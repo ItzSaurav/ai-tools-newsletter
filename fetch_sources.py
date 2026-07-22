@@ -42,8 +42,7 @@ def fetch_arxiv(session):
     logging.info("Fetching arXiv...")
     items = []
     try:
-        # Search for recent AI, CL, CV papers
-        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.CV&sortBy=submittedDate&sortOrder=desc&max_results=30"
+        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.CL%20OR%20cat:cs.CV&sortBy=submittedDate&sortOrder=desc&max_results=30"
         response = session.get(url, timeout=10)
         response.raise_for_status()
         root = ET.fromstring(response.text)
@@ -68,8 +67,7 @@ def fetch_hackernews(session):
     logging.info("Fetching Hacker News...")
     items = []
     try:
-        # Algolia search past 24h
-        url = "http://hn.algolia.com/api/v1/search_by_date?query=AI OR LLM OR Agent OR model&tags=story&numericFilters=created_at_i>{}".format(
+        url = "http://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i>{}".format(
             int((datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=1)).timestamp())
         )
         response = session.get(url, timeout=10)
@@ -100,7 +98,7 @@ def fetch_github(session):
         
         # Search repositories created in the last 7 days (to have some volume) with AI/Agent topics
         date_str = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
-        query = f"topic:ai OR topic:agent OR topic:llm created:>{date_str}"
+        query = f"topic:ai created:>{date_str}"
         url = f"https://api.github.com/search/repositories?q={urllib.parse.quote(query)}&sort=stars&order=desc&per_page=30"
         
         response = session.get(url, headers=headers, timeout=10)
