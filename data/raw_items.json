@@ -1,1 +1,352 @@
-[]
+[
+  {
+    "title": "Google ordered to open Android and Search to rivals in Europe",
+    "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 Comments: 0",
+    "date": "2026-07-22T16:31:33Z"
+  },
+  {
+    "title": "Show HN: Codify \u2013 Terraform for Developer Environments",
+    "url": "https://codifycli.com/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 3 Comments: 1",
+    "date": "2026-07-22T16:30:13Z"
+  },
+  {
+    "title": "European Commission: Guidance to Google for AI Interoperability on Android",
+    "url": "https://daringfireball.net/2026/07/ec_google_guidance_android_ai_and_search_sharing",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 Comments: 0",
+    "date": "2026-07-22T16:29:31Z"
+  },
+  {
+    "title": "Ukrainian drones deliver robots directly into battle by sea and air",
+    "url": "https://arstechnica.com/gadgets/2026/07/ukrainian-drones-deliver-robots-directly-into-battle-by-sea-and-air/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:22:56Z"
+  },
+  {
+    "title": "Dog Photographer Loses Copyright Case over AI-Generated Comic Version of Photo",
+    "url": "https://petapixel.com/2026/07/22/dog-photographer-loses-copyright-case-over-ai-generated-comic-version-of-her-image/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 3 Comments: 0",
+    "date": "2026-07-22T16:17:16Z"
+  },
+  {
+    "title": "I used ChatGPT to sue a Norwegian airline from New York and get $4760",
+    "url": "https://www.behind-the-enemy-lines.com/2026/07/the-lawyer-i-never-hired-how-chatgpt.html",
+    "source": "Hacker News",
+    "summary_raw": "Points: 4 Comments: 1",
+    "date": "2026-07-22T16:16:31Z"
+  },
+  {
+    "title": "DuckDB Internals: Why Is DuckDB Fast? (Part 2 Vectorized Execution)",
+    "url": "https://www.greybeam.ai/blog/duckdb-internals-part-2",
+    "source": "Hacker News",
+    "summary_raw": "Points: 3 Comments: 0",
+    "date": "2026-07-22T16:14:47Z"
+  },
+  {
+    "title": "Sneaky Windows stealer targets 300 apps, gives crims AI profiler to max profits",
+    "url": "https://www.theregister.com/security/2026/07/22/sneaky-windows-stealer-targets-300-apps-gives-crims-an-ai-profiler-to-maximize-profits/5275962",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:14:19Z"
+  },
+  {
+    "title": "Layoffs.FYI Adds new AI attribution layoff chart",
+    "url": "https://layoffs.fyi/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:13:36Z"
+  },
+  {
+    "title": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
+    "url": "https://arstechnica.com/ai/2026/07/us-army-faces-ai-use-limits-after-exhausting-years-supply-of-ai-tokens/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 4 Comments: 1",
+    "date": "2026-07-22T16:13:07Z"
+  },
+  {
+    "title": "We probed a pinned GPT-5.5 endpoint: every request carried ~1,447 hidden tokens",
+    "url": "https://tosea.ai/blog/prompt-injection-llm-fingerprint-drift",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:12:19Z"
+  },
+  {
+    "title": "I Had 11 AI Subagents Test Every PPTX Skill for Claude Code. Here's What Works",
+    "url": "https://www.bulaev.net/p/i-had-11-ai-subagents-test-every",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:02:48Z"
+  },
+  {
+    "title": "Launch HN: Unlayer (YC W22) \u2013 Add email and document builders to your app",
+    "url": "https://unlayer.com",
+    "source": "Hacker News",
+    "summary_raw": "Points: 8 Comments: 6",
+    "date": "2026-07-22T16:02:03Z"
+  },
+  {
+    "title": "Denying the Worm",
+    "url": "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T16:00:31Z"
+  },
+  {
+    "title": "OpenAI tries consulting \u2013 charging boots-on-the-ground prices to deploy agents",
+    "url": "https://www.theregister.com/ai-and-ml/2026/07/22/openai-tries-the-consulting-path-with-presence-charging-enterprises-boots-on-the-ground-prices-to-deploy-agents/5275867",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 1",
+    "date": "2026-07-22T15:56:04Z"
+  },
+  {
+    "title": "frontier AI labs lost the \"deep research\" frontier",
+    "url": "https://andrewtrask.substack.com/p/6-weeks-ago-frontier-ai-labs-lost",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T15:51:45Z"
+  },
+  {
+    "title": "Forget sovereign AI \u2013 the world needs business apps and datacenters",
+    "url": "https://pluralistic.net/2026/07/22/table-flipper/#graveyard-of-indispensable-nations",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T15:51:07Z"
+  },
+  {
+    "title": "Buyer: eBay AI Pop-Ups Disrupt Shopping Experience",
+    "url": "https://www.ecommercebytes.com/C/letters/blog.pl?/pl/2026/7/1784684738.html",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T15:51:02Z"
+  },
+  {
+    "title": "Show HN: AI resume spam ruined hiring so I built a tool to keep the bots out",
+    "url": "https://permanym.com",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 0",
+    "date": "2026-07-22T15:48:47Z"
+  },
+  {
+    "title": "Show HN: The Email Game \u2013 AI agents compete over cryptographically signed emails",
+    "url": "https://theemailgame.com/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 Comments: 1",
+    "date": "2026-07-22T15:43:22Z"
+  },
+  {
+    "title": "MIgHTy-alIeN/MEV-Arbitrage-Bot",
+    "url": "https://github.com/MIgHTy-alIeN/MEV-Arbitrage-Bot",
+    "source": "GitHub",
+    "summary_raw": "An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+    "date": "2026-07-17T09:45:22Z"
+  },
+  {
+    "title": "Kritt-ai/open-kritt",
+    "url": "https://github.com/Kritt-ai/open-kritt",
+    "source": "GitHub",
+    "summary_raw": "Orchestrate AI agents to find real vulnerabilities in code.",
+    "date": "2026-07-20T20:26:24Z"
+  },
+  {
+    "title": "livetennisapi/livetennisapi-mcp",
+    "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+    "source": "GitHub",
+    "summary_raw": "MCP server for the Live Tennis API \u2014 give Claude, Cursor and other LLM agents real-time tennis scores, odds and model win-probability",
+    "date": "2026-07-18T23:17:55Z"
+  },
+  {
+    "title": "KlaatAI/klaatcode",
+    "url": "https://github.com/KlaatAI/klaatcode",
+    "source": "GitHub",
+    "summary_raw": "Open-source AI coding agent for the terminal. Claude Code-grade accuracy with smart model routing \u2014 uses the right AI model for each task, cutting costs 10x. Supports Claude, GPT, Gemini, DeepSeek & more.",
+    "date": "2026-07-17T11:38:10Z"
+  },
+  {
+    "title": "bytedoger/awesome-OpenPrice",
+    "url": "https://github.com/bytedoger/awesome-OpenPrice",
+    "source": "GitHub",
+    "summary_raw": "open price ,\u4e00\u4e2a\u5f00\u6e90\u7684\u6536\u5f55\u5168\u7f51\u5361\u7f51\u6e20\u9053\u5404\u79cdAI\u8ba2\u9605\u4ef7\u683c\u7684\u9879\u76ee\u3002\u6253\u7834\u4fe1\u606f\u8327\u623f\uff0c\u4e00\u7ad9\u5f0f\u83b7\u53d6\u5404\u4e2a\u6e20\u9053\u7684 Claude\u3001GPT\u3001gemini \u3001cursor\u4ea7\u54c1\u7684\u6700\u65b0\u4ef7\u683c",
+    "date": "2026-07-16T06:28:46Z"
+  },
+  {
+    "title": "Prism-Shadow/penguin-harness",
+    "url": "https://github.com/Prism-Shadow/penguin-harness",
+    "source": "GitHub",
+    "summary_raw": "Open, Efficient, Self-Improving Harness: Autonomously Build and Optimize AI Products for Just a Few Dollars",
+    "date": "2026-07-19T03:15:21Z"
+  },
+  {
+    "title": "lofty14/restaurant-digitalization-blueprint",
+    "url": "https://github.com/lofty14/restaurant-digitalization-blueprint",
+    "source": "GitHub",
+    "summary_raw": "\u9910\u996e\u8fde\u9501\u6570\u5b57\u5316 + AI \u5168\u666f\u84dd\u56fe:\u539f\u4e32(\u5e73\u4ef7\u70e4\u4e32\u8fde\u9501)\u7684\u67b6\u6784\u51b3\u7b56\u3001\u4e1a\u52a1\u53e3\u5f84\u3001\u8e29\u5751\u5b9e\u5f55\u4e0e\u53ef\u76f4\u63a5\u5582\u7ed9 AI \u7684\u590d\u523b\u6307\u4ee4\u3002\u7eaf\u81ea\u7136\u8bed\u8a00\u65b9\u6848,\u4e0d\u542b\u4ee3\u7801\u4e0e\u4efb\u4f55\u771f\u5b9e\u7ecf\u8425\u6570\u636e\u3002",
+    "date": "2026-07-16T05:53:33Z"
+  },
+  {
+    "title": "sequilade/tokentab",
+    "url": "https://github.com/sequilade/tokentab",
+    "source": "GitHub",
+    "summary_raw": "A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, and day.",
+    "date": "2026-07-17T11:40:07Z"
+  },
+  {
+    "title": "stephenleo/OpenMicro",
+    "url": "https://github.com/stephenleo/OpenMicro",
+    "source": "GitHub",
+    "summary_raw": "\ud83c\udfae Codex Micro functionality using any Gaming Controller on any Coding Harness!",
+    "date": "2026-07-16T03:23:26Z"
+  },
+  {
+    "title": "MemTensor/memmy-agent",
+    "url": "https://github.com/MemTensor/memmy-agent",
+    "source": "GitHub",
+    "summary_raw": "One Agent. One memory. Shared by every AI. \ud83c\udf59",
+    "date": "2026-07-16T07:57:45Z"
+  },
+  {
+    "title": "opencoredev/sandbox-sdk",
+    "url": "https://github.com/opencoredev/sandbox-sdk",
+    "source": "GitHub",
+    "summary_raw": "A simple oss SDK for spinning sandboxes with one clean syntax.",
+    "date": "2026-07-16T03:57:28Z"
+  },
+  {
+    "title": "ailinone/collective-intelligence",
+    "url": "https://github.com/ailinone/collective-intelligence",
+    "source": "GitHub",
+    "summary_raw": "Ailin\u00b9 is an open-source collective intelligence engine where tens of thousands of AI models collaborate through dozens of coordination strategies, applying structured diversity and independent reasoning to improve reliability, auditability, and resilience.",
+    "date": "2026-07-20T00:17:45Z"
+  },
+  {
+    "title": "bbarit/bbarit-agent-oss",
+    "url": "https://github.com/bbarit/bbarit-agent-oss",
+    "source": "GitHub",
+    "summary_raw": "Open-source AI coding agent for your terminal \u2014 one Rust binary, 15+ LLM providers, 1,000+ models. A self-hostable Claude Code / Codex CLI alternative (MIT).",
+    "date": "2026-07-16T04:00:27Z"
+  },
+  {
+    "title": "QuesmaOrg/awesome-ai-tokenomics",
+    "url": "https://github.com/QuesmaOrg/awesome-ai-tokenomics",
+    "source": "GitHub",
+    "summary_raw": "A map of what AI tokens actually cost, and where they're wasted vs. well spent. Tools, research, practices, and copy-paste setups for token-efficient agentic coding.",
+    "date": "2026-07-17T21:38:33Z"
+  },
+  {
+    "title": "copybrainapp/copybrainapp",
+    "url": "https://github.com/copybrainapp/copybrainapp",
+    "source": "GitHub",
+    "summary_raw": "Your second brain for everything you copy.",
+    "date": "2026-07-18T18:56:25Z"
+  },
+  {
+    "title": "Saganaki22/GNM-Studio",
+    "url": "https://github.com/Saganaki22/GNM-Studio",
+    "source": "GitHub",
+    "summary_raw": "A local-first WIN desktop (portable) and web studio for creating and animating Google GNM heads with webcam motion capture.",
+    "date": "2026-07-16T20:14:53Z"
+  },
+  {
+    "title": "xinwithyu/moonlit-myriad",
+    "url": "https://github.com/xinwithyu/moonlit-myriad",
+    "source": "GitHub",
+    "summary_raw": "\u4e13\u4e3a AI \u73a9\u5bb6\u8bbe\u8ba1\u7684\u5355\u6587\u4ef6\u5361\u724c\u8089\u9e3d \ud83c\udf19",
+    "date": "2026-07-21T10:19:35Z"
+  },
+  {
+    "title": "KuiChi-x/reverseloom",
+    "url": "https://github.com/KuiChi-x/reverseloom",
+    "source": "GitHub",
+    "summary_raw": "Open-source AI browser agent for web reverse engineering. Turn websites into browser-free API clients and crawlers with CDP, network tracing, and JavaScript analysis. | \u5f00\u6e90 AI \u6d4f\u89c8\u5668 Agent\uff08\u667a\u80fd\u4f53\uff09\uff1a\u81ea\u52a8\u5b8c\u6210\u7f51\u9875\u9006\u5411\uff0c\u751f\u6210\u8131\u79bb\u6d4f\u89c8\u5668\u8fd0\u884c\u7684 API \u5ba2\u6237\u7aef\u548c\u722c\u866b\u3002",
+    "date": "2026-07-16T13:36:10Z"
+  },
+  {
+    "title": "zfoong/Here-are-the-N-prompts-that",
+    "url": "https://github.com/zfoong/Here-are-the-N-prompts-that",
+    "source": "GitHub",
+    "summary_raw": "Every day you see posts that go like this: \"Here are the N prompts that...\". Here, I collect, distill, and categorize all the prompts found in these posts.",
+    "date": "2026-07-16T08:23:20Z"
+  },
+  {
+    "title": "Drobiazkin/ai-agent-architecture",
+    "url": "https://github.com/Drobiazkin/ai-agent-architecture",
+    "source": "GitHub",
+    "summary_raw": "Build LLM systems you actually control. A free, open engineering book + course \u2014 from tokenization to serving your own models. Mechanisms, trade-offs, and numbers, not prompt tips",
+    "date": "2026-07-17T17:57:55Z"
+  },
+  {
+    "title": "Institut-du-Numerique-Responsable/green-claude",
+    "url": "https://github.com/Institut-du-Numerique-Responsable/green-claude",
+    "source": "GitHub",
+    "summary_raw": "\ud83c\udf31 Skill \u00e9co-responsable pour Claude Code : sobri\u00e9t\u00e9 num\u00e9rique, audit d'\u00e9co-conception (RGESN, GR491, Green Software Foundation) et pratiques de sobri\u00e9t\u00e9 IA",
+    "date": "2026-07-18T17:02:35Z"
+  },
+  {
+    "title": "bergside/awesome-eve-agents",
+    "url": "https://github.com/bergside/awesome-eve-agents",
+    "source": "GitHub",
+    "summary_raw": "Awesome AI agents based on Eve",
+    "date": "2026-07-16T09:55:39Z"
+  },
+  {
+    "title": "flatkey-ai/flatkey-cli",
+    "url": "https://github.com/flatkey-ai/flatkey-cli",
+    "source": "GitHub",
+    "summary_raw": "Flatkey media generation CLI for images, videos, audio, text, credits, and model discovery.",
+    "date": "2026-07-17T03:35:56Z"
+  },
+  {
+    "title": "weed33834/nova",
+    "url": "https://github.com/weed33834/nova",
+    "source": "GitHub",
+    "summary_raw": "AI-powered multi-agent classroom that turns any topic into an interactive learning experience",
+    "date": "2026-07-20T22:35:30Z"
+  },
+  {
+    "title": "fahreziadh/inklish",
+    "url": "https://github.com/fahreziadh/inklish",
+    "source": "GitHub",
+    "summary_raw": "Practice English where you write it: realistic email, Slack, GitHub, and chat rooms with an AI persona and a coach on every message. BYOK: runs on your own OpenRouter key",
+    "date": "2026-07-18T13:32:03Z"
+  },
+  {
+    "title": "Kanvis-chen/kanvis-video",
+    "url": "https://github.com/Kanvis-chen/kanvis-video",
+    "source": "GitHub",
+    "summary_raw": "Kanvis Video: open-source Codex Skills and a local Kanvis Studio workspace for turning long-form content into editable video projects.",
+    "date": "2026-07-17T09:59:53Z"
+  },
+  {
+    "title": "AliAkrami1375/Li-Translate",
+    "url": "https://github.com/AliAkrami1375/Li-Translate",
+    "source": "GitHub",
+    "summary_raw": "Open-source AI-powered subtitle generation and natural language translation platform for video and audio.",
+    "date": "2026-07-19T08:21:07Z"
+  },
+  {
+    "title": "mujingquan835/dashiai-ppt-skill",
+    "url": "https://github.com/mujingquan835/dashiai-ppt-skill",
+    "source": "GitHub",
+    "summary_raw": "\u5927\u5e08 PPT\uff1a\u7531 @\u5927\u5e08\u7684AI\u5c0f\u7076 \u7ef4\u62a4\u7684\u53ef\u7f16\u8f91 PPTX \u751f\u6210\u3001\u7f51\u9875\u7f16\u8f91\u4e0e\u5b89\u5168\u8fd4\u5de5 Skill",
+    "date": "2026-07-16T03:07:26Z"
+  },
+  {
+    "title": "iqbalmh18/abigail",
+    "url": "https://github.com/iqbalmh18/abigail",
+    "source": "GitHub",
+    "summary_raw": "Async Python CLI & library for FREE web AI services - No Login, No Api Key, No Browser Required ",
+    "date": "2026-07-20T13:19:34Z"
+  },
+  {
+    "title": "kyegomez/Latent-MoE",
+    "url": "https://github.com/kyegomez/Latent-MoE",
+    "source": "GitHub",
+    "summary_raw": "Implementation of LatentMoE,Toward Optimal Accuracy per FLOP and Parameter in Mixture of Experts (Elango et al., NVIDIA 2026) \u2014 in Pytorch. A single-file, dependency-light layer you can drop in place of a standard MoE FFN.",
+    "date": "2026-07-21T13:15:02Z"
+  }
+]

@@ -1,3 +1,60 @@
 {
-  "curated_items": []
+  "curated_items": [
+    {
+      "title": "KlaatAI/klaatcode",
+      "url": "https://github.com/KlaatAI/klaatcode",
+      "category": "Tools",
+      "summary": "Klaatcode is an open-source AI coding agent for the terminal, offering Claude Code-grade accuracy with smart model routing, reducing costs by 10 times. It supports multiple AI models, including Claude, GPT, Gemini, DeepSeek, and more.",
+      "why_it_matters": "Klaatcode matters for builders as it provides a cost-effective and efficient way to leverage AI models for coding tasks, enhancing productivity and reducing expenses."
+    },
+    {
+      "title": "OpenAI tries consulting \u2013 charging boots-on-the-ground prices to deploy agents",
+      "url": "https://www.theregister.com/ai-and-ml/2026/07/22/openai-tries-the-consulting-path-with-presence-charging-enterprises-boots-on-the-ground-prices-to-deploy-agents/5275867",
+      "category": "Research",
+      "summary": "OpenAI is exploring the consulting space by offering on-site deployment of AI agents to enterprises at premium prices, mirroring traditional consulting models. This move aims to provide tailored AI solutions to businesses.",
+      "why_it_matters": "This development matters for builders as it signifies a shift in how AI solutions are delivered and priced, potentially creating new opportunities for customized AI deployments in various industries."
+    },
+    {
+      "title": "I Had 11 AI Subagents Test Every PPTX Skill for Claude Code. Here's What Works",
+      "url": "https://www.bulaev.net/p/i-had-11-ai-subagents-test-every",
+      "category": "Agents",
+      "summary": "The author details an experiment where 11 AI subagents were used to test every PPTX skill for Claude Code, providing insights into what works and what doesn't. This experiment showcases the potential of using multiple subagents for comprehensive testing.",
+      "why_it_matters": "This experiment matters for builders as it demonstrates a novel approach to testing AI skills using subagents, which could enhance the efficiency and effectiveness of AI model evaluation and training."
+    },
+    {
+      "title": "DuckDB Internals: Why Is DuckDB Fast? (Part 2 Vectorized Execution)",
+      "url": "https://www.greybeam.ai/blog/duckdb-internals-part-2",
+      "category": "Tools",
+      "summary": "This article delves into the internals of DuckDB, focusing on its vectorized execution as a key factor in its speed. Vectorized execution allows DuckDB to process data in batches, significantly improving performance.",
+      "why_it_matters": "Understanding DuckDB's vectorized execution matters for builders as it provides insights into optimizing database performance, which is crucial for applications relying heavily on data processing and analysis."
+    },
+    {
+      "title": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
+      "url": "https://arstechnica.com/ai/2026/07/us-army-faces-ai-use-limits-after-exhausting-years-supply-of-ai-tokens/",
+      "category": "Research",
+      "summary": "The US Army has depleted its allocated supply of AI tokens, highlighting the finite nature of 'unlimited' AI resources. This situation underscores the importance of efficient AI token usage and planning.",
+      "why_it_matters": "This development matters for builders as it emphasizes the need for responsible and efficient use of AI resources, considering the potential limitations and costs associated with AI token consumption."
+    },
+    {
+      "title": "MemTensor/memmy-agent",
+      "url": "https://github.com/MemTensor/memmy-agent",
+      "category": "Agents",
+      "summary": "Memmy-agent is designed to share a single memory across every AI, potentially streamlining AI interactions and data sharing. This approach could simplify the integration of multiple AI models within a single system.",
+      "why_it_matters": "Memmy-agent matters for builders as it proposes a novel method for AI memory sharing, which could reduce complexity and enhance the interoperability of AI systems, leading to more efficient and integrated AI solutions."
+    },
+    {
+      "title": "Show HN: Codify \u2013 Terraform for Developer Environments",
+      "url": "https://codifycli.com/",
+      "category": "Tools",
+      "summary": "Codify is a tool that aims to simplify the management of developer environments, drawing inspiration from Terraform. It automates the setup and configuration of development environments, making it easier for developers to get started with projects.",
+      "why_it_matters": "Codify matters for builders as it addresses the complexity of setting up and managing developer environments, potentially reducing the time and effort required for developers to begin working on projects, thus enhancing productivity."
+    },
+    {
+      "title": "ailinone/collective-intelligence",
+      "url": "https://github.com/ailinone/collective-intelligence",
+      "category": "Research",
+      "summary": "Ailin's collective intelligence engine is an open-source platform where thousands of AI models collaborate through various coordination strategies. This approach aims to improve the reliability, auditability, and resilience of AI systems.",
+      "why_it_matters": "Ailin's collective intelligence engine matters for builders as it offers a framework for enhancing the robustness and trustworthiness of AI systems by leveraging the collective capabilities of multiple AI models, which could lead to more dependable AI applications."
+    }
+  ]
 }
