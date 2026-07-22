@@ -1,4 +1,23 @@
+# Newsletter Newsletter Pipeline Dependencies
+# Pinned for reproducibility.
+
+# HTTP + retry
 requests==2.32.3
+urllib3==2.2.3
+
+# RSS / Atom feed parsing (fixes ArXiv)
+feedparser==6.0.11
+
+# HTML parsing for GitHub Trending scraper
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# Groq SDK + compatible HTTP client
 groq==0.11.0
-python-dotenv==1.0.1
 httpx==0.27.2
+
+# Environment variable loading
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.2.2

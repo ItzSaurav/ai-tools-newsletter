@@ -1,4 +1,8 @@
 .env
 __pycache__/
 *.pyc
+*.pyo
 logs/*.log
+run_logs*.txt
+test_apis.py
+test_arxiv.py

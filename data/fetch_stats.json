@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-22",
+  "source_counts": {
+    "fetch_arxiv": 30,
+    "fetch_hackernews": 30,
+    "fetch_github_search": 30,
+    "fetch_github_trending": 20,
+    "fetch_huggingface_papers": 20,
+    "fetch_huggingface_blog": 20,
+    "fetch_paperswithcode": 0,
+    "fetch_openai_blog": 20,
+    "fetch_anthropic_blog": 0,
+    "fetch_deepmind_blog": 20,
+    "fetch_simon_willison": 20,
+    "fetch_latentspace": 20,
+    "fetch_devto": 12,
+    "fetch_reddit": 0
+  },
+  "total_fetched": 242,
+  "duplicates_removed": 0,
+  "new_items": 242
+}

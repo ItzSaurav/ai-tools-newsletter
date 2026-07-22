@@ -1,186 +1,530 @@
+"""
+fetch_sources.py — Fetch from 14 sources, each fully isolated.
+
+Sources:
+  1. arXiv API (cs.AI, cs.CL, cs.LG, cs.CV)
+  2. Hacker News (Algolia API)
+  3. GitHub Search (repo search, AI topics)
+  4. GitHub Trending (HTML scrape)
+  5. Hugging Face Papers (daily API)
+  6. Hugging Face Blog (RSS)
+  7. Papers With Code (latest papers API)
+  8. OpenAI Blog (RSS)
+  9. Anthropic Blog (RSS)
+  10. DeepMind Blog (RSS)
+  11. Simon Willison Blog (RSS)
+  12. Latent Space (RSS)
+  13. Dev.to AI tag (RSS)
+  14. Reddit — optional, 403 is expected from CI/CD (not a failure)
+"""
+
+from __future__ import annotations
+
+import datetime
 import json
 import os
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-import datetime
-from dotenv import load_dotenv
-import logging
+import time
 import urllib.parse
-import xml.etree.ElementTree as ET
+from typing import List, Optional
+
+import feedparser
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+
+from config import (
+    ARXIV_MAX_RESULTS,
+    GITHUB_DAYS_BACK,
+    GITHUB_MAX_REPOS,
+    HF_PAPERS_MAX,
+    HN_MAX_HITS,
+    PWC_MAX,
+    REDDIT_LIMIT_PER_SUB,
+    RSS_MAX_ITEMS,
+    RAW_ITEMS_FILE,
+    SEEN_ITEMS_FILE,
+    RawArticle,
+    ensure_dirs,
+    get_logger,
+    get_session,
+)
 
 load_dotenv()
 
-# Setup logging
-os.makedirs("logs", exist_ok=True)
-logging.basicConfig(
-    filename=f"logs/fetch_{datetime.datetime.now(datetime.timezone.utc).date().isoformat()}.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+log = get_logger(
+    "fetch",
+    log_file=f"logs/fetch_{datetime.date.today().isoformat()}.log",
 )
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-logging.getLogger("").addHandler(console)
 
-SEEN_ITEMS_FILE = "data/seen_items.json"
-RAW_ITEMS_FILE = "data/raw_items.json"
+TODAY_UTC = datetime.datetime.now(datetime.timezone.utc)
 
-def get_session():
-    session = requests.Session()
-    retries = Retry(total=5, backoff_factor=1, status_forcelist=[ 429, 500, 502, 503, 504 ])
-    session.mount('http://', HTTPAdapter(max_retries=retries))
-    session.mount('https://', HTTPAdapter(max_retries=retries))
-    return session
 
-def load_seen_urls():
+# ─────────────────────────────────────────────
+# STATE
+# ─────────────────────────────────────────────
+def load_seen_urls() -> set[str]:
     if os.path.exists(SEEN_ITEMS_FILE):
         with open(SEEN_ITEMS_FILE, "r", encoding="utf-8") as f:
             return set(json.load(f))
     return set()
 
-def fetch_arxiv(session):
-    logging.info("Fetching arXiv...")
+
+# ─────────────────────────────────────────────
+# HELPER
+# ─────────────────────────────────────────────
+def _make_item(
+    title: str,
+    url: str,
+    source: str,
+    summary_raw: str = "",
+    date: str = "",
+    hn_points: int = 0,
+    github_stars: int = 0,
+    github_forks: int = 0,
+) -> dict:
+    return RawArticle(
+        title=title.strip(),
+        url=url.strip(),
+        source=source,
+        summary_raw=summary_raw.strip()[:800],  # cap length
+        date=date,
+        hn_points=hn_points,
+        github_stars=github_stars,
+        github_forks=github_forks,
+    ).to_dict()
+
+
+def _parse_rss(feed_url: str, source_name: str, session, limit: int = RSS_MAX_ITEMS) -> List[dict]:
+    """Generic RSS/Atom feed parser using feedparser."""
     items = []
     try:
-        url = "http://export.arxiv.org/api/query?search_query=cat:cs.AI%20OR%20cat:cs.CL%20OR%20cat:cs.CV&sortBy=submittedDate&sortOrder=desc&max_results=30"
-        response = session.get(url, timeout=10)
-        response.raise_for_status()
-        root = ET.fromstring(response.text)
-        ns = {"atom": "http://www.w3.org/2005/Atom"}
-        for entry in root.findall("atom:entry", ns):
-            title = entry.find("atom:title", ns).text.replace("\n", " ").strip()
-            summary = entry.find("atom:summary", ns).text.replace("\n", " ").strip()
-            link = entry.find("atom:id", ns).text
-            published = entry.find("atom:published", ns).text
-            items.append({
-                "title": title,
-                "url": link,
-                "source": "arXiv",
-                "summary_raw": summary,
-                "date": published
-            })
-    except Exception as e:
-        logging.error(f"Error fetching arXiv: {e}")
+        resp = session.get(feed_url, timeout=15)
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.text)
+        for entry in feed.entries[:limit]:
+            title = getattr(entry, "title", "")
+            url = getattr(entry, "link", "")
+            summary = getattr(entry, "summary", "") or getattr(entry, "description", "")
+            published = getattr(entry, "published", "") or getattr(entry, "updated", "")
+            if title and url:
+                items.append(_make_item(title, url, source_name, summary, published))
+    except Exception as exc:
+        log.warning(f"RSS fetch failed for {source_name} ({feed_url}): {exc}")
     return items
 
-def fetch_hackernews(session):
-    logging.info("Fetching Hacker News...")
+
+# ─────────────────────────────────────────────
+# SOURCE 1 — arXiv
+# ─────────────────────────────────────────────
+def fetch_arxiv(session) -> List[dict]:
+    log.info("Fetching arXiv…")
     items = []
     try:
-        url = "http://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&numericFilters=created_at_i>{}".format(
-            int((datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=1)).timestamp())
+        # feedparser handles the Atom namespace cleanly — no manual %20 encoding needed
+        query = "cat:cs.AI OR cat:cs.CL OR cat:cs.LG OR cat:cs.CV"
+        params = urllib.parse.urlencode({
+            "search_query": query,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+            "max_results": ARXIV_MAX_RESULTS,
+        })
+        url = f"https://export.arxiv.org/api/query?{params}"
+        resp = session.get(url, timeout=20)
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.text)
+        for entry in feed.entries:
+            title = entry.get("title", "").replace("\n", " ").strip()
+            arxiv_url = entry.get("id", "").replace("http://", "https://")
+            summary = entry.get("summary", "").replace("\n", " ").strip()
+            published = entry.get("published", "")
+            if title and arxiv_url:
+                items.append(_make_item(title, arxiv_url, "arXiv", summary, published))
+        log.info(f"arXiv: {len(items)} items")
+    except Exception as exc:
+        log.error(f"arXiv fetch failed: {exc}")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 2 — Hacker News (Algolia)
+# ─────────────────────────────────────────────
+def fetch_hackernews(session) -> List[dict]:
+    log.info("Fetching Hacker News…")
+    items = []
+    try:
+        cutoff = int((TODAY_UTC - datetime.timedelta(days=2)).timestamp())
+        url = (
+            f"https://hn.algolia.com/api/v1/search_by_date"
+            f"?query=AI&tags=story&numericFilters=created_at_i%3E{cutoff}"
+            f"&hitsPerPage={HN_MAX_HITS}"
         )
-        response = session.get(url, timeout=10)
-        response.raise_for_status()
-        hits = response.json().get("hits", [])[:30]
+        resp = session.get(url, timeout=15)
+        resp.raise_for_status()
+        hits = resp.json().get("hits", [])[:HN_MAX_HITS]
         for hit in hits:
-            # Prefer the actual URL, fallback to HN post
+            title = hit.get("title", "")
             link = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
-            items.append({
-                "title": hit.get("title", ""),
-                "url": link,
-                "source": "Hacker News",
-                "summary_raw": f"Points: {hit.get('points', 0)} Comments: {hit.get('num_comments', 0)}",
-                "date": hit.get("created_at")
-            })
-    except Exception as e:
-        logging.error(f"Error fetching Hacker News: {e}")
+            points = hit.get("points") or 0
+            comments = hit.get("num_comments") or 0
+            items.append(_make_item(
+                title, link, "Hacker News",
+                summary_raw=f"Points: {points} | Comments: {comments}",
+                date=hit.get("created_at", ""),
+                hn_points=points,
+            ))
+        log.info(f"Hacker News: {len(items)} items")
+    except Exception as exc:
+        log.error(f"Hacker News fetch failed: {exc}")
     return items
 
-def fetch_github(session):
-    logging.info("Fetching GitHub...")
+
+# ─────────────────────────────────────────────
+# SOURCE 3 — GitHub Search (new AI repos)
+# ─────────────────────────────────────────────
+def fetch_github_search(session) -> List[dict]:
+    log.info("Fetching GitHub Search…")
     items = []
     try:
         token = os.getenv("GH_TOKEN")
         headers = {"Accept": "application/vnd.github.v3+json"}
         if token:
             headers["Authorization"] = f"token {token}"
-        
-        # Search repositories created in the last 7 days (to have some volume) with AI/Agent topics
-        date_str = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
+
+        date_str = (TODAY_UTC - datetime.timedelta(days=GITHUB_DAYS_BACK)).strftime("%Y-%m-%d")
         query = f"topic:ai created:>{date_str}"
-        url = f"https://api.github.com/search/repositories?q={urllib.parse.quote(query)}&sort=stars&order=desc&per_page=30"
-        
-        response = session.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
-        repos = response.json().get("items", [])
-        for repo in repos:
-            items.append({
-                "title": repo.get("full_name"),
-                "url": repo.get("html_url"),
-                "source": "GitHub",
-                "summary_raw": repo.get("description") or "No description",
-                "date": repo.get("created_at")
-            })
-    except Exception as e:
-        logging.error(f"Error fetching GitHub: {e}")
+        url = (
+            f"https://api.github.com/search/repositories"
+            f"?q={urllib.parse.quote(query)}&sort=stars&order=desc&per_page={GITHUB_MAX_REPOS}"
+        )
+        resp = session.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+        for repo in resp.json().get("items", []):
+            description = repo.get("description") or "No description"
+            items.append(_make_item(
+                title=repo.get("full_name", ""),
+                url=repo.get("html_url", ""),
+                source="GitHub",
+                summary_raw=f"{description} | ⭐ {repo.get('stargazers_count', 0)} | 🍴 {repo.get('forks_count', 0)}",
+                date=repo.get("created_at", ""),
+                github_stars=repo.get("stargazers_count", 0),
+                github_forks=repo.get("forks_count", 0),
+            ))
+        log.info(f"GitHub Search: {len(items)} items")
+    except Exception as exc:
+        log.error(f"GitHub Search fetch failed: {exc}")
     return items
 
-def fetch_reddit(session):
-    logging.info("Fetching Reddit...")
+
+# ─────────────────────────────────────────────
+# SOURCE 4 — GitHub Trending (HTML scrape)
+# ─────────────────────────────────────────────
+def fetch_github_trending(session) -> List[dict]:
+    log.info("Fetching GitHub Trending…")
     items = []
-    headers = {"User-Agent": "AIToolsNewsletter/1.0"}
-    subreddits = ["MachineLearning", "LocalLLaMA"]
     try:
-        for sub in subreddits:
-            url = f"https://old.reddit.com/r/{sub}/top.json?t=day&limit=15"
-            response = session.get(url, headers=headers, timeout=10)
-            response.raise_for_status()
-            posts = response.json().get("data", {}).get("children", [])
+        url = "https://github.com/trending?since=daily&spoken_language_code=en"
+        resp = session.get(url, timeout=20)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+        for article in soup.select("article.Box-row")[:20]:
+            a_tag = article.select_one("h2 a")
+            if not a_tag:
+                continue
+            repo_path = a_tag.get("href", "").strip("/")
+            if not repo_path:
+                continue
+            repo_url = f"https://github.com/{repo_path}"
+            title = repo_path.replace("/", " / ")
+            desc_el = article.select_one("p")
+            description = desc_el.get_text(strip=True) if desc_el else ""
+            stars_el = article.select_one("a[href$='/stargazers']")
+            stars_text = stars_el.get_text(strip=True).replace(",", "") if stars_el else "0"
+            try:
+                stars = int(stars_text)
+            except ValueError:
+                stars = 0
+            items.append(_make_item(
+                title=title,
+                url=repo_url,
+                source="GitHub Trending",
+                summary_raw=f"{description} | ⭐ {stars}",
+                github_stars=stars,
+            ))
+        log.info(f"GitHub Trending: {len(items)} items")
+    except Exception as exc:
+        log.warning(f"GitHub Trending fetch failed: {exc}")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 5 — Hugging Face Papers (daily)
+# ─────────────────────────────────────────────
+def fetch_huggingface_papers(session) -> List[dict]:
+    log.info("Fetching Hugging Face Papers…")
+    items = []
+    try:
+        date_str = TODAY_UTC.strftime("%Y-%m-%d")
+        url = f"https://huggingface.co/api/daily_papers?date={date_str}"
+        resp = session.get(url, timeout=15)
+        if resp.status_code == 404:
+            # No papers for today yet — try yesterday
+            yesterday = (TODAY_UTC - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+            url = f"https://huggingface.co/api/daily_papers?date={yesterday}"
+            resp = session.get(url, timeout=15)
+        resp.raise_for_status()
+        papers = resp.json()
+        if isinstance(papers, dict):
+            papers = papers.get("papers", [])
+        for paper in papers[:HF_PAPERS_MAX]:
+            paper_id = paper.get("paper", {}).get("id", "")
+            title = paper.get("paper", {}).get("title", "")
+            abstract = paper.get("paper", {}).get("abstract", "")
+            if not title or not paper_id:
+                continue
+            arxiv_url = f"https://arxiv.org/abs/{paper_id}"
+            items.append(_make_item(title, arxiv_url, "Hugging Face Papers", abstract))
+        log.info(f"Hugging Face Papers: {len(items)} items")
+    except Exception as exc:
+        log.warning(f"Hugging Face Papers fetch failed: {exc}")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 6 — Hugging Face Blog (RSS)
+# ─────────────────────────────────────────────
+def fetch_huggingface_blog(session) -> List[dict]:
+    log.info("Fetching Hugging Face Blog…")
+    items = _parse_rss(
+        "https://huggingface.co/blog/feed.xml",
+        "Hugging Face Blog",
+        session,
+    )
+    log.info(f"Hugging Face Blog: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 7 — Papers With Code (latest)
+# ─────────────────────────────────────────────
+def fetch_paperswithcode(session) -> List[dict]:
+    log.info("Fetching Papers With Code…")
+    # Use RSS feed — more reliable from CI than JSON API
+    items = _parse_rss(
+        "https://paperswithcode.com/rss",
+        "Papers With Code",
+        session,
+        limit=PWC_MAX,
+    )
+    log.info(f"Papers With Code: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 8 — OpenAI Blog (RSS)
+# ─────────────────────────────────────────────
+def fetch_openai_blog(session) -> List[dict]:
+    log.info("Fetching OpenAI Blog…")
+    items = _parse_rss(
+        "https://openai.com/news/rss.xml",
+        "OpenAI Blog",
+        session,
+    )
+    log.info(f"OpenAI Blog: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 9 — Anthropic Blog (RSS)
+# ─────────────────────────────────────────────
+def fetch_anthropic_blog(session) -> List[dict]:
+    log.info("Fetching Anthropic Blog…")
+    # Try multiple known Anthropic RSS/feed endpoints
+    for feed_url in [
+        "https://www.anthropic.com/news/rss.xml",
+        "https://www.anthropic.com/news/rss",
+        "https://www.anthropic.com/blog.rss",
+    ]:
+        items = _parse_rss(feed_url, "Anthropic Blog", session)
+        if items:
+            log.info(f"Anthropic Blog: {len(items)} items (via {feed_url})")
+            return items
+    log.warning("Anthropic Blog: no working RSS endpoint found — skipping")
+    return []
+
+
+# ─────────────────────────────────────────────
+# SOURCE 10 — DeepMind Blog (RSS)
+# ─────────────────────────────────────────────
+def fetch_deepmind_blog(session) -> List[dict]:
+    log.info("Fetching DeepMind Blog…")
+    items = _parse_rss(
+        "https://deepmind.google/blog/rss.xml",
+        "DeepMind Blog",
+        session,
+    )
+    log.info(f"DeepMind Blog: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 11 — Simon Willison Blog (RSS)
+# ─────────────────────────────────────────────
+def fetch_simon_willison(session) -> List[dict]:
+    log.info("Fetching Simon Willison…")
+    items = _parse_rss(
+        "https://simonwillison.net/atom/everything/",
+        "Simon Willison",
+        session,
+    )
+    log.info(f"Simon Willison: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 12 — Latent Space (RSS)
+# ─────────────────────────────────────────────
+def fetch_latentspace(session) -> List[dict]:
+    log.info("Fetching Latent Space…")
+    items = _parse_rss(
+        "https://www.latent.space/feed",
+        "Latent Space",
+        session,
+    )
+    log.info(f"Latent Space: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 13 — Dev.to AI tag (RSS)
+# ─────────────────────────────────────────────
+def fetch_devto(session) -> List[dict]:
+    log.info("Fetching Dev.to AI tag…")
+    items = _parse_rss(
+        "https://dev.to/feed/tag/ai",
+        "Dev.to",
+        session,
+    )
+    log.info(f"Dev.to: {len(items)} items")
+    return items
+
+
+# ─────────────────────────────────────────────
+# SOURCE 14 — Reddit (optional — 403 from CI is expected)
+# ─────────────────────────────────────────────
+def fetch_reddit(session) -> List[dict]:
+    log.info("Fetching Reddit (optional)…")
+    items = []
+    subreddits = ["MachineLearning", "LocalLLaMA"]
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+        )
+    }
+    for sub in subreddits:
+        try:
+            url = f"https://old.reddit.com/r/{sub}/top.json?t=day&limit={REDDIT_LIMIT_PER_SUB}"
+            resp = session.get(url, headers=headers, timeout=10)
+            resp.raise_for_status()
+            posts = resp.json().get("data", {}).get("children", [])
             for post in posts:
-                data = post["data"]
-                # Avoid stickied posts
+                data = post.get("data", {})
                 if data.get("stickied"):
                     continue
-                url_link = data.get("url")
-                # If it's a self post or reddit video, use the permalink
-                if not url_link or url_link.startswith("https://v.redd.it") or "reddit.com" in url_link:
-                    url_link = f"https://old.reddit.com{data.get('permalink')}"
-                
-                items.append({
-                    "title": data.get("title"),
-                    "url": url_link,
-                    "source": f"Reddit (r/{sub})",
-                    "summary_raw": f"Score: {data.get('score', 0)}",
-                    "date": datetime.datetime.fromtimestamp(data.get("created_utc", 0)).isoformat()
-                })
-    except Exception as e:
-        logging.error(f"Error fetching Reddit: {e}")
+                link = data.get("url", "")
+                if not link or "v.redd.it" in link or "reddit.com" in link:
+                    link = f"https://old.reddit.com{data.get('permalink', '')}"
+                score = data.get("score", 0)
+                items.append(_make_item(
+                    title=data.get("title", ""),
+                    url=link,
+                    source=f"Reddit (r/{sub})",
+                    summary_raw=f"Score: {score}",
+                    date=datetime.datetime.fromtimestamp(
+                        data.get("created_utc", 0), tz=datetime.timezone.utc
+                    ).isoformat(),
+                ))
+        except Exception as exc:
+            log.warning(f"Reddit r/{sub} fetch failed (expected in CI): {exc}")
+    log.info(f"Reddit: {len(items)} items")
     return items
 
-def main():
+
+# ─────────────────────────────────────────────
+# MAIN
+# ─────────────────────────────────────────────
+def main() -> None:
+    ensure_dirs()
     session = get_session()
     seen_urls = load_seen_urls()
-    
-    arxiv_items = fetch_arxiv(session)
-    hn_items = fetch_hackernews(session)
-    github_items = fetch_github(session)
-    reddit_items = fetch_reddit(session)
-    
-    all_items = []
-    all_items.extend(arxiv_items)
-    all_items.extend(hn_items)
-    all_items.extend(github_items)
-    all_items.extend(reddit_items)
-    
-    new_items = []
-    new_urls = set()
+
+    # Execute all fetchers — each is fully isolated
+    source_fns = [
+        fetch_arxiv,
+        fetch_hackernews,
+        fetch_github_search,
+        fetch_github_trending,
+        fetch_huggingface_papers,
+        fetch_huggingface_blog,
+        fetch_paperswithcode,
+        fetch_openai_blog,
+        fetch_anthropic_blog,
+        fetch_deepmind_blog,
+        fetch_simon_willison,
+        fetch_latentspace,
+        fetch_devto,
+        fetch_reddit,
+    ]
+
+    source_counts: dict[str, int] = {}
+    all_items: List[dict] = []
+
+    for fn in source_fns:
+        try:
+            fetched = fn(session)
+        except Exception as exc:
+            log.error(f"Unhandled exception in {fn.__name__}: {exc}")
+            fetched = []
+        source_counts[fn.__name__] = len(fetched)
+        all_items.extend(fetched)
+
+    # Deduplicate by URL (preserve insertion order)
+    new_items: List[dict] = []
+    seen_in_run: set[str] = set()
+    duplicates_removed = 0
     for item in all_items:
-        if item["url"] not in seen_urls and item["url"] not in new_urls:
+        url = item.get("url", "")
+        if url and url not in seen_urls and url not in seen_in_run:
             new_items.append(item)
-            new_urls.add(item["url"])
-            seen_urls.add(item["url"])
-            
-    logging.info(f"Arxiv: {len(arxiv_items)}")
-    logging.info(f"Hacker News: {len(hn_items)}")
-    logging.info(f"GitHub: {len(github_items)}")
-    logging.info(f"Reddit: {len(reddit_items)}")
-    logging.info(f"Duplicates removed: {len(all_items) - len(new_items)}")
-    logging.info(f"Total new items to process: {len(new_items)}")
-    
-    os.makedirs("data", exist_ok=True)
+            seen_in_run.add(url)
+        else:
+            duplicates_removed += 1
+
+    # Summary log
+    log.info("─── Fetch Summary ───────────────────────────────")
+    for fn_name, count in source_counts.items():
+        log.info(f"  {fn_name}: {count} items")
+    log.info(f"  Total fetched   : {len(all_items)}")
+    log.info(f"  Duplicates removed: {duplicates_removed}")
+    log.info(f"  New items       : {len(new_items)}")
+    log.info("─────────────────────────────────────────────────")
+
+    # Save raw items
     with open(RAW_ITEMS_FILE, "w", encoding="utf-8") as f:
-        json.dump(new_items, f, indent=2)
+        json.dump(new_items, f, indent=2, ensure_ascii=False)
+
+    # Save fetch stats for metrics.py
+    stats = {
+        "date": TODAY_UTC.date().isoformat(),
+        "source_counts": source_counts,
+        "total_fetched": len(all_items),
+        "duplicates_removed": duplicates_removed,
+        "new_items": len(new_items),
+    }
+    import json as _json
+    stats_path = f"{os.path.dirname(RAW_ITEMS_FILE)}/fetch_stats.json"
+    with open(stats_path, "w", encoding="utf-8") as f:
+        _json.dump(stats, f, indent=2)
+
 
 if __name__ == "__main__":
     main()
