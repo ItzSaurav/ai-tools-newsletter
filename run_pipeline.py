@@ -13,7 +13,7 @@ def run_script(script_name):
         logging.error(f"Error running {script_name}:\n{result.stderr}")
         sys.exit(result.returncode)
     else:
-        logging.info(f"{script_name} completed successfully.\n{result.stdout}")
+        logging.info(f"{script_name} completed successfully.\nSTDOUT:\n{result.stdout}\nSTDERR:\n{result.stderr}")
 
 def main():
     logging.info("Starting AI Tools Newsletter Pipeline")
