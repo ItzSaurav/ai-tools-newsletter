@@ -41,6 +41,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase
+          git pull --rebase --autostash
           git add data/ drafts/
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated pipeline run" && git push)
