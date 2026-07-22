@@ -1,0 +1,46 @@
+name: Newsletter Pipeline
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # 8am UTC daily
+  workflow_dispatch: # Allow manual trigger
+
+concurrency:
+  group: newsletter-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Pipeline
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DRY_RUN: 'false'
+        run: python run_pipeline.py
+
+      - name: Commit state and draft
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase
+          git add data/ drafts/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated pipeline run" && git push)
