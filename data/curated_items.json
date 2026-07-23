@@ -1,165 +1,171 @@
 {
-  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agents, and research, highlighting key developments that can be applied to production AI systems today. From novel language models to AI coding assistants, these curated items provide valuable insights and practical tools for builders.",
+  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agents, and research, with a emphasis on practical applications and technical insights. From cost-efficient token-level collaborative inference to AI coding assistants and multimodal models, we've curated the top 12 articles that matter most to builders.",
   "curated_items": [
     {
       "title": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference",
       "url": "https://arxiv.org/abs/2607.20327v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "PyroDash is a cost-aware framework for token-level small-large language model collaborative inference, aiming to balance the trade-off between model size and inference cost. It dynamically selects between small and large models based on the input tokens, reducing computational costs while maintaining performance.",
-      "why_builders_care": "Builders can leverage PyroDash to optimize their language model deployments, achieving better performance at lower costs.",
+      "summary": "PyroDash is a cost-aware framework for token-level SLM-LLM collaborative inference, enabling large language models to provide strong reasoning capabilities while reducing costs. The framework collaborates between small and large language models to achieve efficient inference.",
+      "why_builders_care": "Builders can use PyroDash to develop more cost-efficient AI models that balance performance and scalability.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
         "llm",
-        "inference-optimization",
-        "collaborative-inference"
+        "slm",
+        "collaborative inference"
       ],
       "confidence_score": 85
-    },
-    {
-      "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
-      "url": "https://arxiv.org/abs/2607.20357v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This research proposes a joint token-compute adaptation approach for multimodal large language models, reducing both the number of input visual tokens and the computational cost of the model. This method enables faster and more efficient processing of multimodal data.",
-      "why_builders_care": "Builders can apply this approach to optimize their multimodal models, improving performance and reducing computational costs.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 12,
-      "tags": [
-        "multimodal",
-        "llm",
-        "adaptation"
-      ],
-      "confidence_score": 90
     },
     {
       "title": "KlaatAI/klaatcode",
       "url": "https://github.com/KlaatAI/klaatcode",
       "source": "GitHub",
       "category": "Agents",
-      "summary": "Klaatcode is an open-source AI coding agent for the terminal, providing smart model routing and support for multiple AI models. It offers Claude Code-grade accuracy while cutting costs by up to 10 times.",
-      "why_builders_care": "Builders can utilize Klaatcode to streamline their coding workflow, leveraging AI assistance while minimizing costs.",
+      "summary": "Klaatcode is an open-source AI coding agent for the terminal, providing Claude Code-grade accuracy with smart model routing. It supports multiple AI models, including Claude, GPT, and Gemini, and reduces costs by 10x.",
+      "why_builders_care": "Builders can use Klaatcode to develop AI-powered coding assistants that improve productivity and reduce costs.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 8,
+      "reading_time_mins": 5,
       "tags": [
-        "ai-coding",
-        "agent",
+        "ai coding assistant",
         "terminal"
       ],
       "confidence_score": 80
+    },
+    {
+      "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+      "url": "https://arxiv.org/abs/2607.20357v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This research proposes a joint token-compute adaptation approach for multimodal large language models, reducing inference costs while maintaining performance. The approach adapts both token and compute resources to optimize multimodal processing.",
+      "why_builders_care": "Builders can use this approach to develop more efficient multimodal AI models that balance performance and costs.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "multimodal llm",
+        "token-compute adaptation"
+      ],
+      "confidence_score": 90
     },
     {
       "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
       "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
       "source": "OpenAI Blog",
       "category": "AI Models",
-      "summary": "GPT-Red is OpenAI's automated red teaming system, designed to improve AI safety, alignment, and prompt injection robustness through self-play. This approach enables the model to identify and address potential vulnerabilities.",
-      "why_builders_care": "Builders can learn from OpenAI's approach to improving model robustness and apply similar strategies to their own AI developments.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
+      "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness. The system enables AI models to self-improve and adapt to new scenarios.",
+      "why_builders_care": "Builders can use GPT-Red to develop more robust and adaptable AI models that improve over time.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
       "tags": [
-        "ai-safety",
-        "robustness",
+        "ai safety",
         "self-improvement"
       ],
       "confidence_score": 88
+    },
+    {
+      "title": "MCP Just Killed the Handshake (Your Server Is Next)",
+      "url": "https://dev.to/temrel/mcp-just-killed-the-handshake-your-server-is-next-47gj",
+      "source": "Dev.to",
+      "category": "Agents",
+      "summary": "This article discusses the implications of MCP (Model Context Protocol) on server architecture and security. MCP enables AI agents to communicate directly, potentially replacing traditional handshakes and server protocols.",
+      "why_builders_care": "Builders need to understand the impact of MCP on their server architecture and security to adapt to the changing landscape.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 6,
+      "tags": [
+        "mcp",
+        "server architecture"
+      ],
+      "confidence_score": 82
+    },
+    {
+      "title": "Latent-MoE",
+      "url": "https://github.com/kyegomez/Latent-MoE",
+      "source": "GitHub",
+      "category": "Open Source",
+      "summary": "Latent-MoE is a PyTorch implementation of the Latent Mixture of Experts (MoE) model, which achieves optimal accuracy per FLOP and parameter in mixture of experts. The model is a single-file, dependency-light layer that can be dropped into existing architectures.",
+      "why_builders_care": "Builders can use Latent-MoE to develop more efficient and accurate AI models that balance performance and parameters.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "latent moe",
+        "pytorch"
+      ],
+      "confidence_score": 85
     },
     {
       "title": "Nativ: Run AI models locally on your Mac",
       "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
       "source": "Simon Willison",
       "category": "AI Models",
-      "summary": "Nativ is a tool that allows users to run AI models locally on their Mac, providing an alternative to cloud-based services. This can be particularly useful for developers who require more control over their AI deployments or need to work with sensitive data.",
-      "why_builders_care": "Builders can use Nativ to deploy and test AI models locally, enhancing their development workflow and potentially improving model performance.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 6,
+      "summary": "Nativ is a tool that enables running AI models locally on Mac devices, providing a convenient way to test and deploy AI models without relying on cloud services.",
+      "why_builders_care": "Builders can use Nativ to develop and test AI models locally, improving productivity and reducing dependencies on cloud services.",
+      "difficulty": "Beginner",
+      "reading_time_mins": 4,
       "tags": [
-        "local-deployment",
-        "ai-models",
-        "mac"
+        "ai models",
+        "local deployment"
       ],
-      "confidence_score": 78
-    },
-    {
-      "title": "Online Variance Reduction for Domain Adaptation on Streaming Data",
-      "url": "https://arxiv.org/abs/2607.20374v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This research focuses on stochastic variance reduction for domain adaptation on streaming data, proposing methods to reduce variance and improve model performance in online learning settings.",
-      "why_builders_care": "Builders working with streaming data can apply these variance reduction techniques to enhance the adaptability and accuracy of their models.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 11,
-      "tags": [
-        "domain-adaptation",
-        "streaming-data",
-        "variance-reduction"
-      ],
-      "confidence_score": 82
-    },
-    {
-      "title": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
-      "url": "https://arxiv.org/abs/2607.20402v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "SoftReason is a neuro-soft-symbolic deductive reasoning architecture designed for high-dimensional perceptual data. It integrates neural networks with symbolic reasoning to improve the interpretability and performance of models on complex tasks.",
-      "why_builders_care": "Builders can leverage SoftReason to develop more interpretable and robust models that combine the strengths of neural and symbolic approaches.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 13,
-      "tags": [
-        "neuro-symbolic",
-        "reasoning",
-        "architecture"
-      ],
-      "confidence_score": 89
-    },
-    {
-      "title": "whisper.cpp",
-      "url": "https://github.com/ggml-org/whisper.cpp",
-      "source": "GitHub Trending",
-      "category": "AI Models",
-      "summary": "Whisper.cpp is a C/C++ port of OpenAI's Whisper model, offering a high-performance, open-source solution for speech recognition tasks. This implementation can be particularly useful for developers looking to integrate speech recognition into their applications.",
-      "why_builders_care": "Builders can utilize Whisper.cpp to add efficient speech recognition capabilities to their projects, benefiting from the model's high accuracy and open-source nature.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 7,
-      "tags": [
-        "speech-recognition",
-        "whisper",
-        "cpp"
-      ],
-      "confidence_score": 81
-    },
-    {
-      "title": "Livetennisapi/mcp",
-      "url": "https://github.com/livetennisapi/livetennisapi-mcp",
-      "source": "GitHub",
-      "category": "Agents",
-      "summary": "This MCP server allows AI assistants like Claude and Cursor to access real-time tennis scores, odds, and model win probabilities, demonstrating the potential for integrating AI agents with live data feeds.",
-      "why_builders_care": "Builders can explore similar integrations to enable their AI agents to interact with real-time data, enhancing the agents' capabilities and user experience.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 5,
-      "tags": [
-        "mcp",
-        "ai-agents",
-        "real-time-data"
-      ],
-      "confidence_score": 75
+      "confidence_score": 80
     },
     {
       "title": "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
       "url": "https://arxiv.org/abs/2607.20379v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This research introduces decodability supervision as a method to improve the verifiability of activation explanations in neural networks. By focusing on making the model's explanations decodable, this approach enhances the transparency and trustworthiness of AI models.",
-      "why_builders_care": "Builders can apply decodability supervision to develop more explainable and reliable models, addressing concerns around AI transparency and accountability.",
+      "summary": "This research proposes a decodability supervision approach for verifiable activation explanations, enabling more transparent and explainable AI models. The approach focuses on training the model to provide clear explanations rather than relying on human interpretation.",
+      "why_builders_care": "Builders can use this approach to develop more transparent and explainable AI models that improve trust and understanding.",
       "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
-        "explainability",
-        "decodability",
-        "supervision"
+        "explainable ai",
+        "decodability supervision"
       ],
-      "confidence_score": 86
+      "confidence_score": 90
+    },
+    {
+      "title": "The Blessing of Dimensionality: How Near-Orthogonality in High-Dimensional Spaces Explains Temporal Portability",
+      "url": "https://arxiv.org/abs/2607.20301v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This research explores the concept of near-orthogonality in high-dimensional spaces and its implications for temporal portability in AI models. The study provides insights into the benefits of high-dimensional spaces for improving model robustness and adaptability.",
+      "why_builders_care": "Builders can use the insights from this research to develop more robust and adaptable AI models that leverage high-dimensional spaces.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 14,
+      "tags": [
+        "high-dimensional spaces",
+        "temporal portability"
+      ],
+      "confidence_score": 92
+    },
+    {
+      "title": "Notes to Self: Can LLMs Benefit from Experiential Abstractions?",
+      "url": "https://arxiv.org/abs/2607.20372v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This research investigates the potential benefits of experiential abstractions for large language models (LLMs), exploring whether LLMs can learn from experience and adapt to new scenarios more effectively.",
+      "why_builders_care": "Builders can use the insights from this research to develop more adaptable and effective LLMs that learn from experience.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "llm",
+        "experiential abstractions"
+      ],
+      "confidence_score": 88
+    },
+    {
+      "title": "livetennisapi-mcp",
+      "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "Livetennisapi-mcp is an MCP server for the Live Tennis API, providing real-time tennis scores, odds, and model win-probability to LLM agents like Claude and Cursor.",
+      "why_builders_care": "Builders can use livetennisapi-mcp to develop AI-powered applications that leverage real-time sports data and analytics.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 6,
+      "tags": [
+        "mcp server",
+        "live tennis api"
+      ],
+      "confidence_score": 80
     }
   ]
 }

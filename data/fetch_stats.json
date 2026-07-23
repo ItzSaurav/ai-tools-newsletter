@@ -5,7 +5,7 @@
     "fetch_hackernews": 30,
     "fetch_github_search": 30,
     "fetch_github_trending": 20,
-    "fetch_huggingface_papers": 14,
+    "fetch_huggingface_papers": 15,
     "fetch_huggingface_blog": 20,
     "fetch_paperswithcode": 0,
     "fetch_openai_blog": 20,
@@ -16,7 +16,7 @@
     "fetch_devto": 12,
     "fetch_reddit": 0
   },
-  "total_fetched": 249,
+  "total_fetched": 250,
   "duplicates_removed": 0,
-  "new_items": 249
+  "new_items": 250
 }

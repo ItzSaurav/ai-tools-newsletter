@@ -60,18 +60,6 @@
     "preliminary_category": "Research"
   },
   {
-    "title": "livetennisapi/livetennisapi-mcp",
-    "url": "https://github.com/livetennisapi/livetennisapi-mcp",
-    "source": "GitHub",
-    "summary_raw": "MCP server for the Live Tennis API — give Claude, Cursor and other LLM agents real-time tennis scores, odds and model win-probability | ⭐ 271 | 🍴 125",
-    "date": "2026-07-18T23:17:55Z",
-    "score": 56.98,
-    "hn_points": 0,
-    "github_stars": 271,
-    "github_forks": 125,
-    "preliminary_category": "Agents"
-  },
-  {
     "title": "KlaatAI/klaatcode",
     "url": "https://github.com/KlaatAI/klaatcode",
     "source": "GitHub",
@@ -81,6 +69,18 @@
     "hn_points": 0,
     "github_stars": 251,
     "github_forks": 87,
+    "preliminary_category": "Agents"
+  },
+  {
+    "title": "livetennisapi/livetennisapi-mcp",
+    "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+    "source": "GitHub",
+    "summary_raw": "MCP server for the Live Tennis API — give Claude, Cursor and other LLM agents real-time tennis scores, odds and model win-probability | ⭐ 205 | 🍴 83",
+    "date": "2026-07-18T23:17:55Z",
+    "score": 56.61,
+    "hn_points": 0,
+    "github_stars": 205,
+    "github_forks": 83,
     "preliminary_category": "Agents"
   },
   {
@@ -106,18 +106,6 @@
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "Research"
-  },
-  {
-    "title": "Chinese AI's role in stopping rogue OpenAI agent shows cost of US guardrails",
-    "url": "https://www.reuters.com/legal/litigation/chinese-ais-role-stopping-rogue-openai-agent-shows-cost-us-guardrails-2026-07-22/",
-    "source": "Hacker News",
-    "summary_raw": "Points: 7 | Comments: 0",
-    "date": "2026-07-23T02:07:16Z",
-    "score": 52.12,
-    "hn_points": 7,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Agents"
   },
   {
     "title": "Online Variance Reduction for Domain Adaptation on Streaming Data",
@@ -180,28 +168,16 @@
     "preliminary_category": "Research"
   },
   {
-    "title": "ToolMonsters/handoff-skill",
-    "url": "https://github.com/ToolMonsters/handoff-skill",
-    "source": "GitHub",
-    "summary_raw": "Claude skill: turn your current conversation into a complete handoff document so any LLM can pick up exactly where you left off | ⭐ 20 | 🍴 7",
-    "date": "2026-07-22T08:59:15Z",
-    "score": 50.34,
+    "title": "MCP Just Killed the Handshake (Your Server Is Next)",
+    "url": "https://dev.to/temrel/mcp-just-killed-the-handshake-your-server-is-next-47gj",
+    "source": "Dev.to",
+    "summary_raw": "<p><em>Originally published in <a href=\"https://spark.temrel.com/?utm_source=devto&amp;utm_medium=social&amp;utm_campaign=repurpose\" rel=\"noopener noreferrer\">Temrel</a>, a weekly newsletter on agentic engineering.</em></p>\n\n<p>You have built an MCP server the right way: handshakes, and perhaps even sampling. On Monday 28 July, the spec finalises and a great deal of \"the right way\" becomes legacy. It is not going to blow up, but the clock starts.</p>\n\n<h2>\n  \n  \n  An MCP primer (skip if you know it)\n</h2>\n\n<p>The Model Context Protocol (MCP) is an open standard from Anthropic (late 2024) that defines how AI apps connect to external tools and data. It runs on local stdio or, more commonly, streamable HTTP for remote tools. Three roles: the host (the app, e.g. Claude Code or Cursor), the cli",
+    "date": "Thu, 23 Jul 2026 10:20:52 +0000",
+    "score": 51.0,
     "hn_points": 0,
-    "github_stars": 20,
-    "github_forks": 7,
-    "preliminary_category": "AI Models"
-  },
-  {
-    "title": "A 100-Task Benchmark of 7 Leading LLMs with Apache SeaTunnel AI CLI",
-    "url": "https://apacheseatunnel.medium.com/can-ai-really-build-data-pipelines-8f8713947ad8",
-    "source": "Hacker News",
-    "summary_raw": "Points: 1 | Comments: 0",
-    "date": "2026-07-23T03:57:00Z",
-    "score": 50.04,
-    "hn_points": 1,
     "github_stars": 0,
     "github_forks": 0,
-    "preliminary_category": "Research"
+    "preliminary_category": "Agents"
   },
   {
     "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
@@ -240,13 +216,13 @@
     "preliminary_category": "Agents"
   },
   {
-    "title": "Why the OpenAI escape is the most worrying AI mishap yet",
-    "url": "https://www.economist.com/science-and-technology/2026/07/22/why-the-openai-escape-is-the-most-worrying-ai-mishap-yet",
+    "title": "AI Slop: Why Philosophy Journals Should Reject AI-Written Prose",
+    "url": "http://schwitzsplinters.blogspot.com/2026/07/ai-slop-and-evidence-about-evidence-why.html",
     "source": "Hacker News",
-    "summary_raw": "Points: 5 | Comments: 3",
-    "date": "2026-07-23T03:07:06Z",
-    "score": 47.19,
-    "hn_points": 5,
+    "summary_raw": "Points: 6 | Comments: 1",
+    "date": "2026-07-23T08:18:00Z",
+    "score": 47.42,
+    "hn_points": 6,
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "Industry News"
@@ -372,6 +348,30 @@
     "preliminary_category": "Research"
   },
   {
+    "title": "ToolMonsters/handoff-skill",
+    "url": "https://github.com/ToolMonsters/handoff-skill",
+    "source": "GitHub",
+    "summary_raw": "Claude skill: turn your current conversation into a complete handoff document so any LLM can pick up exactly where you left off | ⭐ 25 | 🍴 10",
+    "date": "2026-07-22T08:59:15Z",
+    "score": 46.62,
+    "hn_points": 0,
+    "github_stars": 25,
+    "github_forks": 10,
+    "preliminary_category": "AI Models"
+  },
+  {
+    "title": "AI Agents Don't Respect Font Licenses",
+    "url": "https://www.mixfont.com/blog/ai-agents-dont-respect-font-licenses",
+    "source": "Hacker News",
+    "summary_raw": "Points: 3 | Comments: 0",
+    "date": "2026-07-23T08:11:01Z",
+    "score": 46.58,
+    "hn_points": 3,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
+  },
+  {
     "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
     "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
     "source": "OpenAI Blog",
@@ -382,6 +382,54 @@
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "AI Models"
+  },
+  {
+    "title": "The first known runaway AI agent – or a bad marketing stunt?",
+    "url": "https://martinalderson.com/posts/huggingface-openai-exploit/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 | Comments: 0",
+    "date": "2026-07-23T10:17:09Z",
+    "score": 46.15,
+    "hn_points": 2,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
+  },
+  {
+    "title": "Microsoft to fund Mistral's European AI expansion in multibillion-dollar deal",
+    "url": "https://www.reuters.com/business/microsoft-fund-mistrals-european-ai-expansion-multibillion-dollar-deal-2026-07-21/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 | Comments: 0",
+    "date": "2026-07-23T09:54:16Z",
+    "score": 46.15,
+    "hn_points": 2,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "AI Models"
+  },
+  {
+    "title": "Show HN: Ours.network – give your AI agents a direct line to each other",
+    "url": "https://ours.network",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 | Comments: 0",
+    "date": "2026-07-23T07:01:04Z",
+    "score": 46.15,
+    "hn_points": 2,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
+  },
+  {
+    "title": "Show HN: Agentmux – iOS terminal and workspace built for CLI AI agents",
+    "url": "https://agentmux.saxcave.cc/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 2 | Comments: 0",
+    "date": "2026-07-23T06:41:49Z",
+    "score": 46.15,
+    "hn_points": 2,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
   },
   {
     "title": "kyegomez/Latent-MoE",
@@ -396,11 +444,23 @@
     "preliminary_category": "Open Source"
   },
   {
-    "title": "Show HN: Agentmux – iOS terminal and workspace built for CLI AI agents",
-    "url": "https://agentmux.saxcave.cc/",
+    "title": "Senior Python Engineer – AI Agent Evaluation",
+    "url": "https://apply.workable.com/toloka-ai/j/07A6121198",
     "source": "Hacker News",
     "summary_raw": "Points: 1 | Comments: 0",
-    "date": "2026-07-23T06:41:49Z",
+    "date": "2026-07-23T10:23:27Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Research"
+  },
+  {
+    "title": "ZaGuu – an arena where AI agents play negotiation games and build identities",
+    "url": "https://news.ycombinator.com/item?id=49019165",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T09:59:45Z",
     "score": 45.54,
     "hn_points": 1,
     "github_stars": 0,
@@ -408,11 +468,11 @@
     "preliminary_category": "Agents"
   },
   {
-    "title": "MemoHood and MemoBase – local memory and knowledge base for AI agents",
-    "url": "https://github.com/mxskorohood-cmd/memobase",
+    "title": "Find the prefect domain name with Gemeni and Agents (Antigravity)",
+    "url": "https://rizz.dev/blog/guides/find-an-available-domain-name-with-ai",
     "source": "Hacker News",
-    "summary_raw": "Points: 1 | Comments: 0",
-    "date": "2026-07-23T06:31:03Z",
+    "summary_raw": "Points: 1 | Comments: 1",
+    "date": "2026-07-23T08:59:18Z",
     "score": 45.54,
     "hn_points": 1,
     "github_stars": 0,
@@ -420,16 +480,64 @@
     "preliminary_category": "Agents"
   },
   {
-    "title": "Show HN: AI agents that go from naming your startup to running its marketing",
-    "url": "https://www.brandbrahma.com/",
+    "title": "Lira Engine – prove your data isn't in an LLM (AUC-ROC 1.000)",
+    "url": "https://medium.com/@v_regis/why-self-auditing-your-ai-model-violates-eu-ai-act-article-53-22f693fb64a7",
     "source": "Hacker News",
     "summary_raw": "Points: 1 | Comments: 0",
-    "date": "2026-07-23T06:20:43Z",
+    "date": "2026-07-23T08:38:15Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "AI Models"
+  },
+  {
+    "title": "Founders OS – open-source MCP server that gives AI your business context",
+    "url": "https://www.foundersmcp.com",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T08:13:08Z",
     "score": 45.54,
     "hn_points": 1,
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "Agents"
+  },
+  {
+    "title": "AI Firewall – Security Gateway and Reverse Proxy for LLM Traffic",
+    "url": "https://github.com/bossandboss/Ai-Firewall",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T07:47:13Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "AI Models"
+  },
+  {
+    "title": "Show HN: Ego lite – A Chromium browser where you and AI agents work in parallel",
+    "url": "https://lite.ego.app",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 1",
+    "date": "2026-07-23T07:33:49Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
+  },
+  {
+    "title": "Show HN: Hanesu – An experimental workflow layer for AI coding agents",
+    "url": "https://github.com/jezmn/hanesu",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T06:58:39Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Research"
   },
   {
     "title": "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
@@ -442,18 +550,6 @@
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "Research"
-  },
-  {
-    "title": "Publicly verifiable receipts for AI agent actions, anchored to Bitcoin",
-    "url": "https://orphograph.com/lp/agent-receipts",
-    "source": "Hacker News",
-    "summary_raw": "Points: 2 | Comments: 0",
-    "date": "2026-07-23T04:10:35Z",
-    "score": 43.65,
-    "hn_points": 2,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Agents"
   },
   {
     "title": "Nativ: Run AI models locally on your Mac",
@@ -502,101 +598,5 @@
     "github_stars": 0,
     "github_forks": 0,
     "preliminary_category": "Research"
-  },
-  {
-    "title": "Lipschitzian SLLNs for random functions",
-    "url": "https://arxiv.org/abs/2607.20411v1",
-    "source": "arXiv",
-    "summary_raw": "We prove strong laws of large numbers for locally Lipschitz functions in the Lipschitz pseudometric. Our results hold under either a topological or a model-theoretic condition, with the latter encompassing functions jointly definable in o-minimal structures but extending substantially beyond this class. Applications include uniform convergence of limiting and Clarke subdifferentials and finite-sample identification of solutions. Consequently, we identify broad classes of functions for which the failure phenomena revealed by our previous negative results [Tian and Royset, arXiv:2511.16568, 2025] do not occur.",
-    "date": "2026-07-22T17:50:53Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
-    "url": "https://arxiv.org/abs/2607.20402v1",
-    "source": "arXiv",
-    "summary_raw": "In many reasoning problems, the premises are not observed as discrete symbols, but must be inferred from high-dimensional inputs. Further, the predicate vocabulary, argument structure, and trusted evidence are supplied by a Knowledge Graph (KG), or rule definitions. Classical neuro-symbolic pipelines have a discrete interface between perception and deduction. We present a neuro-soft-symbolic architecture for differentiable deductive reasoning over latent perceptual facts and knowledge-provided predicates. SoftReason removes the gradient gap by representing the deductive state as a local soft interpretation tensor over candidate constants and predicates. Perception proposes probabilistic base facts, KG triples enter as high-confidence soft evidence, and every query anchor, predicate choice,",
-    "date": "2026-07-22T17:38:39Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "Persian Pixel: A large-scale synthetic OCR dataset for Persian language",
-    "url": "https://arxiv.org/abs/2607.20385v1",
-    "source": "arXiv",
-    "summary_raw": "Optical Character Recognition (OCR) for Persian remains substantially less mature than for Latin-script languages despite Persian being spoken by more than 110 million people across multiple countries. This gap arises from two fundamental challenges: the intrinsic complexity of the Perso-Arabic writing system and the limited availability of large-scale, high-quality annotated datasets. Persian script exhibits obligatory cursive connectivity, context-dependent glyph shaping, extensive ligatures, diacritic placement, and stylistic variation across writing forms such as Naskh and Nastaliq, all of which significantly complicate text recognition. At the same time, the high cost and labor-intensive nature of manual annotation have created a persistent data bottleneck, limiting the development of",
-    "date": "2026-07-22T17:13:25Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "Generative AI floods and dilutes the market for books",
-    "url": "https://arxiv.org/abs/2607.20349v1",
-    "source": "arXiv",
-    "summary_raw": "Generative AI can produce book-length works of fiction at near-zero cost. These books are often dismissed as low-quality ``slop'' that buyers will ignore, and are assumed to carry little commercial weight. We test that assumption with full-text AI detection across 14,419 self-published genre-fiction books sold on Amazon from 2023 to 2026, matched to daily sales records through June 2026. None of these books disclose whether or not they contain AI-produced content. We find that books for which we detected substantial AI text ($>$ 25\\%) make up a large share of the catalog but a smaller share of sales. Even so, they reach commercial scale, winning a growing share of sales over time and taking more of the scarce top-rank positions once held by books with no detected AI text. Over this period,",
-    "date": "2026-07-22T16:33:20Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "Toward Reliable RGB-D Semantic Segmentation: Handling Missing Modalities via Condition Dropout",
-    "url": "https://arxiv.org/abs/2607.20326v1",
-    "source": "arXiv",
-    "summary_raw": "RGB-D semantic segmentation has achieved remarkable progress, yet most models assume that RGB and depth are always available. In practice, failures or occlusions of surveillance sensors often remove one modality. Although RGB or depth alone can contain sufficient cues, models trained only on full-modality inputs fail to exploit the remaining modality once one is missing, causing severe degradation. We tackle this issue with a simple continued-training paradigm, \\emph{Condition Dropout (ConD)}, which mitigates degradation while preserving full-modality accuracy. Starting from a pretrained RGB-D model, ConD adds a second stage that randomly simulates complete, RGB-missing, and depth-missing inputs, freezes the original encoders, and trains copied encoders with zero-initialized feature inject",
-    "date": "2026-07-22T16:12:27Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "Decentralized Online Riemannian Optimization for Strongly Geodesically Convex Functions",
-    "url": "https://arxiv.org/abs/2607.20316v1",
-    "source": "arXiv",
-    "summary_raw": "We study decentralized online optimization for strongly geodesically convex (strongly g-convex) losses on Riemannian manifolds with bounded sectional curvature, including positively curved manifolds. In centralized Riemannian optimization, strong g-convexity tightens the optimal regret from $O(\\sqrt{T})$ to $O(\\log T)$, where $T$ is the time horizon; in the decentralized Riemannian setting, however, existing methods address only g-convex losses, leaving the strongly g-convex regime unexplored. One challenge is that the required decaying step size in the centralized regime is incompatible with existing network-error analyses, which typically assume a fixed step size. First, we provide a general network-error analysis for time-varying schedules. Next, we build on this analysis to establish t",
-    "date": "2026-07-22T16:03:43Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "Adaptive deep nonparametric regression from dependent data under covariate shift",
-    "url": "https://arxiv.org/abs/2607.20309v1",
-    "source": "arXiv",
-    "summary_raw": "Covariate shift often occurs because, in many real applications, the source and the target observations may be generated from different distributions. In this case, the standard metric under the source distribution is not appropriate. This paper considers deep neural network estimators for nonparametric quantile and Huber regression under covariate shift and from dependent observations. We deal with a generalized Bernstein-type inequality that is satisfied by many classical models, including i.i.d. observations, $φ$-mixing, strong mixing, and $\\mathcal{C}$-mixing processes. To perform the covariate shift phenomenon, we propose a sparse-penalized deep neural network (SPDNN) estimator that takes into account the discrepancy between the source and target distributions of the data. When the de",
-    "date": "2026-07-22T15:55:46Z",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Research"
-  },
-  {
-    "title": "ggml-org / whisper.cpp",
-    "url": "https://github.com/ggml-org/whisper.cpp",
-    "source": "GitHub Trending",
-    "summary_raw": "Port of OpenAI's Whisper model in C/C++ | ⭐ 52203",
-    "date": "",
-    "score": 42.5,
-    "hn_points": 0,
-    "github_stars": 52203,
-    "github_forks": 0,
-    "preliminary_category": "AI Models"
   }
 ]

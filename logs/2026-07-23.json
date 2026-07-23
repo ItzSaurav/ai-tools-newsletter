@@ -1,16 +1,16 @@
 {
   "date": "2026-07-23",
-  "pipeline_duration_seconds": 40.06,
+  "pipeline_duration_seconds": 18.67,
   "fetch": {
-    "total_fetched": 249,
-    "new_items": 249,
+    "total_fetched": 250,
+    "new_items": 250,
     "duplicates_removed": 0,
     "source_counts": {
       "fetch_arxiv": 30,
       "fetch_hackernews": 30,
       "fetch_github_search": 30,
       "fetch_github_trending": 20,
-      "fetch_huggingface_papers": 14,
+      "fetch_huggingface_papers": 15,
       "fetch_huggingface_blog": 20,
       "fetch_paperswithcode": 0,
       "fetch_openai_blog": 20,
@@ -23,18 +23,18 @@
     }
   },
   "ranking": {
-    "total_ranked": 249,
+    "total_ranked": 250,
     "after_ranking": 50,
     "top_score": 69.5,
-    "avg_score": 36.26,
+    "avg_score": 36.53,
     "cutoff_score": 42.5
   },
   "curation": {
     "items_in": 50,
-    "items_out": 10,
-    "groq_latency_seconds": 7.095
+    "items_out": 11,
+    "groq_latency_seconds": 7.267
   },
   "draft": {
-    "size_kb": 46.9
+    "size_kb": 49.3
   }
 }
