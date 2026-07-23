@@ -240,30 +240,6 @@
     "preliminary_category": "Agents"
   },
   {
-    "title": "How to Deploy Llama 3.3 70B with vLLM + Paged Attention on a $9/Month DigitalOcean GPU Droplet: 128K Context Window at 1/155th Claude Opus Cost",
-    "url": "https://dev.to/ramosai/how-to-deploy-llama-33-70b-with-vllm-paged-attention-on-a-9month-digitalocean-gpu-droplet-290o",
-    "source": "Dev.to",
-    "summary_raw": "<h2>\n  \n  \n  ⚡ Deploy this in under 10 minutes\n</h2>\n\n<p>Get $200 free: <a href=\"https://m.do.co/c/9fa609b86a0e\" rel=\"noopener noreferrer\">https://m.do.co/c/9fa609b86a0e</a><br /><br />\n($5/month server — this is what I used)</p>\n\n\n<h1>\n  \n  \n  How to Deploy Llama 3.3 70B with vLLM + Paged Attention on a $9/Month DigitalOcean GPU Droplet: 128K Context Window at 1/155th Claude Opus Cost\n</h1>\n\n<p>Stop overpaying for AI APIs — here's what serious builders do instead.</p>\n\n<p>I'm talking about $10-50 per million tokens when you could be running Llama 3.3 70B locally for the cost of a coffee subscription. Last month, my team spent $4,200 on Claude API calls for a document processing pipeline. Today, that same workload runs on a single DigitalOcean GPU Droplet for $9/month, with 128K token cont",
-    "date": "Thu, 23 Jul 2026 06:13:36 +0000",
-    "score": 48.0,
-    "hn_points": 0,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "AI Models"
-  },
-  {
-    "title": "Show HN: AgentNest, self-hosted sandboxes for AI agents",
-    "url": "https://github.com/mihirahuja1/agentnestOSS",
-    "source": "Hacker News",
-    "summary_raw": "Points: 8 | Comments: 2",
-    "date": "2026-07-23T01:54:06Z",
-    "score": 47.8,
-    "hn_points": 8,
-    "github_stars": 0,
-    "github_forks": 0,
-    "preliminary_category": "Agents"
-  },
-  {
     "title": "Why the OpenAI escape is the most worrying AI mishap yet",
     "url": "https://www.economist.com/science-and-technology/2026/07/22/why-the-openai-escape-is-the-most-worrying-ai-mishap-yet",
     "source": "Hacker News",
@@ -418,6 +394,30 @@
     "github_stars": 12,
     "github_forks": 0,
     "preliminary_category": "Open Source"
+  },
+  {
+    "title": "Show HN: Agentmux – iOS terminal and workspace built for CLI AI agents",
+    "url": "https://agentmux.saxcave.cc/",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T06:41:49Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
+  },
+  {
+    "title": "MemoHood and MemoBase – local memory and knowledge base for AI agents",
+    "url": "https://github.com/mxskorohood-cmd/memobase",
+    "source": "Hacker News",
+    "summary_raw": "Points: 1 | Comments: 0",
+    "date": "2026-07-23T06:31:03Z",
+    "score": 45.54,
+    "hn_points": 1,
+    "github_stars": 0,
+    "github_forks": 0,
+    "preliminary_category": "Agents"
   },
   {
     "title": "Show HN: AI agents that go from naming your startup to running its marketing",
@@ -591,11 +591,11 @@
     "title": "ggml-org / whisper.cpp",
     "url": "https://github.com/ggml-org/whisper.cpp",
     "source": "GitHub Trending",
-    "summary_raw": "Port of OpenAI's Whisper model in C/C++ | ⭐ 52202",
+    "summary_raw": "Port of OpenAI's Whisper model in C/C++ | ⭐ 52203",
     "date": "",
     "score": 42.5,
     "hn_points": 0,
-    "github_stars": 52202,
+    "github_stars": 52203,
     "github_forks": 0,
     "preliminary_category": "AI Models"
   }

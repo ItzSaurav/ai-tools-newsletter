@@ -4,8 +4,8 @@
   "rolling_30d": {
     "avg_fetched_per_run": 249.0,
     "avg_curated_per_run": 10.0,
-    "avg_groq_latency_seconds": 11.06,
-    "avg_pipeline_duration_seconds": 26.2
+    "avg_groq_latency_seconds": 7.09,
+    "avg_pipeline_duration_seconds": 40.1
   },
   "history": [
     {
@@ -13,9 +13,9 @@
       "total_fetched": 249,
       "new_items": 249,
       "curated_count": 10,
-      "groq_latency_s": 11.059,
-      "pipeline_duration_s": 26.25,
-      "draft_size_kb": 47.1
+      "groq_latency_s": 7.095,
+      "pipeline_duration_s": 40.06,
+      "draft_size_kb": 46.9
     }
   ]
 }
