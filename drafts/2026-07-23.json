@@ -1,0 +1,168 @@
+[
+  {
+    "title": "PyroDash: Cost-Efficient Token-Level Small-Large Language Model Collaborative Inference",
+    "url": "https://arxiv.org/abs/2607.20327v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "PyroDash is a cost-aware framework for token-level SLM-LLM collaborative inference, reducing the costs of serving large language models at scale. The framework collaborates between small and large language models to improve reliability on difficult problems.",
+    "why_builders_care": "Builders can use PyroDash to reduce the costs of serving large language models while maintaining reliability.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "slm",
+      "collaborative inference"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+    "url": "https://arxiv.org/abs/2607.20357v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper proposes a joint token-compute adaptation method for multimodal LLMs, reducing inference costs by adapting both the number of input visual tokens and the computation of the large language model.",
+    "why_builders_care": "Builders can use this method to reduce the inference costs of multimodal LLMs.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "multimodal llm",
+      "inference optimization"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "KlaatAI/klaatcode",
+    "url": "https://github.com/KlaatAI/klaatcode",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "Klaatcode is an open-source AI coding agent for the terminal, providing Claude Code-grade accuracy with smart model routing and support for multiple AI models.",
+    "why_builders_care": "Builders can use Klaatcode to improve their coding productivity with AI assistance.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "ai coding agent",
+      "terminal"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "source": "OpenAI Blog",
+    "category": "AI Models",
+    "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+    "why_builders_care": "Builders can use GPT-Red to improve the safety and robustness of their AI models.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai safety",
+      "red teaming"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Nativ: Run AI models locally on your Mac",
+    "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "Nativ is a tool that allows users to run AI models locally on their Mac, providing a convenient way to test and deploy AI models.",
+    "why_builders_care": "Builders can use Nativ to test and deploy AI models locally on their Mac.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai models",
+      "local deployment"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
+    "url": "https://arxiv.org/abs/2607.20402v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "SoftReason is a neuro-soft-symbolic deductive reasoning architecture that can reason about high-dimensional perceptual data, providing a new approach to integrating symbolic and connectionist AI.",
+    "why_builders_care": "Builders can use SoftReason to integrate symbolic and connectionist AI in their applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "neuro-soft-symbolic",
+      "deductive reasoning"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Livetennisapi/livetennisapi-mcp",
+    "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "Livetennisapi-mcp is an MCP server that provides real-time tennis scores, odds, and model win-probability to AI assistants like Claude and Cursor.",
+    "why_builders_care": "Builders can use Livetennisapi-mcp to provide real-time sports data to their AI assistants.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "mcp server",
+      "sports data"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
+    "url": "https://arxiv.org/abs/2607.20379v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper proposes a decodability supervision method for verifiable activation explanations, improving the interpretability of neural networks.",
+    "why_builders_care": "Builders can use this method to improve the interpretability of their neural networks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "interpretability",
+      "decodability supervision"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Latent-MoE",
+    "url": "https://github.com/kyegomez/Latent-MoE",
+    "source": "GitHub",
+    "category": "Open Source",
+    "summary": "Latent-MoE is an implementation of the Latent Mixture of Experts (MoE) model, providing a efficient and scalable approach to mixture of experts.",
+    "why_builders_care": "Builders can use Latent-MoE to improve the efficiency and scalability of their mixture of experts models.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "mixture of experts",
+      "latent moe"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "The Blessing of Dimensionality: How Near-Orthogonality in High-Dimensional Spaces Explains Temporal Portability",
+    "url": "https://arxiv.org/abs/2607.20301v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper explores the concept of near-orthogonality in high-dimensional spaces and its relation to temporal portability, providing insights into the behavior of large language models.",
+    "why_builders_care": "Builders can use this research to better understand the behavior of large language models and improve their temporal portability.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "high-dimensional spaces",
+      "temporal portability"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Don't Trust the Label: License Laundering in AI Supply Chains",
+    "url": "https://arxiv.org/abs/2607.20300v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper investigates the issue of license laundering in AI supply chains, highlighting the need for more transparency and accountability in AI development.",
+    "why_builders_care": "Builders can use this research to better understand the risks of license laundering in AI supply chains and take steps to mitigate them.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai supply chains",
+      "license laundering"
+    ],
+    "confidence_score": 80
+  }
+]

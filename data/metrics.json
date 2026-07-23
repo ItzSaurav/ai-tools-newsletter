@@ -1,0 +1,21 @@
+{
+  "last_updated": "2026-07-23",
+  "total_runs": 1,
+  "rolling_30d": {
+    "avg_fetched_per_run": 235.0,
+    "avg_curated_per_run": 11.0,
+    "avg_groq_latency_seconds": 5.76,
+    "avg_pipeline_duration_seconds": 77.9
+  },
+  "history": [
+    {
+      "date": "2026-07-23",
+      "total_fetched": 235,
+      "new_items": 235,
+      "curated_count": 11,
+      "groq_latency_s": 5.763,
+      "pipeline_duration_s": 77.9,
+      "draft_size_kb": 48.4
+    }
+  ]
+}

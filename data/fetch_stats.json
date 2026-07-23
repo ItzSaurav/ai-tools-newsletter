@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "source_counts": {
     "fetch_arxiv": 30,
     "fetch_hackernews": 30,
     "fetch_github_search": 30,
     "fetch_github_trending": 20,
-    "fetch_huggingface_papers": 20,
+    "fetch_huggingface_papers": 13,
     "fetch_huggingface_blog": 20,
     "fetch_paperswithcode": 0,
     "fetch_openai_blog": 20,
@@ -16,7 +16,7 @@
     "fetch_devto": 12,
     "fetch_reddit": 0
   },
-  "total_fetched": 242,
+  "total_fetched": 235,
   "duplicates_removed": 0,
-  "new_items": 242
+  "new_items": 235
 }
