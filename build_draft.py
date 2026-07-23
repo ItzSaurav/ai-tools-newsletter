@@ -26,6 +26,7 @@ from dotenv import load_dotenv
 from config import (
     CURATED_ITEMS_FILE,
     DRAFTS_DIR,
+    EmailError,
     ensure_dirs,
     get_logger,
 )
@@ -378,13 +379,18 @@ def build_html(curated_data: dict) -> str:
 # EMAIL SENDER
 # ─────────────────────────────────────────────
 
-def send_review_email(subject: str, html_content: str, recipient: str) -> bool:
+def send_review_email(subject: str, html_content: str, recipient: str) -> None:
+    """
+    Send a review email via Gmail SMTP.
+    Logs the raw SMTP response dict (empty = all recipients accepted,
+    non-empty = at least one recipient rejected).
+    Raises EmailError on any failure so callers see a typed exception.
+    """
     user = os.getenv("GMAIL_USER")
     password = os.getenv("GMAIL_APP_PASSWORD")
 
     if not user or not password:
-        log.error("Gmail credentials not set. Cannot send review email.")
-        return False
+        raise EmailError("Gmail credentials not set (GMAIL_USER / GMAIL_APP_PASSWORD missing).")
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
@@ -393,20 +399,26 @@ def send_review_email(subject: str, html_content: str, recipient: str) -> bool:
 
     msg.attach(MIMEText(html_content, "html", "utf-8"))
 
+    log.info(f"Connecting to Gmail SMTP to send draft to {recipient}…")
+    t0 = datetime.datetime.now()
     try:
-        log.info(f"Connecting to Gmail SMTP to send draft to {recipient}…")
-        t0 = datetime.datetime.now()
         server = smtplib.SMTP("smtp.gmail.com", 587, timeout=20)
         server.starttls()
         server.login(user, password)
-        server.sendmail(user, recipient, msg.as_string())
+        refused = server.sendmail(user, recipient, msg.as_string())
         server.quit()
-        elapsed = (datetime.datetime.now() - t0).total_seconds()
-        log.info(f"Review draft sent successfully in {elapsed:.1f}s")
-        return True
     except Exception as exc:
-        log.error(f"Failed to send review email: {exc}")
-        return False
+        log.error(f"SMTP error: {exc}")
+        raise EmailError(f"Failed to send review email: {exc}") from exc
+
+    elapsed = (datetime.datetime.now() - t0).total_seconds()
+    if refused:
+        # sendmail() returns {addr: (code, msg)} for rejected recipients
+        log.error(f"SMTP send partially failed — rejected recipients: {refused}")
+        raise EmailError(f"SMTP rejected recipients: {refused}")
+    log.info(f"SMTP sendmail() returned {{}} (all recipients accepted) in {elapsed:.1f}s")
+    log.info(f"Review draft sent successfully in {elapsed:.1f}s")
+
 
 
 # ─────────────────────────────────────────────
@@ -446,11 +458,15 @@ def main() -> None:
     if os.getenv("DRY_RUN", "false").lower() != "true":
         recipient = os.getenv("GMAIL_USER", "")
         if recipient:
-            send_review_email(
-                subject=f"[REVIEW] The Builder's Brief — {TODAY_PRETTY}",
-                html_content=final_html,
-                recipient=recipient,
-            )
+            try:
+                send_review_email(
+                    subject=f"[REVIEW] The Builder's Brief — {TODAY_PRETTY}",
+                    html_content=final_html,
+                    recipient=recipient,
+                )
+            except EmailError as exc:
+                log.error(f"Email send failed: {exc}")
+                raise
         else:
             log.warning("GMAIL_USER not set. Skipping review email.")
     else:

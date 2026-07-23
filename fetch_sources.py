@@ -333,22 +333,62 @@ def fetch_openai_blog(session) -> List[dict]:
 
 
 # ─────────────────────────────────────────────
-# SOURCE 9 — Anthropic Blog (RSS)
+# SOURCE 9 — Anthropic Blog (HTML scrape)
 # ─────────────────────────────────────────────
 def fetch_anthropic_blog(session) -> List[dict]:
     log.info("Fetching Anthropic Blog…")
-    # Try multiple known Anthropic RSS/feed endpoints
-    for feed_url in [
-        "https://www.anthropic.com/news/rss.xml",
-        "https://www.anthropic.com/news/rss",
-        "https://www.anthropic.com/blog.rss",
-    ]:
-        items = _parse_rss(feed_url, "Anthropic Blog", session)
-        if items:
-            log.info(f"Anthropic Blog: {len(items)} items (via {feed_url})")
-            return items
-    log.warning("Anthropic Blog: no working RSS endpoint found — skipping")
-    return []
+    items = []
+    try:
+        url = "https://www.anthropic.com/news"
+        resp = session.get(url, timeout=20)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "lxml")
+
+        seen_hrefs: set[str] = set()
+        # Anthropic news page: article links look like /news/<slug>
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag["href"]
+            # Only keep paths that look like individual news articles (not the index)
+            if not href.startswith("/news/") or href == "/news/":
+                continue
+            full_url = f"https://www.anthropic.com{href}"
+            if full_url in seen_hrefs:
+                continue
+            seen_hrefs.add(full_url)
+
+            # Title: prefer explicit heading inside the link, fall back to link text
+            heading = a_tag.find(["h2", "h3", "h4"])
+            title = heading.get_text(strip=True) if heading else a_tag.get_text(strip=True)
+            title = " ".join(title.split())  # collapse whitespace
+            if not title or len(title) < 6:
+                continue
+
+            # Date: look for a <time> element nearby (parent card)
+            date_str = ""
+            parent = a_tag.parent
+            for _ in range(5):  # walk up max 5 levels
+                if parent is None:
+                    break
+                time_el = parent.find("time")
+                if time_el:
+                    date_str = time_el.get("datetime", "") or time_el.get_text(strip=True)
+                    break
+                parent = parent.parent
+
+            items.append(_make_item(title, full_url, "Anthropic Blog", date=date_str))
+            if len(items) >= RSS_MAX_ITEMS:
+                break
+
+        if not items:
+            log.warning(
+                "Anthropic Blog: 0 items parsed from https://www.anthropic.com/news —"
+                " page structure may have changed (selector review needed)"
+            )
+        else:
+            log.info(f"Anthropic Blog: {len(items)} items")
+    except Exception as exc:
+        log.warning(f"Anthropic Blog fetch failed: {exc}")
+    return items
 
 
 # ─────────────────────────────────────────────
@@ -408,21 +448,59 @@ def fetch_devto(session) -> List[dict]:
 
 
 # ─────────────────────────────────────────────
-# SOURCE 14 — Reddit (optional — 403 from CI is expected)
+# SOURCE 14 — Reddit (OAuth — free, no credit card)
 # ─────────────────────────────────────────────
+def _get_reddit_token(session) -> Optional[str]:
+    """Get a Reddit OAuth bearer token using client_credentials flow."""
+    import requests as _requests_module  # for HTTPBasicAuth
+    client_id = os.getenv("REDDIT_CLIENT_ID", "")
+    client_secret = os.getenv("REDDIT_CLIENT_SECRET", "")
+    if not client_id or not client_secret:
+        log.warning(
+            "Reddit: REDDIT_CLIENT_ID or REDDIT_CLIENT_SECRET not set — skipping"
+        )
+        return None
+    try:
+        auth = _requests_module.auth.HTTPBasicAuth(client_id, client_secret)
+        data = {"grant_type": "client_credentials"}
+        headers = {"User-Agent": "ai-tools-newsletter/2.0 by ItzSaurav"}
+        resp = session.post(
+            "https://www.reddit.com/api/v1/access_token",
+            auth=auth,
+            data=data,
+            headers=headers,
+            timeout=10,
+        )
+        resp.raise_for_status()
+        token = resp.json().get("access_token", "")
+        if not token:
+            log.warning("Reddit OAuth: response had no access_token field")
+            return None
+        return token
+    except Exception as exc:
+        log.warning(f"Reddit OAuth token fetch failed: {exc}")
+        return None
+
+
 def fetch_reddit(session) -> List[dict]:
-    log.info("Fetching Reddit (optional)…")
+    log.info("Fetching Reddit (OAuth)…")
+    token = _get_reddit_token(session)
+    if not token:
+        log.info("Reddit: 0 items (OAuth credentials unavailable)")
+        return []
+
     items = []
     subreddits = ["MachineLearning", "LocalLLaMA"]
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
-        )
+        "Authorization": f"bearer {token}",
+        "User-Agent": "ai-tools-newsletter/2.0 by ItzSaurav",
     }
     for sub in subreddits:
         try:
-            url = f"https://old.reddit.com/r/{sub}/top.json?t=day&limit={REDDIT_LIMIT_PER_SUB}"
+            url = (
+                f"https://oauth.reddit.com/r/{sub}/top"
+                f"?t=day&limit={REDDIT_LIMIT_PER_SUB}"
+            )
             resp = session.get(url, headers=headers, timeout=10)
             resp.raise_for_status()
             posts = resp.json().get("data", {}).get("children", [])
@@ -432,7 +510,7 @@ def fetch_reddit(session) -> List[dict]:
                     continue
                 link = data.get("url", "")
                 if not link or "v.redd.it" in link or "reddit.com" in link:
-                    link = f"https://old.reddit.com{data.get('permalink', '')}"
+                    link = f"https://www.reddit.com{data.get('permalink', '')}"
                 score = data.get("score", 0)
                 items.append(_make_item(
                     title=data.get("title", ""),
@@ -443,8 +521,9 @@ def fetch_reddit(session) -> List[dict]:
                         data.get("created_utc", 0), tz=datetime.timezone.utc
                     ).isoformat(),
                 ))
+            log.info(f"Reddit r/{sub}: {sum(1 for p in posts if not p['data'].get('stickied'))} items")
         except Exception as exc:
-            log.warning(f"Reddit r/{sub} fetch failed (expected in CI): {exc}")
+            log.warning(f"Reddit r/{sub} fetch failed: {exc}")
     log.info(f"Reddit: {len(items)} items")
     return items
 
