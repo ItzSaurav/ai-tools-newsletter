@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
+    "url": "https://arxiv.org/abs/2607.21591v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper proposes a method for scaling diffusion models at inference time using progressive seed pruning, which reduces the computational cost of seed search. The approach is shown to be effective in improving the efficiency of diffusion models.",
+    "why_builders_care": "Builders can use this method to optimize the performance of their diffusion models, reducing the computational cost and improving the overall efficiency of their AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "diffusion models",
+      "inference optimization",
+      "seed pruning"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+    "url": "https://arxiv.org/abs/2607.21552v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces MIRROR, a framework for multi-modal reasoning that learns from different views of the same data. The approach is shown to be effective in improving the performance of vision-language models.",
+    "why_builders_care": "Builders can use MIRROR to develop more effective multi-modal models that can reason about different types of data, such as images and text.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 12,
+    "tags": [
+      "multi-modal reasoning",
+      "vision-language models",
+      "MIRROR"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
+    "url": "https://arxiv.org/abs/2607.21550v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper proposes X$^3$-OPD, a method for distilling reasoning into large audio-language models using on-policy alignment. The approach is shown to be effective in improving the performance of audio-language models.",
+    "why_builders_care": "Builders can use X$^3$-OPD to develop more effective audio-language models that can reason about audio and text data.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "audio-language models",
+      "reasoning",
+      "on-policy alignment"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "DONDO: Open w2v-BERT Speech-Recognition Base Models for African Languages",
+    "url": "https://arxiv.org/abs/2607.21540v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces DONDO, a set of open-source speech-recognition base models for African languages. The models are shown to be effective in improving the performance of speech recognition systems for African languages.",
+    "why_builders_care": "Builders can use DONDO to develop more effective speech recognition systems for African languages, which can be used in a variety of applications such as voice assistants and language translation.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "speech recognition",
+      "African languages",
+      "w2v-BERT"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "livetennisapi/livetennisapi-mcp",
+    "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "This repository provides an MCP server for the Live Tennis API, which allows AI agents to access real-time tennis scores, odds, and model win-probability.",
+    "why_builders_care": "Builders can use this repository to develop AI agents that can access real-time tennis data and make predictions about match outcomes.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "MCP",
+      "Live Tennis API",
+      "AI agents"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "source": "OpenAI Blog",
+    "category": "AI Models",
+    "summary": "This blog post introduces GPT-Red, a system for self-improvement of language models that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+    "why_builders_care": "Builders can use GPT-Red to develop more robust and safe language models that can be used in a variety of applications such as chatbots and language translation.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "GPT-Red",
+      "self-improvement",
+      "language models"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "OptiMCP",
+    "url": "https://github.com/ysharmcode/OptiMCP",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "This repository provides OptiMCP, a tool for verifying the math and logic of AI agents against a set of rules.",
+    "why_builders_care": "Builders can use OptiMCP to ensure that their AI agents are functioning correctly and making accurate predictions.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "OptiMCP",
+      "AI agents",
+      "verification"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "Nativ: Run AI models locally on your Mac",
+    "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "This blog post introduces Nativ, a tool for running AI models locally on a Mac.",
+    "why_builders_care": "Builders can use Nativ to develop and test AI models on their local machines, which can be more convenient and efficient than using cloud-based services.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "Nativ",
+      "AI models",
+      "local development"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "Claude make Fable 5 permanent",
+    "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "This blog post announces that Claude Fable 5 will be included in all Max and Team Premium plans, at 50% off.",
+    "why_builders_care": "Builders can use Claude Fable 5 to develop more effective language models that can be used in a variety of applications such as chatbots and language translation.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "Claude Fable 5",
+      "language models",
+      "premium plans"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Flux 3",
+    "url": "https://bfl.ai/blog/flux-3",
+    "source": "Hacker News",
+    "category": "Industry News",
+    "summary": "This blog post introduces Flux 3, a new version of the Flux multimodal model.",
+    "why_builders_care": "Builders can use Flux 3 to develop more effective multimodal models that can be used in a variety of applications such as image and video generation.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "Flux 3",
+      "multimodal models",
+      "image generation"
+    ],
+    "confidence_score": 80
+  }
+]
