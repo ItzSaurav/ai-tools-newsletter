@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
+    "url": "https://arxiv.org/abs/2607.21591v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper proposes a method for inference-time scaling of diffusion models via progressive seed pruning, which reduces the computational cost of seed search. The approach is shown to be effective in improving the efficiency of diffusion models.",
+    "why_builders_care": "Builders can use this method to optimize the performance of their diffusion models, reducing the computational cost and improving the overall efficiency of their AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "diffusion models",
+      "inference optimization",
+      "seed pruning"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+    "url": "https://arxiv.org/abs/2607.21552v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces MIRROR, a framework for multi-modal reasoning that learns from different views of the same data. The approach is shown to be effective in improving the performance of vision-language models.",
+    "why_builders_care": "Builders can use MIRROR to develop more accurate and robust multi-modal models, enabling their AI systems to better understand and reason about complex data.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 12,
+    "tags": [
+      "multi-modal reasoning",
+      "vision-language models",
+      "mirror"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "source": "OpenAI Blog",
+    "category": "AI Models",
+    "summary": "This article introduces GPT-Red, a self-improvement system for large language models that uses self-play to improve AI safety, alignment, and prompt injection robustness. GPT-Red is designed to enhance the performance and reliability of AI models.",
+    "why_builders_care": "Builders can use GPT-Red to develop more robust and reliable AI models, improving the overall performance and safety of their AI systems.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "gpt-red",
+      "self-improvement",
+      "ai safety"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Quoting Boris Cherny",
+    "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "This article discusses the latest developments in AI models, including the introduction of Opus 5, a new model that is designed to be more robust and reliable than previous models.",
+    "why_builders_care": "Builders can learn about the latest advancements in AI models and how they can be used to improve the performance and reliability of their AI systems.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "opus 5",
+      "ai models",
+      "robustness"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "petals",
+    "url": "https://github.com/bigscience-workshop/petals",
+    "source": "GitHub Trending",
+    "category": "AI Models",
+    "summary": "This repository provides a framework for running LLMs at home, using a BitTorrent-style approach for fine-tuning and inference. The framework is designed to be fast and efficient, with speeds of up to 10x faster than offloading.",
+    "why_builders_care": "Builders can use this framework to develop and deploy their own LLMs, improving the performance and efficiency of their AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "llms",
+      "bit-torrent",
+      "fine-tuning"
+    ],
+    "confidence_score": 89
+  },
+  {
+    "title": "AWS announces AWS-bench, an open-source benchmark for AI agents on AWS",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/",
+    "source": "Hacker News",
+    "category": "Industry News",
+    "summary": "This article announces the release of AWS-bench, an open-source benchmark for AI agents on AWS. The benchmark is designed to provide a standardized way to evaluate the performance of AI agents on AWS.",
+    "why_builders_care": "Builders can use AWS-bench to evaluate and compare the performance of their AI agents on AWS, improving the overall efficiency and effectiveness of their AI systems.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "aws-bench",
+      "ai agents",
+      "benchmarking"
+    ],
+    "confidence_score": 86
+  },
+  {
+    "title": "Claude Code vs Cursor: Which Should You Use in 2026?",
+    "url": "https://dev.to/alden_menzalji/claude-code-vs-cursor-which-should-you-use-in-2026-262a",
+    "source": "Dev.to",
+    "category": "Agents",
+    "summary": "This article compares and contrasts Claude Code and Cursor, two popular AI coding assistants. The article provides guidance on which tool to use in different scenarios.",
+    "why_builders_care": "Builders can use this article to decide which AI coding assistant is best for their needs, improving their overall productivity and efficiency.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 10,
+    "tags": [
+      "claude code",
+      "cursor",
+      "ai coding assistants"
+    ],
+    "confidence_score": 84
+  },
+  {
+    "title": "Nativ: Run AI models locally on your Mac",
+    "url": "https://simonwillison.net/2026/Jul/21/nativ/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "This article introduces Nativ, a tool for running AI models locally on a Mac. Nativ is designed to be easy to use and provides a simple way to deploy AI models on local hardware.",
+    "why_builders_care": "Builders can use Nativ to develop and deploy their own AI models on local hardware, improving the performance and efficiency of their AI systems.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "nativ",
+      "ai models",
+      "local deployment"
+    ],
+    "confidence_score": 87
+  },
+  {
+    "title": "OptiMCP",
+    "url": "https://github.com/ysharmcode/OptiMCP",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "This repository provides a tool for verifying the math and logic of AI agents against a set of rules. OptiMCP is designed to ensure that AI agents are accurate and reliable.",
+    "why_builders_care": "Builders can use OptiMCP to verify the accuracy and reliability of their AI agents, improving the overall performance and safety of their AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "optimcp",
+      "ai agents",
+      "verification"
+    ],
+    "confidence_score": 91
+  }
+]
