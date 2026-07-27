@@ -1,181 +1,149 @@
 {
-  "intro": "This edition of The Builder's Brief focuses on the latest advancements in AI models, agents, and research, with a special emphasis on multimodal models, inference optimization, and AI safety. We've curated the top 12 articles from the past week, covering topics such as large language models, agent frameworks, and video generation.",
+  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agents, and research, highlighting key developments in LLMs, multimodal models, and AI safety. We've curated a selection of the most valuable articles and repositories for AI engineers, ML researchers, and technical founders.",
   "curated_items": [
+    {
+      "title": "Khoj: Your AI Second Brain",
+      "url": "https://github.com/khoj-ai/khoj",
+      "source": "GitHub Trending",
+      "category": "Research",
+      "summary": "Khoj is a self-hostable AI second brain that allows users to get answers from the web or their documents, build custom agents, and schedule automations. It supports various LLMs, including GPT, Claude, and LLaMA.",
+      "why_builders_care": "Builders can use Khoj to create custom AI-powered tools and automate tasks.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "llm",
+        "ai-second-brain",
+        "self-hostable"
+      ],
+      "confidence_score": 90
+    },
     {
       "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
       "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
       "source": "OpenAI Blog",
       "category": "AI Models",
-      "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness. This system has the potential to significantly enhance the security and reliability of large language models.",
-      "why_builders_care": "Builders can use GPT-Red to improve the robustness and security of their own AI models, reducing the risk of prompt injection attacks and other vulnerabilities.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
+      "summary": "GPT-Red is an automated red teaming system developed by OpenAI that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "why_builders_care": "Builders can use GPT-Red to improve the robustness and safety of their AI models.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
       "tags": [
-        "llm",
+        "gpt-red",
         "ai-safety",
-        "red-teaming"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
-      "url": "https://arxiv.org/abs/2607.21552v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "MIRROR is a new approach to multi-modal reasoning that uses a combination of text, diagram, and combined diagram+text views to improve the reasoning capabilities of vision-language models. This approach has the potential to significantly enhance the performance of multimodal models.",
-      "why_builders_care": "Builders can use MIRROR to improve the reasoning capabilities of their own multimodal models, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "multimodal",
-        "reasoning",
-        "vision-language"
-      ],
-      "confidence_score": 92
-    },
-    {
-      "title": "X$^3$-OPD: Distilling Reasoning into Large Audio-Language Models via On-Policy Alignment",
-      "url": "https://arxiv.org/abs/2607.21550v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "X$^3$-OPD is a new approach to distilling reasoning into large audio-language models using on-policy alignment. This approach has the potential to significantly enhance the reasoning capabilities of audio-language models.",
-      "why_builders_care": "Builders can use X$^3$-OPD to improve the reasoning capabilities of their own audio-language models, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "audio-language",
-        "reasoning",
-        "distillation"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "DONDO: Open w2v-BERT Speech-Recognition Base Models for African Languages",
-      "url": "https://arxiv.org/abs/2607.21540v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "DONDO is a new family of open, permissively licensed automatic speech recognition (ASR) base models for African languages, built on the w2v-BERT 2.0 self-supervised speech encoder. This release has the potential to significantly enhance the performance of ASR systems for African languages.",
-      "why_builders_care": "Builders can use DONDO to improve the performance of their own ASR systems for African languages, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 10,
-      "tags": [
-        "asr",
-        "african-languages",
-        "w2v-bert"
-      ],
-      "confidence_score": 88
-    },
-    {
-      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "url": "https://arxiv.org/abs/2607.21557v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "OpenForgeRL is a new approach to training harness-native agents in any environment, using a combination of reinforcement learning and imitation learning. This approach has the potential to significantly enhance the performance of agents in complex environments.",
-      "why_builders_care": "Builders can use OpenForgeRL to improve the performance of their own agents in complex environments, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "agents",
-        "reinforcement-learning",
-        "imitation-learning"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
-      "url": "https://arxiv.org/abs/2607.21553v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "SANA-Video 2.0 is a new approach to efficient video generation using a hybrid linear attention mechanism with attention residuals. This approach has the potential to significantly enhance the performance of video generation models.",
-      "why_builders_care": "Builders can use SANA-Video 2.0 to improve the performance of their own video generation models, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "video-generation",
-        "attention-mechanism",
-        "efficiency"
-      ],
-      "confidence_score": 92
-    },
-    {
-      "title": "Windowed-MTP: Removing the Full-Context Draft-KV Tax at Million-Token Context",
-      "url": "https://arxiv.org/abs/2607.21535v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "Windowed-MTP is a new approach to removing the full-context draft-KV tax at million-token context, using a combination of speculative decoding and parallel verification. This approach has the potential to significantly enhance the performance of large language models.",
-      "why_builders_care": "Builders can use Windowed-MTP to improve the performance of their own large language models, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "large-language-models",
-        "speculative-decoding",
-        "parallel-verification"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
-      "url": "https://arxiv.org/abs/2607.21570v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "MedGame is a new approach to medical education using storytelling gamification empowered by large language models. This approach has the potential to significantly enhance the engagement and effectiveness of medical education.",
-      "why_builders_care": "Builders can use MedGame to improve the engagement and effectiveness of their own medical education platforms, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 10,
-      "tags": [
-        "medical-education",
-        "storytelling",
-        "gamification"
+        "self-improvement"
       ],
       "confidence_score": 85
     },
     {
-      "title": "UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging",
-      "url": "https://arxiv.org/abs/2607.21546v1",
+      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework",
+      "url": "https://arxiv.org/abs/2607.22511v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "UnDA is a new approach to unpaired domain alignment for cross-modal knowledge transfer in medical imaging, using a combination of adversarial training and self-supervised learning. This approach has the potential to significantly enhance the performance of medical imaging models.",
-      "why_builders_care": "Builders can use UnDA to improve the performance of their own medical imaging models, enabling them to tackle more complex tasks and applications.",
+      "summary": "CausalForge is a framework for automating theoretical research using large language models (LLMs) and causal inference. It aims to improve the reliability and efficiency of research by using LLMs to evaluate and generate candidate results.",
+      "why_builders_care": "Builders can use CausalForge to automate research tasks and improve the efficiency of their research workflows.",
       "difficulty": "Advanced",
-      "reading_time_mins": 15,
+      "reading_time_mins": 12,
       "tags": [
-        "medical-imaging",
-        "domain-alignment",
-        "cross-modal"
+        "causal-forge",
+        "agentic-framework",
+        "research-automation"
       ],
-      "confidence_score": 90
+      "confidence_score": 88
     },
     {
-      "title": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
-      "url": "https://arxiv.org/abs/2607.21591v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning is a new approach to scaling diffusion models at inference time, using a combination of progressive seed pruning and conditional sampling. This approach has the potential to significantly enhance the efficiency of diffusion models.",
-      "why_builders_care": "Builders can use this approach to improve the efficiency of their own diffusion models, enabling them to tackle more complex tasks and applications.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
+      "title": "Nativ: Run AI Models Locally on Your Mac",
+      "url": "https://blaizzy.github.io/nativ/",
+      "source": "Simon Willison",
+      "category": "AI Models",
+      "summary": "Nativ is a tool that allows users to run AI models locally on their Mac. It supports various models, including vision-LLMs, and provides a user-friendly interface for model deployment.",
+      "why_builders_care": "Builders can use Nativ to deploy and test AI models locally, reducing the need for cloud infrastructure.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 6,
       "tags": [
-        "diffusion-models",
-        "inference-time",
-        "scaling"
+        "nativ",
+        "ai-model-deployment",
+        "local-deployment"
+      ],
+      "confidence_score": 80
+    },
+    {
+      "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.21653",
+      "source": "Hugging Face Papers",
+      "category": "Research",
+      "summary": "Molt is a scalable training framework for agentic reinforcement learning. It provides a PyTorch-native implementation of various reinforcement learning algorithms and supports large-scale model training.",
+      "why_builders_care": "Builders can use Molt to train and deploy large-scale reinforcement learning models.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "molt",
+        "reinforcement-learning",
+        "pytorch"
       ],
       "confidence_score": 92
     },
     {
-      "title": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
-      "url": "https://arxiv.org/abs/2607.21594v1",
+      "title": "Investing in Multi-Agent AI Safety Research",
+      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "source": "DeepMind Blog",
+      "category": "Research",
+      "summary": "DeepMind and partners announce a $10M funding call for multi-agent safety research. The goal is to develop new methods and techniques for ensuring the safety and reliability of multi-agent AI systems.",
+      "why_builders_care": "Builders can apply for funding to support their research in multi-agent AI safety.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 5,
+      "tags": [
+        "multi-agent-ai",
+        "safety-research",
+        "funding-call"
+      ],
+      "confidence_score": 85
+    },
+    {
+      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+      "url": "https://arxiv.org/abs/2607.22529v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers is a new approach to multi-agent autoregressive diffusion models, using a combination of streaming processing and world state registers. This approach has the potential to significantly enhance the performance of multi-agent models.",
-      "why_builders_care": "Builders can use this approach to improve the performance of their own multi-agent models, enabling them to tackle more complex tasks and applications.",
+      "summary": "Skill Self-Play is a method for improving the capabilities of large language models (LLMs) through co-evolving skills. It uses self-play to develop new skills and adapt to changing environments.",
+      "why_builders_care": "Builders can use Skill Self-Play to improve the capabilities of their LLMs and develop more robust AI models.",
       "difficulty": "Advanced",
-      "reading_time_mins": 15,
+      "reading_time_mins": 10,
       "tags": [
-        "multi-agent",
-        "autoregressive",
-        "diffusion-models"
+        "skill-self-play",
+        "llm-capability",
+        "co-evolving-skills"
       ],
       "confidence_score": 90
+    },
+    {
+      "title": "OpenAI’s Accidental Cyberattack Against Hugging Face is Science Fiction That Happened",
+      "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+      "source": "Simon Willison",
+      "category": "Research",
+      "summary": "OpenAI's accidental cyberattack against Hugging Face highlights the risks and challenges of developing and deploying AI models. It emphasizes the need for robust security measures and careful testing.",
+      "why_builders_care": "Builders can learn from OpenAI's experience and take steps to improve the security and reliability of their AI models.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "openai",
+        "hugging-face",
+        "cyberattack"
+      ],
+      "confidence_score": 85
+    },
+    {
+      "title": "Deer-Workflow: An Open-Source Dynamic Workflow Runtime",
+      "url": "https://github.com/deerwork-ai/deer-workflow",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "Deer-Workflow is an open-source dynamic workflow runtime that allows users to define and execute workflows using a visual interface. It supports various agents and provides a flexible and scalable workflow management system.",
+      "why_builders_care": "Builders can use Deer-Workflow to manage and automate complex workflows and integrate with various AI agents.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "deer-workflow",
+        "dynamic-workflow",
+        "open-source"
+      ],
+      "confidence_score": 80
     }
   ]
 }

@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Khoj: Your AI Second Brain",
+    "url": "https://github.com/khoj-ai/khoj",
+    "source": "GitHub Trending",
+    "category": "Research",
+    "summary": "Khoj is a self-hostable AI second brain that allows users to get answers from the web or their documents, build custom agents, and schedule automations. It supports various LLMs, including GPT, Claude, and LLaMA.",
+    "why_builders_care": "Builders can use Khoj to create custom AI-powered tools and automate tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "ai-second-brain",
+      "self-hostable"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+    "source": "OpenAI Blog",
+    "category": "AI Models",
+    "summary": "GPT-Red is an automated red teaming system developed by OpenAI that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+    "why_builders_care": "Builders can use GPT-Red to improve the robustness and safety of their AI models.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "gpt-red",
+      "ai-safety",
+      "self-improvement"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework",
+    "url": "https://arxiv.org/abs/2607.22511v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "CausalForge is a framework for automating theoretical research using large language models (LLMs) and causal inference. It aims to improve the reliability and efficiency of research by using LLMs to evaluate and generate candidate results.",
+    "why_builders_care": "Builders can use CausalForge to automate research tasks and improve the efficiency of their research workflows.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "causal-forge",
+      "agentic-framework",
+      "research-automation"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "Nativ: Run AI Models Locally on Your Mac",
+    "url": "https://blaizzy.github.io/nativ/",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "Nativ is a tool that allows users to run AI models locally on their Mac. It supports various models, including vision-LLMs, and provides a user-friendly interface for model deployment.",
+    "why_builders_care": "Builders can use Nativ to deploy and test AI models locally, reducing the need for cloud infrastructure.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 6,
+    "tags": [
+      "nativ",
+      "ai-model-deployment",
+      "local-deployment"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2607.21653",
+    "source": "Hugging Face Papers",
+    "category": "Research",
+    "summary": "Molt is a scalable training framework for agentic reinforcement learning. It provides a PyTorch-native implementation of various reinforcement learning algorithms and supports large-scale model training.",
+    "why_builders_care": "Builders can use Molt to train and deploy large-scale reinforcement learning models.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "molt",
+      "reinforcement-learning",
+      "pytorch"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Investing in Multi-Agent AI Safety Research",
+    "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+    "source": "DeepMind Blog",
+    "category": "Research",
+    "summary": "DeepMind and partners announce a $10M funding call for multi-agent safety research. The goal is to develop new methods and techniques for ensuring the safety and reliability of multi-agent AI systems.",
+    "why_builders_care": "Builders can apply for funding to support their research in multi-agent AI safety.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "multi-agent-ai",
+      "safety-research",
+      "funding-call"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+    "url": "https://arxiv.org/abs/2607.22529v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Skill Self-Play is a method for improving the capabilities of large language models (LLMs) through co-evolving skills. It uses self-play to develop new skills and adapt to changing environments.",
+    "why_builders_care": "Builders can use Skill Self-Play to improve the capabilities of their LLMs and develop more robust AI models.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "skill-self-play",
+      "llm-capability",
+      "co-evolving-skills"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "OpenAI’s Accidental Cyberattack Against Hugging Face is Science Fiction That Happened",
+    "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "OpenAI's accidental cyberattack against Hugging Face highlights the risks and challenges of developing and deploying AI models. It emphasizes the need for robust security measures and careful testing.",
+    "why_builders_care": "Builders can learn from OpenAI's experience and take steps to improve the security and reliability of their AI models.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "openai",
+      "hugging-face",
+      "cyberattack"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Deer-Workflow: An Open-Source Dynamic Workflow Runtime",
+    "url": "https://github.com/deerwork-ai/deer-workflow",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "Deer-Workflow is an open-source dynamic workflow runtime that allows users to define and execute workflows using a visual interface. It supports various agents and provides a flexible and scalable workflow management system.",
+    "why_builders_care": "Builders can use Deer-Workflow to manage and automate complex workflows and integrate with various AI agents.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "deer-workflow",
+      "dynamic-workflow",
+      "open-source"
+    ],
+    "confidence_score": 80
+  }
+]
