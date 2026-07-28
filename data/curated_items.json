@@ -1,147 +1,179 @@
 {
-  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agents, and research, highlighting key developments in LLMs, multimodal models, and AI safety. We've curated a selection of the most valuable articles and repositories for AI engineers, ML researchers, and technical founders.",
+  "intro": "This edition of The Builder's Brief focuses on the latest advancements in AI models, agents, and research, with a emphasis on practical applications and real-world implications. From explainable reinforcement learning to multimodal LLM systems, we've curated the top 12 articles that matter most to builders.",
   "curated_items": [
     {
-      "title": "Khoj: Your AI Second Brain",
-      "url": "https://github.com/khoj-ai/khoj",
-      "source": "GitHub Trending",
+      "title": "Explainable Reinforcement Learning via Physics-Aware Policy Distillation",
+      "url": "https://arxiv.org/abs/2607.24672v1",
+      "source": "arXiv",
       "category": "Research",
-      "summary": "Khoj is a self-hostable AI second brain that allows users to get answers from the web or their documents, build custom agents, and schedule automations. It supports various LLMs, including GPT, Claude, and LLaMA.",
-      "why_builders_care": "Builders can use Khoj to create custom AI-powered tools and automate tasks.",
+      "summary": "This paper introduces a novel approach to explainable reinforcement learning by leveraging physics-aware policy distillation. The method enables the deployment of deep reinforcement learning in safety-critical sectors.",
+      "why_builders_care": "Builders can use this approach to develop more transparent and trustworthy AI systems.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "llm",
-        "ai-second-brain",
-        "self-hostable"
+        "explainable_ai",
+        "reinforcement_learning",
+        "physics_aware"
       ],
       "confidence_score": 90
+    },
+    {
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "url": "https://arxiv.org/abs/2607.24653v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "Kimi K3 is a 2.8T parameter Mixture-of-Experts model with native vision capabilities and a 1-million-token context window. It is built on Kimi Delta Attention and Attention Residuals.",
+      "why_builders_care": "Builders can leverage Kimi K3 for large-scale language modeling tasks and explore its applications in vision and multimodal domains.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "llm",
+        "mixture_of_experts",
+        "vision"
+      ],
+      "confidence_score": 92
     },
     {
       "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
       "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
       "source": "OpenAI Blog",
       "category": "AI Models",
-      "summary": "GPT-Red is an automated red teaming system developed by OpenAI that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
-      "why_builders_care": "Builders can use GPT-Red to improve the robustness and safety of their AI models.",
+      "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "why_builders_care": "Builders can use GPT-Red to develop more robust and secure AI models.",
       "difficulty": "Intermediate",
       "reading_time_mins": 8,
       "tags": [
-        "gpt-red",
-        "ai-safety",
-        "self-improvement"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework",
-      "url": "https://arxiv.org/abs/2607.22511v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "CausalForge is a framework for automating theoretical research using large language models (LLMs) and causal inference. It aims to improve the reliability and efficiency of research by using LLMs to evaluate and generate candidate results.",
-      "why_builders_care": "Builders can use CausalForge to automate research tasks and improve the efficiency of their research workflows.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 12,
-      "tags": [
-        "causal-forge",
-        "agentic-framework",
-        "research-automation"
+        "ai_safety",
+        "red_teaming",
+        "robustness"
       ],
       "confidence_score": 88
     },
     {
-      "title": "Nativ: Run AI Models Locally on Your Mac",
-      "url": "https://blaizzy.github.io/nativ/",
-      "source": "Simon Willison",
-      "category": "AI Models",
-      "summary": "Nativ is a tool that allows users to run AI models locally on their Mac. It supports various models, including vision-LLMs, and provides a user-friendly interface for model deployment.",
-      "why_builders_care": "Builders can use Nativ to deploy and test AI models locally, reducing the need for cloud infrastructure.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 6,
+      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
+      "url": "https://arxiv.org/abs/2607.24743v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "ClinFusion is a multimodal LLM system designed for holistic medical understanding. It absorbs knowledge from heterogeneous 2D and 3D medical images and aligns evaluation protocols with clinical practice.",
+      "why_builders_care": "Builders can use ClinFusion to develop more effective medical diagnosis and treatment systems.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 11,
       "tags": [
-        "nativ",
-        "ai-model-deployment",
-        "local-deployment"
+        "multimodal_llm",
+        "medical_understanding",
+        "vision_centric"
       ],
-      "confidence_score": 80
+      "confidence_score": 91
     },
     {
-      "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2607.21653",
-      "source": "Hugging Face Papers",
+      "title": "The Physics of Multi-Turn Long-Horizon Planning",
+      "url": "https://arxiv.org/abs/2607.24720v1",
+      "source": "arXiv",
       "category": "Research",
-      "summary": "Molt is a scalable training framework for agentic reinforcement learning. It provides a PyTorch-native implementation of various reinforcement learning algorithms and supports large-scale model training.",
-      "why_builders_care": "Builders can use Molt to train and deploy large-scale reinforcement learning models.",
+      "summary": "This paper explores the physics of multi-turn long-horizon planning, focusing on the acquisition, shaping, and integration of planning ability in foundation models.",
+      "why_builders_care": "Builders can use this research to develop more effective planning and decision-making systems.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "molt",
-        "reinforcement-learning",
-        "pytorch"
+        "planning",
+        "long_horizon",
+        "foundation_models"
       ],
-      "confidence_score": 92
+      "confidence_score": 89
     },
     {
-      "title": "Investing in Multi-Agent AI Safety Research",
-      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
-      "source": "DeepMind Blog",
-      "category": "Research",
-      "summary": "DeepMind and partners announce a $10M funding call for multi-agent safety research. The goal is to develop new methods and techniques for ensuring the safety and reliability of multi-agent AI systems.",
-      "why_builders_care": "Builders can apply for funding to support their research in multi-agent AI safety.",
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
+      "source": "Simon Willison",
+      "category": "AI Models",
+      "summary": "Moonshotai has released the weights for their excellent 2.8 trillion parameter Kimi K3 model.",
+      "why_builders_care": "Builders can use Kimi K3 for large-scale language modeling tasks and explore its applications in vision and multimodal domains.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 5,
+      "reading_time_mins": 6,
       "tags": [
-        "multi-agent-ai",
-        "safety-research",
-        "funding-call"
+        "llm",
+        "kimi_k3",
+        "moonshotai"
       ],
       "confidence_score": 85
     },
     {
-      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
-      "url": "https://arxiv.org/abs/2607.22529v1",
+      "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
+      "url": "https://arxiv.org/abs/2607.24707v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "Skill Self-Play is a method for improving the capabilities of large language models (LLMs) through co-evolving skills. It uses self-play to develop new skills and adapt to changing environments.",
-      "why_builders_care": "Builders can use Skill Self-Play to improve the capabilities of their LLMs and develop more robust AI models.",
+      "summary": "ERUnderstand is a benchmark for evaluating vision-language models on structured ER diagrams, aiming to improve AI-assisted database engineering.",
+      "why_builders_care": "Builders can use ERUnderstand to develop more effective database engineering systems.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 9,
+      "tags": [
+        "vision_language_models",
+        "er_diagrams",
+        "database_engineering"
+      ],
+      "confidence_score": 86
+    },
+    {
+      "title": "DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data",
+      "url": "https://arxiv.org/abs/2607.24717v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "DataOrchestra is a method for learning to orchestrate per-example curation of pretraining data, adapting to the needs of each example.",
+      "why_builders_care": "Builders can use DataOrchestra to improve the quality and effectiveness of their pretraining data.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "skill-self-play",
-        "llm-capability",
-        "co-evolving-skills"
+        "pretraining_data",
+        "data_curation",
+        "orchestration"
+      ],
+      "confidence_score": 87
+    },
+    {
+      "title": "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification",
+      "url": "https://arxiv.org/abs/2607.24683v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a co-learning approach for missing arbitrary modalities in multi-modal classification, leveraging complementary information across diverse data sources.",
+      "why_builders_care": "Builders can use this approach to develop more robust and effective multi-modal classification systems.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 11,
+      "tags": [
+        "multi_modal_classification",
+        "missing_modalities",
+        "co_learning"
       ],
       "confidence_score": 90
     },
     {
-      "title": "OpenAI’s Accidental Cyberattack Against Hugging Face is Science Fiction That Happened",
-      "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
-      "source": "Simon Willison",
-      "category": "Research",
-      "summary": "OpenAI's accidental cyberattack against Hugging Face highlights the risks and challenges of developing and deploying AI models. It emphasizes the need for robust security measures and careful testing.",
-      "why_builders_care": "Builders can learn from OpenAI's experience and take steps to improve the security and reliability of their AI models.",
+      "title": "hkc5/cursor-bridge",
+      "url": "https://github.com/hkc5/cursor-bridge",
+      "source": "GitHub",
+      "category": "AI Models",
+      "summary": "Cursor-bridge is a Claude Code that runs on your Cursor subscription, providing a seamless integration with the Claude AI model.",
+      "why_builders_care": "Builders can use cursor-bridge to develop more effective and integrated AI systems.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 8,
+      "reading_time_mins": 5,
       "tags": [
-        "openai",
-        "hugging-face",
-        "cyberattack"
+        "cursor_bridge",
+        "claud_code",
+        "ai_integration"
       ],
-      "confidence_score": 85
+      "confidence_score": 82
     },
     {
-      "title": "Deer-Workflow: An Open-Source Dynamic Workflow Runtime",
-      "url": "https://github.com/deerwork-ai/deer-workflow",
-      "source": "GitHub",
+      "title": "Open-source Cloudflare deployed agent native task management and wiki",
+      "url": "https://tajd.github.io/projektor/",
+      "source": "Hacker News",
       "category": "Agents",
-      "summary": "Deer-Workflow is an open-source dynamic workflow runtime that allows users to define and execute workflows using a visual interface. It supports various agents and provides a flexible and scalable workflow management system.",
-      "why_builders_care": "Builders can use Deer-Workflow to manage and automate complex workflows and integrate with various AI agents.",
+      "summary": "This project provides an open-source Cloudflare deployed agent with native task management and wiki capabilities.",
+      "why_builders_care": "Builders can use this project to develop more effective and integrated agent systems.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 8,
+      "reading_time_mins": 6,
       "tags": [
-        "deer-workflow",
-        "dynamic-workflow",
-        "open-source"
+        "cloudflare",
+        "agent",
+        "task_management"
       ],
       "confidence_score": 80
     }
