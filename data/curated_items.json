@@ -1,181 +1,179 @@
 {
-  "intro": "This edition of The Builder's Brief focuses on the latest advancements in AI models, agents, and research, with a emphasis on practical applications and real-world implications. From explainable reinforcement learning to multimodal LLM systems, we've curated the top 12 articles that matter most to builders.",
+  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI research, including multimodal models, agent frameworks, and inference optimization. We've curated the top 12 articles from the past week, covering topics such as VetClaw, an edge-cloud multimodal agentic system, and MemLens, a value-aware memory management system.",
   "curated_items": [
     {
-      "title": "Explainable Reinforcement Learning via Physics-Aware Policy Distillation",
-      "url": "https://arxiv.org/abs/2607.24672v1",
+      "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+      "url": "https://arxiv.org/abs/2607.26042v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper introduces a novel approach to explainable reinforcement learning by leveraging physics-aware policy distillation. The method enables the deployment of deep reinforcement learning in safety-critical sectors.",
-      "why_builders_care": "Builders can use this approach to develop more transparent and trustworthy AI systems.",
+      "summary": "VetClaw is an edge-cloud multimodal agentic system for early veterinary disease screening. It uses a camera module as an edge sensing device and sends captured images to a server-hosted vision-language model for zero-shot disease classification.",
+      "why_builders_care": "Builders can use VetClaw as a reference for developing multimodal AI systems for real-world applications.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "explainable_ai",
-        "reinforcement_learning",
-        "physics_aware"
+        "multimodal",
+        "edge-cloud",
+        "veterinary"
       ],
       "confidence_score": 90
     },
     {
-      "title": "Kimi K3: Open Frontier Intelligence",
-      "url": "https://arxiv.org/abs/2607.24653v1",
+      "title": "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+      "url": "https://arxiv.org/abs/2607.25992v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "Kimi K3 is a 2.8T parameter Mixture-of-Experts model with native vision capabilities and a 1-million-token context window. It is built on Kimi Delta Attention and Attention Residuals.",
-      "why_builders_care": "Builders can leverage Kimi K3 for large-scale language modeling tasks and explore its applications in vision and multimodal domains.",
+      "summary": "MemLens is a value-aware memory management system that provides interactive analytics for LLM-based agents. It treats heterogeneous user interactions as first-class citizens and provides a fine-grained, value-aware manner for managing memory.",
+      "why_builders_care": "Builders can use MemLens to improve the performance and efficiency of their LLM-based agents.",
       "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
+        "memory management",
         "llm",
-        "mixture_of_experts",
-        "vision"
+        "analytics"
       ],
       "confidence_score": 92
+    },
+    {
+      "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
+      "url": "https://arxiv.org/abs/2607.25962v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "LaP-Forensics is a multimodal framework that augments RGB semantics with reconstruction-based forensic evidence for deepfake detection. It uses a frozen Stable Diffusion model to generate latent pixels and guides the reasoning process.",
+      "why_builders_care": "Builders can use LaP-Forensics as a reference for developing multimodal deepfake detection systems.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "deepfake detection",
+        "multimodal",
+        "forensics"
+      ],
+      "confidence_score": 88
+    },
+    {
+      "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+      "url": "https://arxiv.org/abs/2607.26052v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a confidence-adaptive routing mechanism for Mixture-of-Experts LoRA. It observes that the router's output distribution is already a good indicator of uncertainty and uses this information to adaptively route tokens to experts.",
+      "why_builders_care": "Builders can use this routing mechanism to improve the performance of their Mixture-of-Experts LoRA models.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "mixture-of-experts",
+        "lora",
+        "confidence-adaptive routing"
+      ],
+      "confidence_score": 90
+    },
+    {
+      "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+      "url": "https://arxiv.org/abs/2607.26041v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "Desktop-Delta Bench is a benchmark that measures whether computer-use models can understand desktop GUI transitions. It evaluates the model's ability to reconstruct the causal, task-relevant transition produced by an action.",
+      "why_builders_care": "Builders can use Desktop-Delta Bench to evaluate the performance of their computer-use models.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "computer-use models",
+        "desktop gui",
+        "benchmark"
+      ],
+      "confidence_score": 85
+    },
+    {
+      "title": "MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar",
+      "url": "https://arxiv.org/abs/2607.26016v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "MDTransformer is a hardware-software co-design of a mode-division photonic transformer accelerator. It uses an inverse-designed coherent crossbar to achieve significant speedup and energy efficiency improvements over electronic accelerators.",
+      "why_builders_care": "Builders can use MDTransformer as a reference for developing hardware-software co-designed accelerators for AI workloads.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "hardware-software co-design",
+        "photonic transformer",
+        "accelerator"
+      ],
+      "confidence_score": 92
+    },
+    {
+      "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
+      "url": "https://arxiv.org/abs/2607.26004v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a parallel decoding distillation method for fast image and video generation. It uses a combination of variational score distillation and adversarial losses to distill diffusion models into few-step generative models.",
+      "why_builders_care": "Builders can use this method to improve the efficiency of their image and video generation models.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "image generation",
+        "video generation",
+        "distillation"
+      ],
+      "confidence_score": 85
     },
     {
       "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
       "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
       "source": "OpenAI Blog",
       "category": "AI Models",
-      "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
-      "why_builders_care": "Builders can use GPT-Red to develop more robust and secure AI models.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 8,
+      "summary": "GPT-Red is an automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness. It is designed to test the limits of AI models and identify potential vulnerabilities.",
+      "why_builders_care": "Builders can use GPT-Red to evaluate and improve the robustness of their AI models.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
       "tags": [
-        "ai_safety",
-        "red_teaming",
+        "ai safety",
+        "red teaming",
         "robustness"
-      ],
-      "confidence_score": 88
-    },
-    {
-      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
-      "url": "https://arxiv.org/abs/2607.24743v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "ClinFusion is a multimodal LLM system designed for holistic medical understanding. It absorbs knowledge from heterogeneous 2D and 3D medical images and aligns evaluation protocols with clinical practice.",
-      "why_builders_care": "Builders can use ClinFusion to develop more effective medical diagnosis and treatment systems.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 11,
-      "tags": [
-        "multimodal_llm",
-        "medical_understanding",
-        "vision_centric"
-      ],
-      "confidence_score": 91
-    },
-    {
-      "title": "The Physics of Multi-Turn Long-Horizon Planning",
-      "url": "https://arxiv.org/abs/2607.24720v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper explores the physics of multi-turn long-horizon planning, focusing on the acquisition, shaping, and integration of planning ability in foundation models.",
-      "why_builders_care": "Builders can use this research to develop more effective planning and decision-making systems.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
-      "tags": [
-        "planning",
-        "long_horizon",
-        "foundation_models"
-      ],
-      "confidence_score": 89
-    },
-    {
-      "title": "moonshotai/Kimi-K3",
-      "url": "https://simonwillison.net/2026/Jul/27/kimi-k3/#atom-everything",
-      "source": "Simon Willison",
-      "category": "AI Models",
-      "summary": "Moonshotai has released the weights for their excellent 2.8 trillion parameter Kimi K3 model.",
-      "why_builders_care": "Builders can use Kimi K3 for large-scale language modeling tasks and explore its applications in vision and multimodal domains.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 6,
-      "tags": [
-        "llm",
-        "kimi_k3",
-        "moonshotai"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
-      "url": "https://arxiv.org/abs/2607.24707v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "ERUnderstand is a benchmark for evaluating vision-language models on structured ER diagrams, aiming to improve AI-assisted database engineering.",
-      "why_builders_care": "Builders can use ERUnderstand to develop more effective database engineering systems.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 9,
-      "tags": [
-        "vision_language_models",
-        "er_diagrams",
-        "database_engineering"
-      ],
-      "confidence_score": 86
-    },
-    {
-      "title": "DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data",
-      "url": "https://arxiv.org/abs/2607.24717v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "DataOrchestra is a method for learning to orchestrate per-example curation of pretraining data, adapting to the needs of each example.",
-      "why_builders_care": "Builders can use DataOrchestra to improve the quality and effectiveness of their pretraining data.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
-      "tags": [
-        "pretraining_data",
-        "data_curation",
-        "orchestration"
-      ],
-      "confidence_score": 87
-    },
-    {
-      "title": "Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification",
-      "url": "https://arxiv.org/abs/2607.24683v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes a co-learning approach for missing arbitrary modalities in multi-modal classification, leveraging complementary information across diverse data sources.",
-      "why_builders_care": "Builders can use this approach to develop more robust and effective multi-modal classification systems.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 11,
-      "tags": [
-        "multi_modal_classification",
-        "missing_modalities",
-        "co_learning"
       ],
       "confidence_score": 90
     },
     {
-      "title": "hkc5/cursor-bridge",
-      "url": "https://github.com/hkc5/cursor-bridge",
-      "source": "GitHub",
-      "category": "AI Models",
-      "summary": "Cursor-bridge is a Claude Code that runs on your Cursor subscription, providing a seamless integration with the Claude AI model.",
-      "why_builders_care": "Builders can use cursor-bridge to develop more effective and integrated AI systems.",
+      "title": "openai/whisper",
+      "url": "https://github.com/openai/whisper",
+      "source": "GitHub Trending",
+      "category": "Open Source",
+      "summary": "Whisper is an open-source speech recognition system developed by OpenAI. It uses a combination of machine learning and signal processing techniques to achieve state-of-the-art performance.",
+      "why_builders_care": "Builders can use Whisper as a reference for developing their own speech recognition systems.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 5,
+      "reading_time_mins": 8,
       "tags": [
-        "cursor_bridge",
-        "claud_code",
-        "ai_integration"
+        "speech recognition",
+        "open-source"
       ],
-      "confidence_score": 82
+      "confidence_score": 85
     },
     {
-      "title": "Open-source Cloudflare deployed agent native task management and wiki",
-      "url": "https://tajd.github.io/projektor/",
+      "title": "Triton Control – an open-source control plane for Nvidia Triton on Kubernetes",
+      "url": "https://github.com/ai-lab-tech/triton-control",
       "source": "Hacker News",
-      "category": "Agents",
-      "summary": "This project provides an open-source Cloudflare deployed agent with native task management and wiki capabilities.",
-      "why_builders_care": "Builders can use this project to develop more effective and integrated agent systems.",
+      "category": "Infrastructure",
+      "summary": "Triton Control is an open-source control plane for Nvidia Triton on Kubernetes. It provides a unified interface for managing and orchestrating AI workloads on Kubernetes clusters.",
+      "why_builders_care": "Builders can use Triton Control to simplify the deployment and management of their AI workloads on Kubernetes.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 6,
+      "reading_time_mins": 8,
       "tags": [
-        "cloudflare",
-        "agent",
-        "task_management"
+        "kubernetes",
+        "triton",
+        "control plane"
       ],
       "confidence_score": 80
+    },
+    {
+      "title": "moonshotai/Kimi-K3",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "source": "Simon Willison",
+      "category": "AI Models",
+      "summary": "Kimi-K3 is a large language model developed by Moonshot AI. It has 2.8 trillion parameters and is designed for a wide range of natural language processing tasks.",
+      "why_builders_care": "Builders can use Kimi-K3 as a reference for developing their own large language models.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "large language model",
+        "kimi-k3"
+      ],
+      "confidence_score": 90
     }
   ]
 }
