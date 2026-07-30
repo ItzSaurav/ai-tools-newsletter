@@ -1,0 +1,162 @@
+[
+  {
+    "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+    "url": "https://arxiv.org/abs/2607.27155v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "OmegaUse-OfficeVal is a benchmark for evaluating LLM agents on long-horizon office-suite tasks with economic grounding. It provides a framework for assessing the ability of LLM agents to carry out complex tasks in a realistic setting.",
+    "why_builders_care": "Builders can use OmegaUse-OfficeVal to evaluate and improve the performance of their LLM agents on real-world tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "benchmark",
+      "office-suite"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Explainable and Resource-Efficient Spatial Reasoning in Multimodal LLMs for Decision-Critical Applications",
+    "url": "https://arxiv.org/abs/2607.27145v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper presents a framework for explainable and resource-efficient spatial reasoning in multimodal LLMs, which is crucial for decision-critical applications such as robotics and safety monitoring.",
+    "why_builders_care": "Builders can use this framework to develop more transparent and efficient multimodal LLMs for critical applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "multimodal",
+      "llm",
+      "spatial-reasoning"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "lamhotsiagian/llm-system-design",
+    "url": "https://github.com/lamhotsiagian/llm-system-design",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "This repository provides a production-grade LLM system design platform with a pure-Python LLM serving, RAG, routing, safety, and agent control plane.",
+    "why_builders_care": "Builders can use this platform to develop and deploy their own LLM systems with advanced features.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "llm",
+      "system-design",
+      "agent"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+    "url": "https://arxiv.org/abs/2607.27205v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "TurboVLA is a real-time vision-language-action model that achieves 32 Hz on an RTX 4090 with less than 1 GB VRAM, making it suitable for applications such as robotics and autonomous vehicles.",
+    "why_builders_care": "Builders can use TurboVLA to develop real-time vision-language-action systems with high performance and low latency.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 11,
+    "tags": [
+      "vision-language-action",
+      "real-time",
+      "rtx-4090"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "openai/whisper",
+    "url": "https://github.com/openai/whisper",
+    "source": "GitHub Trending",
+    "category": "Open Source",
+    "summary": "Whisper is an open-source speech recognition system developed by OpenAI, which achieves state-of-the-art performance on various speech recognition benchmarks.",
+    "why_builders_care": "Builders can use Whisper to develop their own speech recognition systems with high accuracy and efficiency.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 9,
+    "tags": [
+      "speech-recognition",
+      "open-source",
+      "whisper"
+    ],
+    "confidence_score": 82
+  },
+  {
+    "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "source": "OpenAI Blog",
+    "category": "Agents",
+    "summary": "GPT-5.6 is a new model that combines frontier intelligence with frontier efficiency, achieving state-of-the-art performance on various natural language processing tasks while reducing computational costs.",
+    "why_builders_care": "Builders can use GPT-5.6 to develop more efficient and effective natural language processing systems.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 7,
+    "tags": [
+      "gpt-5.6",
+      "frontier-intelligence",
+      "efficiency"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "moonshotai/Kimi-K3",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "Kimi-K3 is a 2.8 trillion parameter language model developed by Moonshot, which achieves state-of-the-art performance on various natural language processing tasks.",
+    "why_builders_care": "Builders can use Kimi-K3 to develop more accurate and efficient natural language processing systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "kimi-k3",
+      "language-model",
+      "moonshot"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "source": "GitHub Trending",
+    "category": "Agents",
+    "summary": "LangChain is an open-source agent engineering platform that provides a framework for building and deploying AI agents.",
+    "why_builders_care": "Builders can use LangChain to develop and deploy their own AI agents with advanced features.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "langchain",
+      "agent-engineering",
+      "platform"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Discovering cryptographic weaknesses with Claude",
+    "url": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "This article presents a method for discovering cryptographic weaknesses using Claude, a large language model developed by Anthropic.",
+    "why_builders_care": "Builders can use this method to identify and address potential security vulnerabilities in their systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "cryptographic-weaknesses",
+      "claud",
+      "anthropic"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "Adding a custom MCP server to Claude and ChatGPT",
+    "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/",
+    "source": "Simon Willison",
+    "category": "Agents",
+    "summary": "This article presents a method for adding a custom MCP server to Claude and ChatGPT, enabling more flexible and efficient communication between agents.",
+    "why_builders_care": "Builders can use this method to develop more advanced and customized agent systems.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 9,
+    "tags": [
+      "mcp-server",
+      "claud",
+      "chatgpt"
+    ],
+    "confidence_score": 82
+  }
+]
