@@ -1,0 +1,179 @@
+[
+  {
+    "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+    "url": "https://arxiv.org/abs/2607.28595v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Beacon rethinks agentic visual reasoning to improve the success rate of multimodal large language models on complex tasks. It focuses on when and how to perform visual reasoning, rather than just equipping models with a sophisticated yet inefficient reasoning paradigm.",
+    "why_builders_care": "Builders can use Beacon to enhance their multimodal models' performance on tasks that require visual reasoning.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "multimodal",
+      "visual reasoning"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+    "url": "https://arxiv.org/abs/2607.28587v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "PAIChecker is a tool for uncovering and checking PR-issue misalignment in SWE-bench-like benchmarks. It helps evaluate LLM's issue resolution capability by identifying misalignments between pull requests and linked issues.",
+    "why_builders_care": "Builders can use PAIChecker to improve the accuracy of their LLM's issue resolution capabilities.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "llm",
+      "issue resolution",
+      "benchmarking"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+    "url": "https://arxiv.org/abs/2607.28611v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Chimera is a hybrid visual diffusion backbone that processes text, image, and video tokens in a principled scaling recipe. It enables high-resolution image and video generation while reducing computational costs.",
+    "why_builders_care": "Builders can use Chimera to generate high-quality images and videos with reduced computational costs.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "visual diffusion",
+      "transformers",
+      "image generation"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+    "url": "https://arxiv.org/abs/2607.28627v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "ReToken is a single learnable embedding trained as an explicit retrieval token to improve vision-language models for visual retrieval tasks. It helps reduce computational costs and improve performance.",
+    "why_builders_care": "Builders can use ReToken to enhance their vision-language models' performance on visual retrieval tasks.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "vision-language models",
+      "visual retrieval",
+      "retrieval token"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+    "url": "https://arxiv.org/abs/2607.28609v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "OSReward is a standardized evaluation framework for cross-platform computer-use reward models. It helps verify whether a computer-using agent has fulfilled a task instruction, which is central to CUA evaluation, data curation, and reinforcement learning.",
+    "why_builders_care": "Builders can use OSReward to evaluate and improve their computer-use reward models.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "reward models",
+      "evaluation",
+      "computer-use agents"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+    "url": "https://arxiv.org/abs/2607.28581v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "ROAD is a method for 3D shape generation that aligns discriminative semantics with generative models. It reduces computational costs and improves performance by leveraging semantic and structural priors.",
+    "why_builders_care": "Builders can use ROAD to generate high-quality 3D shapes with reduced computational costs.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "3d shape generation",
+      "discriminative semantics",
+      "generative models"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+    "url": "https://arxiv.org/abs/2607.28565v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "MIND is a multimodal intent-driven network that integrates complementary information from diverse imaging modalities to support clinical diagnosis. It uses diffusion transformers to fuse medical images and improve diagnostic accuracy.",
+    "why_builders_care": "Builders can use MIND to improve diagnostic accuracy in medical imaging applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "medical image fusion",
+      "diffusion transformers",
+      "multimodal"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "ScaFE: Data-Efficient Scar Classification with LLM-Generated Clinical Feature Programs",
+    "url": "https://arxiv.org/abs/2607.28538v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "ScaFE is a data-efficient method for scar classification that uses LLM-generated clinical feature programs. It reduces the need for expert-labeled data and improves classification accuracy.",
+    "why_builders_care": "Builders can use ScaFE to improve scar classification accuracy with reduced data requirements.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "scar classification",
+      "llm",
+      "clinical feature programs"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "lamhotsiagian/llm-system-design",
+    "url": "https://github.com/lamhotsiagian/llm-system-design",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "This repository provides a production-grade LLM system design platform and interactive lab, featuring a pure-Python LLM serving, RAG, routing, safety, and agent control plane.",
+    "why_builders_care": "Builders can use this repository to design and deploy their own LLM systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "llm",
+      "system design",
+      "agent control plane"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Adding a custom MCP server to Claude and ChatGPT",
+    "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Agents",
+    "summary": "This article provides a step-by-step guide on adding a custom MCP server to Claude and ChatGPT, enabling more flexible and customizable interactions with these AI models.",
+    "why_builders_care": "Builders can use this guide to customize their interactions with Claude and ChatGPT.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "mcp",
+      "claud",
+      "chatgpt",
+      "customization"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "OpenAI Whisper",
+    "url": "https://github.com/openai/whisper",
+    "source": "GitHub Trending",
+    "category": "Open Source",
+    "summary": "OpenAI Whisper is an open-source library for robust speech recognition via large-scale weak supervision. It provides a simple and efficient way to transcribe audio files.",
+    "why_builders_care": "Builders can use OpenAI Whisper to add speech recognition capabilities to their applications.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "speech recognition",
+      "open-source",
+      "weak supervision"
+    ],
+    "confidence_score": 85
+  }
+]

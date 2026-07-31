@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-30",
-  "total_runs": 8,
+  "last_updated": "2026-07-31",
+  "total_runs": 9,
   "rolling_30d": {
-    "avg_fetched_per_run": 247.5,
-    "avg_curated_per_run": 10.2,
-    "avg_groq_latency_seconds": 5.87,
+    "avg_fetched_per_run": 248.3,
+    "avg_curated_per_run": 10.3,
+    "avg_groq_latency_seconds": 6.07,
     "avg_pipeline_duration_seconds": 16.5
   },
   "history": [
@@ -79,6 +79,15 @@
       "groq_latency_s": 5.523,
       "pipeline_duration_s": 15.56,
       "draft_size_kb": 46.5
+    },
+    {
+      "date": "2026-07-31",
+      "total_fetched": 255,
+      "new_items": 255,
+      "curated_count": 11,
+      "groq_latency_s": 7.723,
+      "pipeline_duration_s": 15.89,
+      "draft_size_kb": 50.3
     }
   ]
 }
