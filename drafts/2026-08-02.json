@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Advancing the price-performance frontier with GPT‑5.6",
+    "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "OpenAI has announced a significant price drop for GPT-5.6, with a 20% reduction for GPT-5.6 Terra and an 80% drop for GPT-5.6 Luna. This move aims to make AI more accessible and affordable for developers and businesses.",
+    "why_builders_care": "Builders can now access more powerful AI models at a lower cost, enabling them to develop more sophisticated applications and solutions.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "llm",
+      "gpt-5.6",
+      "price-performance"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "lamhotsiagian/llm-system-design",
+    "url": "https://github.com/lamhotsiagian/llm-system-design",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "A production-grade LLM System Design platform and interactive lab, featuring a pure-Python LLM serving, RAG, routing, safety, and agent control plane, along with a LangChain + Streamlit UI and local Ollama models.",
+    "why_builders_care": "Builders can leverage this platform to design and deploy their own LLM systems, streamlining their development process and improving overall efficiency.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "system-design",
+      "rag"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Investing in multi-agent AI safety research",
+    "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+    "source": "DeepMind Blog",
+    "category": "Research",
+    "summary": "Google DeepMind and partners have announced a $10M funding call for multi-agent safety research, aiming to improve the safety and reliability of AI systems in complex, dynamic environments.",
+    "why_builders_care": "Builders can contribute to and benefit from this research, developing more robust and trustworthy AI systems that can operate effectively in real-world scenarios.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 8,
+    "tags": [
+      "ai-safety",
+      "multi-agent",
+      "research"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "AirLLM: Inference 2.8T Kimi K3 on a single 4GB GPU",
+    "url": "https://github.com/lyogavin/airllm",
+    "source": "Hacker News",
+    "category": "AI Models",
+    "summary": "A project demonstrating the inference of a 2.8T Kimi K3 model on a single 4GB GPU, showcasing the potential for efficient and cost-effective AI deployment.",
+    "why_builders_care": "Builders can explore this approach to optimize their own AI models for better performance and reduced costs, making AI more accessible to a wider range of applications and users.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 6,
+    "tags": [
+      "llm",
+      "inference",
+      "gpu"
+    ],
+    "confidence_score": 82
+  },
+  {
+    "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+    "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Agents",
+    "summary": "An exploration of the potential of stateless Model Context Protocol (MCP) and its implications for AI development, including the creation of tools like mcp-explorer and datasette-mcp.",
+    "why_builders_care": "Builders can delve into the possibilities of stateless MCP, leveraging its flexibility and scalability to create more sophisticated and efficient AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "mcp",
+      "stateless",
+      "agents"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Running Kimi K3 on MI355X at Better Performance per Dollar Than B300",
+    "url": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+    "source": "Hacker News",
+    "category": "Infrastructure",
+    "summary": "A comparison of running Kimi K3 on MI355X versus B300, highlighting the performance and cost advantages of the former.",
+    "why_builders_care": "Builders can consider the MI355X as a viable option for running Kimi K3, potentially improving their project's performance and budget efficiency.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 7,
+    "tags": [
+      "kimi-k3",
+      "mi355x",
+      "performance"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Black Forest Labs FLUX 3 - Multimodal Flow Models",
+    "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+    "source": "Latent Space",
+    "category": "AI Models",
+    "summary": "An overview of Black Forest Labs' FLUX 3, a multimodal flow model that outperforms other models like Seedance 2.0, Gemini Omni, and Grok Imagine.",
+    "why_builders_care": "Builders can explore the capabilities of FLUX 3 for their own projects, potentially leveraging its strengths in multimodal processing for more effective and engaging applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 9,
+    "tags": [
+      "flux-3",
+      "multimodal",
+      "flow-models"
+    ],
+    "confidence_score": 89
+  },
+  {
+    "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+    "url": "https://openai.com/index/avatarin",
+    "source": "OpenAI Blog",
+    "category": "Research",
+    "summary": "A case study on how avatarin utilized OpenAI's GPT-Realtime to create a 24/7 retail agent, providing multilingual support to Yamada Denki shoppers.",
+    "why_builders_care": "Builders can learn from avatarin's approach to building a successful retail agent, applying similar strategies to their own customer service and support applications.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "gpt-realtime",
+      "retail-agent",
+      "customer-support"
+    ],
+    "confidence_score": 86
+  },
+  {
+    "title": "CostPerPrompt – Live AI API pricing and real-workload cost calculators",
+    "url": "https://costperprompt.com/",
+    "source": "Hacker News",
+    "category": "AI Tools",
+    "summary": "A tool for calculating the costs of AI API usage, providing real-workload cost estimates and live pricing information.",
+    "why_builders_care": "Builders can use CostPerPrompt to better understand and manage the costs associated with AI API usage, making more informed decisions about their project's budget and resource allocation.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 4,
+    "tags": [
+      "costperprompt",
+      "ai-api",
+      "cost-estimation"
+    ],
+    "confidence_score": 84
+  },
+  {
+    "title": "AFan4724/clone-chat",
+    "url": "https://github.com/AFan4724/clone-chat",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "A local-first LLM agent that learns the tone, stickers, and reply rhythm of a chat partner from real chat history, then chats as them, supporting voice, proactive messages, and long-term memory.",
+    "why_builders_care": "Builders can explore the potential of clone-chat for creating personalized and engaging chat experiences, potentially integrating this technology into their own applications and services.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 11,
+    "tags": [
+      "clone-chat",
+      "llm-agent",
+      "chat-experience"
+    ],
+    "confidence_score": 91
+  }
+]

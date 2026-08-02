@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-02",
+  "pipeline_duration_seconds": 144.87,
+  "fetch": {
+    "total_fetched": 205,
+    "new_items": 205,
+    "duplicates_removed": 0,
+    "source_counts": {
+      "fetch_arxiv": 0,
+      "fetch_hackernews": 30,
+      "fetch_github_search": 30,
+      "fetch_github_trending": 20,
+      "fetch_huggingface_papers": 0,
+      "fetch_huggingface_blog": 20,
+      "fetch_paperswithcode": 0,
+      "fetch_openai_blog": 20,
+      "fetch_anthropic_blog": 13,
+      "fetch_deepmind_blog": 20,
+      "fetch_simon_willison": 20,
+      "fetch_latentspace": 20,
+      "fetch_devto": 12,
+      "fetch_reddit": 0
+    }
+  },
+  "ranking": {
+    "total_ranked": 205,
+    "after_ranking": 50,
+    "top_score": 62.5,
+    "avg_score": 35.48,
+    "cutoff_score": 41.04
+  },
+  "curation": {
+    "items_in": 50,
+    "items_out": 10,
+    "groq_latency_seconds": 7.128
+  },
+  "draft": {
+    "size_kb": 47.8
+  }
+}

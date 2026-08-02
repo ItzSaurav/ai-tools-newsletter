@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "source_counts": {
-    "fetch_arxiv": 30,
+    "fetch_arxiv": 0,
     "fetch_hackernews": 30,
     "fetch_github_search": 30,
     "fetch_github_trending": 20,
@@ -16,7 +16,7 @@
     "fetch_devto": 12,
     "fetch_reddit": 0
   },
-  "total_fetched": 235,
+  "total_fetched": 205,
   "duplicates_removed": 0,
-  "new_items": 235
+  "new_items": 205
 }
