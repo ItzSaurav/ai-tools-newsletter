@@ -1,83 +1,19 @@
 {
-  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI models, agents, and research, with a focus on practical applications and real-world implications. From multimodal models to AI safety and alignment, we've curated the top 12 articles that matter most to builders.",
+  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agent frameworks, and inference optimization, highlighting key research papers, open-source releases, and industry developments that can inform and improve the work of AI engineers, ML researchers, and technical founders.",
   "curated_items": [
     {
-      "title": "The Parts Are Greater Than the Sum: Automated Task Sequencing for Efficient Training of Multi-Policy LLMs",
-      "url": "https://arxiv.org/abs/2607.29601v1",
+      "title": "LiveMem: Maintaining Memory State Continuity in Long-Running LLM Inference",
+      "url": "https://arxiv.org/abs/2608.02515v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper proposes a method for automated task sequencing to improve the efficiency of training multi-policy LLMs. The approach reduces interference and catastrophic forgetting, leading to better transfer and adaptation. The authors demonstrate the effectiveness of their method through experiments.",
-      "why_builders_care": "Builders can use this approach to improve the efficiency of their LLM training pipelines and adapt to new tasks and domains.",
+      "summary": "LiveMem is a method for maintaining memory state continuity in long-running LLM inference, addressing the issue of context retention and retrieval in interactive systems. It formulates the problem as a sequence of interactions and proposes a solution based on persistent state management.",
+      "why_builders_care": "Builders can use LiveMem to develop more effective and efficient interactive AI systems that can handle long-running conversations and tasks.",
       "difficulty": "Advanced",
-      "reading_time_mins": 15,
+      "reading_time_mins": 10,
       "tags": [
         "llm",
-        "task sequencing",
-        "efficient training"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything",
-      "source": "Simon Willison",
-      "category": "AI Models",
-      "summary": "This article discusses the recent price drop of GPT-5.6 and its implications for the AI industry. The author highlights the improved price-performance ratio and the potential for increased adoption.",
-      "why_builders_care": "Builders can take advantage of the improved price-performance ratio to deploy more efficient and cost-effective AI models.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 5,
-      "tags": [
-        "gpt-5.6",
-        "price-performance",
-        "ai models"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
-      "url": "https://arxiv.org/abs/2607.29626v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper introduces AgentHPOBench, a benchmark for evaluating LLM agents as sequential hyperparameter optimizers. The benchmark assesses the ability of LLM agents to conduct experiments and optimize hyperparameters.",
-      "why_builders_care": "Builders can use AgentHPOBench to evaluate and improve the performance of their LLM agents in hyperparameter optimization tasks.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "llm agents",
-        "hyperparameter optimization",
-        "benchmark"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "Investing in multi-agent AI safety research",
-      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
-      "source": "DeepMind Blog",
-      "category": "Research",
-      "summary": "This article announces a $10M funding call for multi-agent AI safety research. The goal is to advance the development of safe and reliable multi-agent AI systems.",
-      "why_builders_care": "Builders can apply for funding to support their research in multi-agent AI safety and contribute to the development of more reliable AI systems.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 5,
-      "tags": [
-        "multi-agent ai",
-        "safety research",
-        "funding"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "CodeShrink: Adaptive Visual Compression for Efficient Multimodal Code Understanding",
-      "url": "https://arxiv.org/abs/2607.29637v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes CodeShrink, a method for adaptive visual compression of source code. The approach reduces the input costs of multimodal large language models (MLLMs) and improves code understanding.",
-      "why_builders_care": "Builders can use CodeShrink to improve the efficiency of their MLLM-based code analysis and understanding tools.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "multimodal code understanding",
-        "visual compression",
-        "mlm"
+        "inference",
+        "memory"
       ],
       "confidence_score": 90
     },
@@ -86,96 +22,144 @@
       "url": "https://github.com/lamhotsiagian/llm-system-design",
       "source": "GitHub",
       "category": "Agents",
-      "summary": "This repository provides a production-grade LLM system design platform and interactive lab. It features a pure-Python LLM serving, RAG, routing, safety, and agent control plane.",
-      "why_builders_care": "Builders can use this platform to design and deploy their own LLM-based systems and agents.",
+      "summary": "This repository provides a production-grade LLM system design platform, featuring a pure-Python LLM serving, RAG, routing, safety, and agent control plane, along with a LangChain + Streamlit UI and local Ollama models.",
+      "why_builders_care": "Builders can leverage this platform to design and deploy their own LLM systems, integrating various components and tools for efficient and safe operation.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "llm",
+        "system design",
+        "agents"
+      ],
+      "confidence_score": 85
+    },
+    {
+      "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+      "url": "https://arxiv.org/abs/2608.02585v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "GradCuit is a method for optimizing instance-specific continuous states at test time, enabling robust and interpretable latent reasoning in large language models. It connects these states to the reasoning trajectory through decoded tokens.",
+      "why_builders_care": "Builders can apply GradCuit to improve the performance and interpretability of their LLMs, especially in tasks requiring test-time adaptation and reasoning.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "llm",
+        "latent reasoning",
+        "optimization"
+      ],
+      "confidence_score": 92
+    },
+    {
+      "title": "A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI",
+      "url": "https://arxiv.org/abs/2608.02553v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper presents a taxonomy of cognitive capability gaps in generative and agentic AI, highlighting the limitations and challenges of current AI systems in areas such as sustained reasoning, adaptive behavior, and self-regulation.",
+      "why_builders_care": "Builders can use this taxonomy to identify and address the cognitive gaps in their AI systems, guiding the development of more advanced and capable AI models.",
       "difficulty": "Intermediate",
       "reading_time_mins": 10,
       "tags": [
-        "llm system design",
-        "rag",
-        "agent control plane"
+        "ai",
+        "cognitive gaps",
+        "taxonomy"
       ],
-      "confidence_score": 85
+      "confidence_score": 88
     },
     {
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "url": "https://openai.com/index/avatarin",
-      "source": "OpenAI Blog",
-      "category": "Research",
-      "summary": "This article discusses how avatarin built a 24/7 retail agent using GPT-Realtime. The agent provides multilingual support and has received positive feedback from users.",
-      "why_builders_care": "Builders can use GPT-Realtime to build their own conversational agents and provide 24/7 support to their users.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 5,
-      "tags": [
-        "gpt-realtime",
-        "conversational agents",
-        "retail"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "FibVLA: An Efficient Temporal Vision-Language-Action Model with Fibonacci Sampling",
-      "url": "https://arxiv.org/abs/2607.29596v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes FibVLA, a temporal vision-language-action model that uses Fibonacci sampling to improve efficiency. The model is designed for embodied AI applications.",
-      "why_builders_care": "Builders can use FibVLA to develop more efficient and effective embodied AI systems that can perceive and interact with their environment.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "temporal vision-language-action",
-        "fibonacci sampling",
-        "embodied ai"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "AirLLM 70B inference with single 4GB GPU",
-      "url": "https://github.com/lyogavin/airllm",
-      "source": "Hacker News",
-      "category": "AI Models",
-      "summary": "This repository provides a implementation of AirLLM, a 70B parameter LLM that can run on a single 4GB GPU. The model is designed for efficient inference and can be used for a variety of NLP tasks.",
-      "why_builders_care": "Builders can use AirLLM to deploy efficient and cost-effective LLMs for their NLP applications.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 10,
-      "tags": [
-        "airllm",
-        "70b parameters",
-        "4gb gpu"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "RayViT: Ray-Conditioned Visual Representations for Viewpoint-Robust Imitation Learning",
-      "url": "https://arxiv.org/abs/2607.29622v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes RayViT, a ray-conditioned vision transformer encoder for viewpoint-robust imitation learning. The approach improves the robustness of learned policies to camera perturbations.",
-      "why_builders_care": "Builders can use RayViT to develop more robust and reliable imitation learning systems that can adapt to changing environments and viewpoints.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "ray-conditioned vision",
-        "viewpoint-robust imitation learning",
-        "rayvit"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "vedaant00/opendot",
-      "url": "https://github.com/vedaant00/opendot",
-      "source": "GitHub",
+      "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
+      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "source": "Simon Willison",
       "category": "Agents",
-      "summary": "This repository provides a terminal AI agent that can be fully undone, with every file and shell action snapshotted and reversible. The agent is model-agnostic and connects to 1000+ app tools and MCP servers.",
-      "why_builders_care": "Builders can use this agent to develop more transparent and accountable AI systems that can be easily audited and debugged.",
+      "summary": "This article discusses the recent developments in the Model Context Protocol (MCP), particularly the introduction of stateless MCP, and its potential applications and implications for AI agents and systems.",
+      "why_builders_care": "Builders can explore the possibilities of stateless MCP and its integration with various tools and frameworks, such as mcp-explorer and datasette-mcp, to enhance their AI systems.",
       "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "mcp",
+        "stateless",
+        "agents"
+      ],
+      "confidence_score": 82
+    },
+    {
+      "title": "artbyjazi/autoclip",
+      "url": "https://github.com/artbyjazi/autoclip",
+      "source": "GitHub",
+      "category": "AI Models",
+      "summary": "Autoclip is an open-source, local-first AI video clipper that can process long videos and produce caption-burned, speaker-tracked clips in a 9:16 format, using Whisper and Ollama.",
+      "why_builders_care": "Builders can utilize Autoclip to develop their own video processing and clipping tools, leveraging the power of AI for efficient and accurate video analysis.",
+      "difficulty": "Beginner",
+      "reading_time_mins": 6,
+      "tags": [
+        "ai",
+        "video",
+        "clipping"
+      ],
+      "confidence_score": 80
+    },
+    {
+      "title": "GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "source": "OpenAI Blog",
+      "category": "Agents",
+      "summary": "This article discusses the recent release of GPT-5.6, which combines advanced intelligence and efficiency, enabling more effective and productive AI applications and workflows.",
+      "why_builders_care": "Builders can take advantage of GPT-5.6 to develop more powerful and efficient AI systems, integrating the latest advancements in language models and agent technologies.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "gpt-5.6",
+        "intelligence",
+        "efficiency"
+      ],
+      "confidence_score": 90
+    },
+    {
+      "title": "Black Forest Labs FLUX 3 - Multimodal Flow Models",
+      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+      "source": "Latent Space",
+      "category": "AI Models",
+      "summary": "FLUX 3 is a multimodal flow model that outperforms other models like Seedance 2.0, Gemini Omni, and Grok Imagine, and also features a video-action robotics model called FLUX-mimic.",
+      "why_builders_care": "Builders can explore the capabilities of FLUX 3 and its applications in multimodal processing and robotics, potentially integrating it into their own AI projects.",
+      "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "terminal ai agent",
-        "reversible actions",
-        "model-agnostic"
+        "flux 3",
+        "multimodal",
+        "flow models"
       ],
       "confidence_score": 85
+    },
+    {
+      "title": "juxhinr/bindwidth",
+      "url": "https://github.com/juxhinr/bindwidth",
+      "source": "GitHub",
+      "category": "AI Models",
+      "summary": "Bindwidth is an evidence-aware on-prem LLM inference sizing and TCO calculator, helping builders to optimize their AI systems for better performance and cost-effectiveness.",
+      "why_builders_care": "Builders can use Bindwidth to calculate the optimal sizing and cost of their LLM inference workloads, ensuring efficient and scalable AI operations.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "llm",
+        "inference",
+        "sizing"
+      ],
+      "confidence_score": 80
+    },
+    {
+      "title": "CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs",
+      "url": "https://arxiv.org/abs/2608.02578v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "CoWAM is a method for selective policy intervention in World Action Models (WAMs), enabling more effective and efficient decision-making in complex environments.",
+      "why_builders_care": "Builders can apply CoWAM to improve the performance and adaptability of their AI systems, particularly in tasks requiring coordinated action and policy intervention.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "cowam",
+        "wams",
+        "policy intervention"
+      ],
+      "confidence_score": 92
     }
   ]
 }
