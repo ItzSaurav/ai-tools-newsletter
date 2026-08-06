@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Spoken Function Calling: A New Perspective on Spoken Language Understanding for Large Audio Language Models",
+    "url": "https://arxiv.org/abs/2608.05126v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces a new perspective on spoken language understanding for large audio language models, focusing on spoken function calling. The approach aims to improve the interaction between humans and agents by enabling seamless spoken language understanding.",
+    "why_builders_care": "Builders can use this research to develop more effective spoken language understanding systems for their AI-powered applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "spoken-language",
+      "nlp"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "ferrox",
+    "url": "https://github.com/antonellof/ferrox",
+    "source": "GitHub",
+    "category": "Research",
+    "summary": "Ferrox is a pure-Rust GGUF inference engine with quantized CPU, Metal, and CUDA kernels, as well as MoE support and an OpenAI-compatible server. It has been benchmarked against llama.cpp.",
+    "why_builders_care": "Builders can use Ferrox to optimize their AI inference workloads and improve performance.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "inference-optimization",
+      "rust",
+      "cuda"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "CoPlan: A Trustworthy Co-Intelligence Interface for Care Planning through Role-Based Contestable Argument Graphs",
+    "url": "https://arxiv.org/abs/2608.05107v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces CoPlan, a trustworthy co-intelligence interface for care planning that uses role-based contestable argument graphs. The approach enables stakeholders to inspect, challenge, and revise care plans.",
+    "why_builders_care": "Builders can use CoPlan to develop more transparent and collaborative care planning systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "care-planning",
+      "co-intelligence",
+      "argument-graphs"
+    ],
+    "confidence_score": 82
+  },
+  {
+    "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
+    "url": "https://arxiv.org/abs/2608.05144v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Argus is a general-purpose agentic runtime for long-horizon reasoning that enables agents to persist and pivot when evidence supports their current approach or reveals failure.",
+    "why_builders_care": "Builders can use Argus to develop more effective and adaptive AI agents for long-horizon reasoning tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "agentic-runtime",
+      "long-horizon-reasoning",
+      "persistence"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
+    "url": "https://arxiv.org/abs/2608.05139v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces the concept of skill-native LLMs and proposes a skill entropy metric for benchmarking and training long-horizon reasoning models.",
+    "why_builders_care": "Builders can use this research to develop more effective and specialized LLMs for long-horizon reasoning tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "llm",
+      "skill-entropy",
+      "long-horizon-reasoning"
+    ],
+    "confidence_score": 83
+  },
+  {
+    "title": "IRIS: A Visual Cortex-Inspired Framework for Analyzing Orientation Selectivity in Vision Transformers",
+    "url": "https://arxiv.org/abs/2608.05122v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "IRIS is a visual cortex-inspired framework for analyzing orientation selectivity in vision transformers. The approach provides insights into how ViTs encode low-level features.",
+    "why_builders_care": "Builders can use IRIS to develop more effective and interpretable vision transformers for their applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "vision-transformers",
+      "orientation-selectivity",
+      "visual-cortex"
+    ],
+    "confidence_score": 81
+  },
+  {
+    "title": "autoclip",
+    "url": "https://github.com/artbyjazi/autoclip",
+    "source": "GitHub",
+    "category": "AI Models",
+    "summary": "Autoclip is an open-source, local-first AI video clipper that uses Whisper and Ollama for speaker tracking and caption burning.",
+    "why_builders_care": "Builders can use Autoclip to develop more efficient and automated video editing tools.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "video-clipper",
+      "whisper",
+      "ollama"
+    ],
+    "confidence_score": 78
+  },
+  {
+    "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Agents",
+    "summary": "This release of LLM introduces several new features, including support for visible reasoning traces, server-side provider tools, and redesigned content-adaptive logging.",
+    "why_builders_care": "Builders can use this updated LLM to develop more transparent and effective AI agents.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "llm",
+      "reasoning-traces",
+      "openai-responses"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "bindwidth",
+    "url": "https://github.com/juxhinr/bindwidth",
+    "source": "GitHub",
+    "category": "AI Models",
+    "summary": "Bindwidth is an evidence-aware on-prem LLM inference sizing and TCO calculator that helps builders optimize their AI workloads.",
+    "why_builders_care": "Builders can use Bindwidth to optimize their AI inference workloads and reduce costs.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "inference-optimization",
+      "tco-calculator",
+      "llm"
+    ],
+    "confidence_score": 79
+  },
+  {
+    "title": "GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "source": "OpenAI Blog",
+    "category": "Agents",
+    "summary": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
+    "why_builders_care": "Builders can use GPT-5.6 to develop more efficient and effective AI agents for their applications.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "gpt-5.6",
+      "ai-efficiency",
+      "agentic-workflows"
+    ],
+    "confidence_score": 82
+  }
+]
