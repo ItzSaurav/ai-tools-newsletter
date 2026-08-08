@@ -1,0 +1,162 @@
+[
+  {
+    "title": "khoj-ai / khoj",
+    "url": "https://github.com/khoj-ai/khoj",
+    "source": "GitHub Trending",
+    "category": "Research",
+    "summary": "Khoj is a self-hostable AI second brain that allows users to get answers from the web or their documents, build custom agents, and schedule automations. It supports various LLMs, including GPT, Claude, and LLaMA.",
+    "why_builders_care": "Builders can use Khoj to create custom AI-powered tools and automate tasks, making it a valuable resource for those looking to leverage AI in their workflows.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "ai",
+      "automation"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
+    "url": "https://arxiv.org/abs/2608.06329v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This paper introduces a framework for evaluating benchmarks for conversational agents, highlighting the importance of assessing benchmark quality to ensure reliable evaluations.",
+    "why_builders_care": "Builders can use this framework to evaluate and improve the quality of their conversational agent benchmarks, leading to more effective and reliable AI systems.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "conversational-agents",
+      "benchmarks",
+      "evaluation"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "wanmol/goal-flow",
+    "url": "https://github.com/wanmol/goal-flow",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "Goal-Flow is a production-grade framework for building agent loops, allowing users to combine workflow graphs and agent loops, transpile Dify DSL to runnable code, and swap wire protocols.",
+    "why_builders_care": "Builders can use Goal-Flow to create complex agent-based systems, enabling more sophisticated and autonomous AI applications.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "agent-loops",
+      "workflow-graphs",
+      "dify"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Lybrary – An iOS browser with an AI agent inside",
+    "url": "https://apps.apple.com/us/app/buddy-the-ai-mobile-browser/id6788047483",
+    "source": "Hacker News",
+    "category": "Agents",
+    "summary": "Lybrary is an iOS browser that integrates an AI agent, providing users with a more personalized and interactive browsing experience.",
+    "why_builders_care": "Builders can explore the potential of integrating AI agents into mobile applications, enhancing user experience and creating new opportunities for AI-driven innovation.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "ios",
+      "browser"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "source": "OpenAI Blog",
+    "category": "Agents",
+    "summary": "This article discusses the latest advancements in GPT-5.6, highlighting its improved efficiency and intelligence capabilities, and their implications for AI applications.",
+    "why_builders_care": "Builders can leverage the improved capabilities of GPT-5.6 to develop more efficient and effective AI systems, driving innovation and progress in the field.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "gpt",
+      "efficiency",
+      "intelligence"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "formetaohy/Flint",
+    "url": "https://github.com/formetaohy/Flint",
+    "source": "GitHub",
+    "category": "AI Models",
+    "summary": "Flint is a fast, cross-platform LLM inference engine written in Rust, allowing for efficient and flexible deployment of AI models.",
+    "why_builders_care": "Builders can use Flint to deploy AI models in a variety of environments, making it easier to integrate AI into their applications and workflows.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "llm",
+      "inference",
+      "rust"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Black Forest Labs FLUX 3 - Multimodal Flow Models",
+    "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+    "source": "Latent Space",
+    "category": "AI Models",
+    "summary": "This article introduces FLUX 3, a multimodal flow model that outperforms other models in various tasks, and discusses its potential applications and implications.",
+    "why_builders_care": "Builders can explore the capabilities of FLUX 3 and its potential applications, driving innovation and progress in the field of AI research.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "multimodal",
+      "flow-models",
+      "ai"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
+    "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Agents",
+    "summary": "This article discusses the latest release of LLM, highlighting its new features and capabilities, including support for reasoning traces and OpenAI Responses.",
+    "why_builders_care": "Builders can leverage the new features of LLM to develop more sophisticated and effective AI systems, driving innovation and progress in the field.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "reasoning-traces",
+      "openai"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "Cross platform, portable and CPU accelerated AI inference with Go 1.27",
+    "url": "https://blog.devgenius.io/achieving-local-ai-inference-with-go-1-27s-simd-package-e8875f567e35?sk=5162348584951937a84caba3ca9a1fc0",
+    "source": "Hacker News",
+    "category": "Infrastructure",
+    "summary": "This article discusses the potential of using Go 1.27 for cross-platform, portable, and CPU-accelerated AI inference, highlighting its benefits and implications.",
+    "why_builders_care": "Builders can explore the potential of using Go 1.27 for AI inference, enabling more efficient and flexible deployment of AI models.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "go",
+      "ai",
+      "inference"
+    ],
+    "confidence_score": 75
+  },
+  {
+    "title": "Introducing Muse Code and Muse Spark 1.2",
+    "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "This article introduces Muse Code and Muse Spark 1.2, highlighting their capabilities and potential applications in the field of AI research.",
+    "why_builders_care": "Builders can explore the capabilities of Muse Code and Muse Spark 1.2, driving innovation and progress in the field of AI research.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "muse-code",
+      "muse-spark",
+      "ai"
+    ],
+    "confidence_score": 80
+  }
+]
