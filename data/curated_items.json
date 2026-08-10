@@ -1,165 +1,181 @@
 {
-  "intro": "This edition of The Builder's Brief focuses on the latest advancements in AI models, tools, and research, with a particular emphasis on agent frameworks, multimodal models, and inference optimization. The selected articles provide insights into the current state of AI development and offer practical advice for builders looking to improve their skills.",
+  "intro": "This edition of The Builder's Brief focuses on recent advancements in AI models, agents, and research, highlighting key developments that can be applied to production AI systems today. From new open-source LLMs to innovative agent frameworks, these curated items provide valuable insights and tools for AI engineers, ML researchers, and technical founders.",
   "curated_items": [
     {
-      "title": "antonellof/ferrox",
-      "url": "https://github.com/antonellof/ferrox",
-      "source": "GitHub",
+      "title": "Diffusion LLMs as Targets and Adversaries",
+      "url": "https://arxiv.org/abs/2608.07430v1",
+      "source": "arXiv",
       "category": "Research",
-      "summary": "Ferrox is a pure-Rust GGUF inference engine that supports quantized CPU, Metal, and CUDA kernels, as well as MoE support and an OpenAI-compatible server. It has been benchmarked against llama.cpp.",
-      "why_builders_care": "Builders can use Ferrox to optimize their AI models for better performance and efficiency.",
+      "summary": "This research investigates diffusion large language models (DLLMs) as both targets and adversaries, exposing mechanistic vulnerabilities in diffusion-based architectures. The study highlights the importance of understanding internal safety mechanisms in DLLMs.",
+      "why_builders_care": "Builders can apply the findings to improve the security and reliability of their AI systems.",
       "difficulty": "Advanced",
-      "reading_time_mins": 10,
+      "reading_time_mins": 15,
       "tags": [
         "llm",
-        "inference",
-        "rust"
+        "diffusion",
+        "security"
       ],
       "confidence_score": 90
     },
     {
-      "title": "Benchmarking the Benchmarks: Evaluating Benchmarks for Conversational Agents",
-      "url": "https://arxiv.org/abs/2608.06329v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper introduces a framework for evaluating the quality of benchmarks for conversational agents, highlighting the importance of consistent tasks, realistic scenarios, and comprehensive policy coverage.",
-      "why_builders_care": "Builders can use this framework to assess the effectiveness of their conversational agents and identify areas for improvement.",
+      "title": "Ferrox: Pure-Rust GGUF Inference Engine",
+      "url": "https://github.com/antonellof/ferrox",
+      "source": "GitHub",
+      "category": "Open Source",
+      "summary": "Ferrox is a pure-Rust GGUF inference engine that supports quantized CPU, Metal, and CUDA kernels, as well as MoE support and an OpenAI-compatible server. It has been benchmarked against llama.cpp.",
+      "why_builders_care": "Builders can utilize Ferrox to optimize their AI inference workloads.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 15,
+      "reading_time_mins": 10,
       "tags": [
-        "conversational-agents",
-        "benchmarks",
-        "evaluation"
+        "inference",
+        "rust",
+        "gguf"
       ],
       "confidence_score": 85
     },
     {
-      "title": "NeSy-RAG: Neuro-Symbolic RAG for Explainable Question Answering",
-      "url": "https://arxiv.org/abs/2608.06292v1",
+      "title": "A Picture is Worth a Thousand Tokens",
+      "url": "https://arxiv.org/abs/2608.07427v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "NeSy-RAG is a neuro-symbolic approach to retrieval-augmented generation (RAG) that provides explainable question answering by grounding large language models in external knowledge and attributing reasoning steps to specific sources.",
-      "why_builders_care": "Builders can use NeSy-RAG to develop more transparent and trustworthy question answering systems.",
+      "summary": "This research explores how vision language models can reduce AI energy costs while improving accuracy. The study demonstrates the potential of multimodal models in reducing the environmental impact of AI systems.",
+      "why_builders_care": "Builders can apply the findings to develop more efficient and environmentally friendly AI systems.",
       "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
-        "rag",
-        "explainability",
-        "neuro-symbolic"
+        "multimodal",
+        "energy",
+        "efficiency"
       ],
       "confidence_score": 88
     },
     {
-      "title": "QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction",
-      "url": "https://arxiv.org/abs/2608.06294v1",
+      "title": "ResidencyRL: Reinforcement Learning in Simulated Clinical Environments",
+      "url": "https://arxiv.org/abs/2608.07418v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "QuanTiMedAI is a quantum-enhanced time-series model that leverages agentic AI to predict cardiac arrest mortality, demonstrating the potential of hybrid approaches in healthcare applications.",
-      "why_builders_care": "Builders can explore the application of quantum-enhanced models in their own projects, particularly in areas where complex time-series data is involved.",
+      "summary": "This research introduces ResidencyRL, a framework for reinforcement learning in simulated clinical environments. The study demonstrates the potential of ResidencyRL in improving medical education and clinical decision-making.",
+      "why_builders_care": "Builders can apply the findings to develop more effective AI-powered medical education and decision-support systems.",
       "difficulty": "Advanced",
-      "reading_time_mins": 14,
+      "reading_time_mins": 15,
       "tags": [
-        "quantum",
-        "time-series",
-        "healthcare"
+        "reinforcement learning",
+        "medical education",
+        "clinical decision-making"
+      ],
+      "confidence_score": 92
+    },
+    {
+      "title": "KADATH: Evolutionary Multi-Agent Runtime",
+      "url": "https://github.com/i3T4AN/KADATH",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "KADATH is an evolutionary multi-agent runtime that breeds, evaluates, and improves autonomous agents across reproducible epochs to converge on optimization of a goal.",
+      "why_builders_care": "Builders can utilize KADATH to develop more efficient and adaptive AI-powered systems.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 10,
+      "tags": [
+        "multi-agent",
+        "evolutionary algorithms",
+        "optimization"
       ],
       "confidence_score": 82
     },
     {
-      "title": "llm-anthropic 0.26",
-      "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
-      "source": "Simon Willison",
-      "category": "Agents",
-      "summary": "The llm-anthropic 0.26 release includes new features enabled by LLM 0.32, such as support for reasoning traces, OpenAI responses, server-side tools, and smarter logging.",
-      "why_builders_care": "Builders can utilize the updated features in llm-anthropic 0.26 to enhance their agent development workflows.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 8,
-      "tags": [
-        "llm",
-        "anthropic",
-        "agents"
-      ],
-      "confidence_score": 80
-    },
-    {
-      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
-      "url": "https://arxiv.org/abs/2608.06362v1",
+      "title": "GeoBenchLLM: A Comprehensive Benchmark for Evaluating LLMs on Geo-Related Tasks",
+      "url": "https://arxiv.org/abs/2608.07411v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "AV-AIVAT is a method for evaluating agents in imperfect-information games that reduces costs by up to 74x through certified anytime-valid stopping, making agent evaluation more efficient and accessible.",
-      "why_builders_care": "Builders can apply AV-AIVAT to significantly reduce the costs associated with evaluating their agents in complex game environments.",
+      "summary": "This research introduces GeoBenchLLM, a comprehensive benchmark for evaluating large language models on geo-related tasks. The study provides insights into the strengths and weaknesses of LLMs in geospatial applications.",
+      "why_builders_care": "Builders can use GeoBenchLLM to evaluate and improve the performance of their AI systems in geospatial applications.",
       "difficulty": "Advanced",
-      "reading_time_mins": 11,
+      "reading_time_mins": 12,
       "tags": [
-        "agent-evaluation",
-        "imperfect-information-games",
-        "efficiency"
+        "llm",
+        "geospatial",
+        "benchmarking"
+      ],
+      "confidence_score": 89
+    },
+    {
+      "title": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+      "url": "https://arxiv.org/abs/2608.07460v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This research introduces CreativeInstruct, a framework for teaching large language models to balance quality, creativity, and diversity. The study demonstrates the potential of CreativeInstruct in improving the performance of LLMs in creative tasks.",
+      "why_builders_care": "Builders can apply the findings to develop more creative and diverse AI-powered systems.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 15,
+      "tags": [
+        "llm",
+        "creativity",
+        "diversity"
+      ],
+      "confidence_score": 91
+    },
+    {
+      "title": "Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools",
+      "url": "https://arxiv.org/abs/2608.07446v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This research provides a taxonomy-driven analysis of open-source AI risk mitigation tools. The study highlights the importance of understanding and addressing AI risks in production systems.",
+      "why_builders_care": "Builders can utilize the taxonomy to identify and mitigate AI risks in their systems.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 10,
+      "tags": [
+        "ai risk",
+        "mitigation",
+        "taxonomy"
       ],
       "confidence_score": 86
     },
     {
-      "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
-      "url": "https://arxiv.org/abs/2608.06346v1",
+      "title": "Blast Radius: Predictive Memory Management for Agentic Coding",
+      "url": "https://arxiv.org/abs/2608.07440v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "TRAJDEBUG is a method for tracing error lifecycles in long-horizon agent trajectories to identify critical failures, facilitating more effective debugging and improvement of agentic systems.",
-      "why_builders_care": "Builders can use TRAJDEBUG to pinpoint and address critical failures in their agent systems, leading to more robust and reliable performance.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 13,
-      "tags": [
-        "debugging",
-        "agent-trajectories",
-        "error-lifecycle"
-      ],
-      "confidence_score": 84
-    },
-    {
-      "title": "Model Genome: Fingerprinting Whether an LLM Was Trained from Scratch or Derived",
-      "url": "https://huggingface.co/blog/mayafree/model-dna",
-      "source": "Hacker News",
-      "category": "AI Models",
-      "summary": "Model Genome is a technique for fingerprinting large language models to determine whether they were trained from scratch or derived from another model, providing insights into model provenance and potential intellectual property implications.",
-      "why_builders_care": "Builders can use Model Genome to verify the origins of their LLMs and ensure compliance with licensing and intellectual property requirements.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 9,
-      "tags": [
-        "llm",
-        "model-genome",
-        "provenance"
-      ],
-      "confidence_score": 81
-    },
-    {
-      "title": "Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations",
-      "url": "https://arxiv.org/abs/2608.06305v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes moving beyond top-K retrieval in favor of interpretable agentic operations that provide more transparent and controllable information retrieval and generation processes.",
-      "why_builders_care": "Builders can adopt these alternative approaches to enhance the interpretability and reliability of their information retrieval and generation systems.",
+      "summary": "This research introduces Blast Radius, a predictive memory management layer for agentic coding. The study demonstrates the potential of Blast Radius in improving the efficiency and scalability of AI systems.",
+      "why_builders_care": "Builders can apply the findings to develop more efficient and scalable AI-powered systems.",
       "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
-        "retrieval",
-        "agentic-operations",
-        "interpretability"
+        "agentic coding",
+        "memory management",
+        "efficiency"
       ],
-      "confidence_score": 83
+      "confidence_score": 90
     },
     {
-      "title": "On-Policy Self-Distillation without Any Supervision",
-      "url": "https://arxiv.org/abs/2608.06296v1",
+      "title": "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
+      "url": "https://arxiv.org/abs/2608.07438v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper introduces a method for on-policy self-distillation that eliminates the need for external supervision, enabling more flexible and efficient model training and improvement.",
-      "why_builders_care": "Builders can apply this method to simplify their model training processes and reduce dependencies on labeled data or external guidance.",
+      "summary": "This research introduces PsychoAgent, a cognitive architecture for LLM agents that separates factual and affective memory and integrates both through conflict-aware mechanisms.",
+      "why_builders_care": "Builders can utilize PsychoAgent to develop more human-like and emotionally intelligent AI systems.",
       "difficulty": "Advanced",
+      "reading_time_mins": 15,
+      "tags": [
+        "llm",
+        "cognitive architecture",
+        "affective computing"
+      ],
+      "confidence_score": 93
+    },
+    {
+      "title": "Goal-Flow: Graph-Orchestrated Agent Loop",
+      "url": "https://github.com/wanmol/goal-flow",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "Goal-Flow is a production-grade framework on LangGraph that combines workflow graphs and agent loops, transpiling Dify DSL to runnable code and swapping wire protocols.",
+      "why_builders_care": "Builders can utilize Goal-Flow to develop more efficient and scalable AI-powered systems.",
+      "difficulty": "Intermediate",
       "reading_time_mins": 10,
       "tags": [
-        "self-distillation",
-        "on-policy",
-        "unsupervised"
+        "agent loop",
+        "langgraph",
+        "workflow"
       ],
-      "confidence_score": 87
+      "confidence_score": 84
     }
   ]
 }
