@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Introducing Muse Glimmer",
+    "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "Meta released Muse Glimmer, a 30B open model under an Apache 2.0 license, designed for local AI agents on consumer hardware. The model supports scheduling, file organization, tool calling, and multi-step tasks without relying on Meta's servers.",
+    "why_builders_care": "Builders can use Muse Glimmer to develop local AI agents for various applications, reducing reliance on cloud services.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "llm",
+      "open-source",
+      "meta"
+    ],
+    "confidence_score": 95
+  },
+  {
+    "title": "Muse Glimmer: a real agentic model that fits on your own GPU",
+    "url": "https://dev.to/alvarito1983/metas-muse-glimmer-a-real-agentic-model-that-fits-on-your-own-gpu-16oh",
+    "source": "Dev.to",
+    "category": "Agents",
+    "summary": "Muse Glimmer is a 30B open model that can run on consumer hardware, enabling local AI agents for tasks like scheduling and file organization. The model is available on Hugging Face under an Apache 2.0 license.",
+    "why_builders_care": "Builders can use Muse Glimmer to develop local AI agents for various applications, reducing reliance on cloud services.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "llm",
+      "open-source",
+      "gpu"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Anthropic pledges to embed watermarks to help discern AI slop in sop to EU",
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/11/anthropic-pledges-to-embed-watermarks-to-help-discern-ai-slop-in-sop-to-eu/5285792",
+    "source": "Hacker News",
+    "category": "Industry News",
+    "summary": "Anthropic announced plans to embed watermarks in their AI models to help identify AI-generated content, addressing EU concerns about AI transparency.",
+    "why_builders_care": "Builders need to consider AI transparency and watermarking in their own models to comply with regulatory requirements.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "watermarking",
+      "eu"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+    "url": "https://arxiv.org/abs/2608.09802",
+    "source": "Hugging Face Papers",
+    "category": "Research",
+    "summary": "SWE-Bench ProMax is a benchmark for evaluating the performance of AI agents on large-scale multilingual code refactoring tasks, providing insights into agent capabilities and limitations.",
+    "why_builders_care": "Builders can use SWE-Bench ProMax to evaluate and improve the performance of their AI agents on code refactoring tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 15,
+    "tags": [
+      "ai",
+      "benchmarking",
+      "code-refactoring"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+    "url": "https://arxiv.org/abs/2608.07169",
+    "source": "Hugging Face Papers",
+    "category": "Research",
+    "summary": "Agent Memory Distillation is a technique for improving the performance of small LLM agents by leveraging hierarchical teacher memory, enabling more efficient and effective knowledge transfer.",
+    "why_builders_care": "Builders can use Agent Memory Distillation to improve the performance of their small LLM agents, reducing the need for large amounts of training data.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "memory-distillation",
+      "llm"
+    ],
+    "confidence_score": 89
+  },
+  {
+    "title": "Investing in multi-agent AI safety research",
+    "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+    "source": "DeepMind Blog",
+    "category": "Research",
+    "summary": "DeepMind announced a $10M funding call for multi-agent safety research, aiming to improve the safety and reliability of AI systems in complex environments.",
+    "why_builders_care": "Builders can apply for funding to support their own multi-agent AI safety research, contributing to the development of more reliable and trustworthy AI systems.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 8,
+    "tags": [
+      "ai",
+      "safety",
+      "research"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "txtai: All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
+    "url": "https://github.com/neuml/txtai",
+    "source": "GitHub Trending",
+    "category": "Agents",
+    "summary": "txtai is an open-source framework for building AI-powered applications, providing tools for semantic search, LLM orchestration, and language model workflows.",
+    "why_builders_care": "Builders can use txtai to develop AI-powered applications, leveraging its pre-built tools and workflows to streamline their development process.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai",
+      "framework",
+      "llm"
+    ],
+    "confidence_score": 91
+  },
+  {
+    "title": "activepieces: AI Agents & MCPs & AI Workflow Automation",
+    "url": "https://github.com/activepieces/activepieces",
+    "source": "GitHub Trending",
+    "category": "Agents",
+    "summary": "activepieces is an open-source platform for building and automating AI workflows, providing tools for AI agents, MCPs, and workflow automation.",
+    "why_builders_care": "Builders can use activepieces to automate their AI workflows, leveraging its pre-built tools and integrations to streamline their development process.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "workflow",
+      "automation"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Black Forest Labs FLUX 3 - Multimodal Flow Models",
+    "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
+    "source": "Latent Space",
+    "category": "AI Models",
+    "summary": "Black Forest Labs released FLUX 3, a multimodal flow model that outperforms existing models in various tasks, demonstrating the potential of multimodal AI models.",
+    "why_builders_care": "Builders can use FLUX 3 to develop more accurate and efficient multimodal AI models, leveraging its pre-trained weights and architectures.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai",
+      "multimodal",
+      "flow-models"
+    ],
+    "confidence_score": 93
+  },
+  {
+    "title": "French lawyers are being told to use open source AI models for confidential data",
+    "url": "https://huggingface.co/blog/jedisct1/lawyers-and-local-ai",
+    "source": "Hacker News",
+    "category": "AI Models",
+    "summary": "French lawyers are being advised to use open-source AI models for confidential data, highlighting the importance of data privacy and security in AI applications.",
+    "why_builders_care": "Builders need to consider data privacy and security when developing AI models, especially when working with sensitive or confidential data.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "open-source",
+      "data-privacy"
+    ],
+    "confidence_score": 86
+  }
+]
