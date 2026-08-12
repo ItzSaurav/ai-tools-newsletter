@@ -1,165 +1,165 @@
 {
-  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI models, agents, and research, with a focus on open-source releases, multimodal models, and AI safety. The top stories include Meta's release of Muse Glimmer, a 30B open model, and Anthropic's pledge to embed watermarks in their AI models.",
+  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI research, models, and tools, with a focus on multimodal models, inference optimization, and agent frameworks. The selected articles provide insights into the current state of AI development and offer practical applications for builders.",
   "curated_items": [
+    {
+      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+      "url": "https://arxiv.org/abs/2608.11152v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a method for scheduling mixed RL rollouts beyond prefix locality, improving inference efficiency through cache reuse and load balancing. The approach enables more efficient training of large language models.",
+      "why_builders_care": "Builders can use this method to optimize their RL rollout scheduling and improve the efficiency of their model training.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "rl",
+        "rollout",
+        "scheduling"
+      ],
+      "confidence_score": 80
+    },
     {
       "title": "Introducing Muse Glimmer",
       "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
       "source": "Simon Willison",
       "category": "Research",
-      "summary": "Meta released Muse Glimmer, a 30B open model under an Apache 2.0 license, designed for local AI agents on consumer hardware. The model supports scheduling, file organization, tool calling, and multi-step tasks without relying on Meta's servers.",
-      "why_builders_care": "Builders can use Muse Glimmer to develop local AI agents for various applications, reducing reliance on cloud services.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
-      "tags": [
-        "llm",
-        "open-source",
-        "meta"
-      ],
-      "confidence_score": 95
-    },
-    {
-      "title": "Muse Glimmer: a real agentic model that fits on your own GPU",
-      "url": "https://dev.to/alvarito1983/metas-muse-glimmer-a-real-agentic-model-that-fits-on-your-own-gpu-16oh",
-      "source": "Dev.to",
-      "category": "Agents",
-      "summary": "Muse Glimmer is a 30B open model that can run on consumer hardware, enabling local AI agents for tasks like scheduling and file organization. The model is available on Hugging Face under an Apache 2.0 license.",
-      "why_builders_care": "Builders can use Muse Glimmer to develop local AI agents for various applications, reducing reliance on cloud services.",
+      "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license. The model is designed for open-agentic applications and provides a significant step forward in the development of open-source language models.",
+      "why_builders_care": "Builders can use Muse Glimmer as a starting point for their own open-agentic projects, taking advantage of its open-source license and state-of-the-art capabilities.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 8,
-      "tags": [
-        "llm",
-        "open-source",
-        "gpu"
-      ],
-      "confidence_score": 92
-    },
-    {
-      "title": "Anthropic pledges to embed watermarks to help discern AI slop in sop to EU",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/11/anthropic-pledges-to-embed-watermarks-to-help-discern-ai-slop-in-sop-to-eu/5285792",
-      "source": "Hacker News",
-      "category": "Industry News",
-      "summary": "Anthropic announced plans to embed watermarks in their AI models to help identify AI-generated content, addressing EU concerns about AI transparency.",
-      "why_builders_care": "Builders need to consider AI transparency and watermarking in their own models to comply with regulatory requirements.",
-      "difficulty": "Beginner",
       "reading_time_mins": 5,
       "tags": [
-        "ai",
-        "watermarking",
-        "eu"
-      ],
-      "confidence_score": 88
-    },
-    {
-      "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
-      "url": "https://arxiv.org/abs/2608.09802",
-      "source": "Hugging Face Papers",
-      "category": "Research",
-      "summary": "SWE-Bench ProMax is a benchmark for evaluating the performance of AI agents on large-scale multilingual code refactoring tasks, providing insights into agent capabilities and limitations.",
-      "why_builders_care": "Builders can use SWE-Bench ProMax to evaluate and improve the performance of their AI agents on code refactoring tasks.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 15,
-      "tags": [
-        "ai",
-        "benchmarking",
-        "code-refactoring"
-      ],
-      "confidence_score": 90
-    },
-    {
-      "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
-      "url": "https://arxiv.org/abs/2608.07169",
-      "source": "Hugging Face Papers",
-      "category": "Research",
-      "summary": "Agent Memory Distillation is a technique for improving the performance of small LLM agents by leveraging hierarchical teacher memory, enabling more efficient and effective knowledge transfer.",
-      "why_builders_care": "Builders can use Agent Memory Distillation to improve the performance of their small LLM agents, reducing the need for large amounts of training data.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 12,
-      "tags": [
-        "ai",
-        "memory-distillation",
-        "llm"
-      ],
-      "confidence_score": 89
-    },
-    {
-      "title": "Investing in multi-agent AI safety research",
-      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
-      "source": "DeepMind Blog",
-      "category": "Research",
-      "summary": "DeepMind announced a $10M funding call for multi-agent safety research, aiming to improve the safety and reliability of AI systems in complex environments.",
-      "why_builders_care": "Builders can apply for funding to support their own multi-agent AI safety research, contributing to the development of more reliable and trustworthy AI systems.",
-      "difficulty": "Beginner",
-      "reading_time_mins": 8,
-      "tags": [
-        "ai",
-        "safety",
-        "research"
+        "muse",
+        "glimmer",
+        "open-source"
       ],
       "confidence_score": 85
     },
     {
-      "title": "txtai: All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
-      "url": "https://github.com/neuml/txtai",
-      "source": "GitHub Trending",
-      "category": "Agents",
-      "summary": "txtai is an open-source framework for building AI-powered applications, providing tools for semantic search, LLM orchestration, and language model workflows.",
-      "why_builders_care": "Builders can use txtai to develop AI-powered applications, leveraging its pre-built tools and workflows to streamline their development process.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 10,
-      "tags": [
-        "ai",
-        "framework",
-        "llm"
-      ],
-      "confidence_score": 91
-    },
-    {
-      "title": "activepieces: AI Agents & MCPs & AI Workflow Automation",
-      "url": "https://github.com/activepieces/activepieces",
-      "source": "GitHub Trending",
-      "category": "Agents",
-      "summary": "activepieces is an open-source platform for building and automating AI workflows, providing tools for AI agents, MCPs, and workflow automation.",
-      "why_builders_care": "Builders can use activepieces to automate their AI workflows, leveraging its pre-built tools and integrations to streamline their development process.",
-      "difficulty": "Intermediate",
+      "title": "MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment",
+      "url": "https://arxiv.org/abs/2608.11167v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a method for multimodal code-switching, enabling the interleaving of visual objects into language for explicit object-level alignment. The approach has significant implications for the development of multimodal models.",
+      "why_builders_care": "Builders can use this method to improve the performance of their multimodal models, enabling more effective alignment between visual and linguistic representations.",
+      "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
-        "ai",
-        "workflow",
-        "automation"
+        "multimodal",
+        "code-switching",
+        "object-level"
+      ],
+      "confidence_score": 82
+    },
+    {
+      "title": "Transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "source": "GitHub Trending",
+      "category": "AI Models",
+      "summary": "The Transformers library provides a comprehensive framework for building and using transformer-based models. The library includes a wide range of pre-trained models and tools for tasks such as text classification, language modeling, and machine translation.",
+      "why_builders_care": "Builders can use the Transformers library to build and deploy their own transformer-based models, taking advantage of the library's pre-trained models and tools.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
+      "tags": [
+        "transformers",
+        "huggingface",
+        "library"
       ],
       "confidence_score": 90
     },
     {
-      "title": "Black Forest Labs FLUX 3 - Multimodal Flow Models",
-      "url": "https://www.latent.space/p/ainews-black-forest-labs-flux-3-multimodal",
-      "source": "Latent Space",
-      "category": "AI Models",
-      "summary": "Black Forest Labs released FLUX 3, a multimodal flow model that outperforms existing models in various tasks, demonstrating the potential of multimodal AI models.",
-      "why_builders_care": "Builders can use FLUX 3 to develop more accurate and efficient multimodal AI models, leveraging its pre-trained weights and architectures.",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "source": "Simon Willison",
+      "category": "Research",
+      "summary": "This paper proposes a method for stealing reasoning traces from proprietary LLM APIs, enabling the recovery of valuable information about the models' decision-making processes.",
+      "why_builders_care": "Builders can use this method to gain insights into the decision-making processes of proprietary LLM APIs, potentially improving their own model development and deployment.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "ai",
-        "multimodal",
-        "flow-models"
+        "reasoning",
+        "traces",
+        "proprietary"
       ],
-      "confidence_score": 93
+      "confidence_score": 78
     },
     {
-      "title": "French lawyers are being told to use open source AI models for confidential data",
-      "url": "https://huggingface.co/blog/jedisct1/lawyers-and-local-ai",
-      "source": "Hacker News",
-      "category": "AI Models",
-      "summary": "French lawyers are being advised to use open-source AI models for confidential data, highlighting the importance of data privacy and security in AI applications.",
-      "why_builders_care": "Builders need to consider data privacy and security when developing AI models, especially when working with sensitive or confidential data.",
-      "difficulty": "Beginner",
-      "reading_time_mins": 5,
+      "title": "Graph-Orchestrated Agent Loop",
+      "url": "https://github.com/wanmol/goal-flow",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "The Graph-Orchestrated Agent Loop (GOAL) framework provides a production-grade framework for building and deploying agent-based systems. The framework enables the combination of workflow graphs and agent loops, supporting the development of complex agent-based applications.",
+      "why_builders_care": "Builders can use the GOAL framework to build and deploy their own agent-based systems, taking advantage of the framework's production-grade capabilities and flexibility.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 8,
       "tags": [
-        "ai",
-        "open-source",
-        "data-privacy"
+        "goal",
+        "agent",
+        "framework"
       ],
-      "confidence_score": 86
+      "confidence_score": 88
+    },
+    {
+      "title": "Watermarks Remover",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "source": "GitHub",
+      "category": "Open Source",
+      "summary": "The Watermarks Remover tool provides a simple and effective way to remove watermarks from images and other media. The tool supports a wide range of file formats and is easy to use.",
+      "why_builders_care": "Builders can use the Watermarks Remover tool to remove watermarks from their own images and media, potentially improving the appearance and usability of their content.",
+      "difficulty": "Beginner",
+      "reading_time_mins": 3,
+      "tags": [
+        "watermarks",
+        "remover",
+        "tool"
+      ],
+      "confidence_score": 80
+    },
+    {
+      "title": "DACRI: Decision-Aware Causal Intervention Ranking for Critical Supply Chains",
+      "url": "https://arxiv.org/abs/2608.11154v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a method for decision-aware causal intervention ranking in critical supply chains. The approach enables the identification of the most effective interventions for improving supply chain performance.",
+      "why_builders_care": "Builders can use this method to improve the performance of their own supply chains, identifying the most effective interventions and optimizing their decision-making processes.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "dacri",
+        "causal",
+        "intervention"
+      ],
+      "confidence_score": 82
+    },
+    {
+      "title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
+      "url": "https://arxiv.org/abs/2608.11142v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper proposes a method for learning SAR intensity representations for agricultural monitoring. The approach enables the effective use of SAR data for monitoring crop health and yield.",
+      "why_builders_care": "Builders can use this method to improve the accuracy and effectiveness of their agricultural monitoring systems, potentially improving crop yields and reducing waste.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 10,
+      "tags": [
+        "sar2agri",
+        "agricultural",
+        "monitoring"
+      ],
+      "confidence_score": 80
+    },
+    {
+      "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
+      "url": "https://arxiv.org/abs/2608.11195v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This paper presents a case study on human-AI mathematical collaboration, focusing on the Grothendieck constant. The study demonstrates the potential for AI to contribute to mathematical research and improve human-AI collaboration.",
+      "why_builders_care": "Builders can use this study as a model for their own human-AI collaboration efforts, potentially improving the effectiveness and efficiency of their research and development processes.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 12,
+      "tags": [
+        "grothendieck",
+        "human-ai",
+        "collaboration"
+      ],
+      "confidence_score": 85
     }
   ]
 }
