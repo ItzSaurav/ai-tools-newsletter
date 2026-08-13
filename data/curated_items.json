@@ -1,165 +1,165 @@
 {
-  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI research, models, and tools, with a focus on multimodal models, inference optimization, and agent frameworks. The selected articles provide insights into the current state of AI development and offer practical applications for builders.",
+  "intro": "This edition of The Builder's Brief highlights recent advancements in AI models, agents, and research, with a focus on practical applications and technical insights. From new open-source LLMs to innovative approaches in computer vision and natural language processing, these curated items provide valuable information for builders working on production AI systems.",
   "curated_items": [
     {
-      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
-      "url": "https://arxiv.org/abs/2608.11152v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes a method for scheduling mixed RL rollouts beyond prefix locality, improving inference efficiency through cache reuse and load balancing. The approach enables more efficient training of large language models.",
-      "why_builders_care": "Builders can use this method to optimize their RL rollout scheduling and improve the efficiency of their model training.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 10,
-      "tags": [
-        "rl",
-        "rollout",
-        "scheduling"
-      ],
-      "confidence_score": 80
-    },
-    {
-      "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+      "title": "Muse Glimmer",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
       "source": "Simon Willison",
-      "category": "Research",
-      "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license. The model is designed for open-agentic applications and provides a significant step forward in the development of open-source language models.",
-      "why_builders_care": "Builders can use Muse Glimmer as a starting point for their own open-agentic projects, taking advantage of its open-source license and state-of-the-art capabilities.",
+      "category": "AI Models",
+      "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license, offering a significant step up from previous Llama licenses. This model is part of Meta's efforts to provide open and accessible AI technologies.",
+      "why_builders_care": "Builders can utilize Muse Glimmer for a wide range of applications, from natural language processing to generative tasks, benefiting from its open license and Meta's commitment to AI development.",
       "difficulty": "Intermediate",
       "reading_time_mins": 5,
       "tags": [
-        "muse",
-        "glimmer",
-        "open-source"
-      ],
-      "confidence_score": 85
-    },
-    {
-      "title": "MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment",
-      "url": "https://arxiv.org/abs/2608.11167v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This paper proposes a method for multimodal code-switching, enabling the interleaving of visual objects into language for explicit object-level alignment. The approach has significant implications for the development of multimodal models.",
-      "why_builders_care": "Builders can use this method to improve the performance of their multimodal models, enabling more effective alignment between visual and linguistic representations.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 12,
-      "tags": [
-        "multimodal",
-        "code-switching",
-        "object-level"
-      ],
-      "confidence_score": 82
-    },
-    {
-      "title": "Transformers",
-      "url": "https://github.com/huggingface/transformers",
-      "source": "GitHub Trending",
-      "category": "AI Models",
-      "summary": "The Transformers library provides a comprehensive framework for building and using transformer-based models. The library includes a wide range of pre-trained models and tools for tasks such as text classification, language modeling, and machine translation.",
-      "why_builders_care": "Builders can use the Transformers library to build and deploy their own transformer-based models, taking advantage of the library's pre-trained models and tools.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 8,
-      "tags": [
-        "transformers",
-        "huggingface",
-        "library"
+        "llm",
+        "open-source",
+        "meta"
       ],
       "confidence_score": 90
     },
     {
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
-      "source": "Simon Willison",
+      "title": "Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams",
+      "url": "https://arxiv.org/abs/2608.12262v1",
+      "source": "arXiv",
       "category": "Research",
-      "summary": "This paper proposes a method for stealing reasoning traces from proprietary LLM APIs, enabling the recovery of valuable information about the models' decision-making processes.",
-      "why_builders_care": "Builders can use this method to gain insights into the decision-making processes of proprietary LLM APIs, potentially improving their own model development and deployment.",
+      "summary": "Diagram-MMU is a benchmark designed for evaluating the capabilities of multimodal large language models (MLLMs) in understanding and generating scientific diagrams. It aims to facilitate the development of MLLMs for scientific writing and collaboration.",
+      "why_builders_care": "Builders can use Diagram-MMU to assess and improve the performance of their MLLMs in scientific diagram-related tasks, enhancing the models' utility in academic and research settings.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "reasoning",
-        "traces",
-        "proprietary"
+        "multimodal",
+        "scientific-diagrams",
+        "benchmark"
       ],
-      "confidence_score": 78
+      "confidence_score": 85
     },
     {
-      "title": "Graph-Orchestrated Agent Loop",
-      "url": "https://github.com/wanmol/goal-flow",
-      "source": "GitHub",
+      "title": "txtai: All-in-one AI framework for semantic search, LLM orchestration, and language model workflows",
+      "url": "https://github.com/neuml/txtai",
+      "source": "GitHub Trending",
       "category": "Agents",
-      "summary": "The Graph-Orchestrated Agent Loop (GOAL) framework provides a production-grade framework for building and deploying agent-based systems. The framework enables the combination of workflow graphs and agent loops, supporting the development of complex agent-based applications.",
-      "why_builders_care": "Builders can use the GOAL framework to build and deploy their own agent-based systems, taking advantage of the framework's production-grade capabilities and flexibility.",
+      "summary": "txtai is an AI framework that provides a comprehensive set of tools for semantic search, LLM orchestration, and managing language model workflows. It aims to simplify the integration of AI capabilities into various applications.",
+      "why_builders_care": "Builders can leverage txtai to streamline their AI development workflow, focusing on building applications rather than managing complex AI infrastructures.",
       "difficulty": "Intermediate",
       "reading_time_mins": 8,
       "tags": [
-        "goal",
-        "agent",
-        "framework"
+        "ai-framework",
+        "semantic-search",
+        "llm-orchestration"
       ],
       "confidence_score": 88
     },
     {
-      "title": "Watermarks Remover",
-      "url": "https://github.com/guillaumemeyer/watermarks-remover",
-      "source": "GitHub",
-      "category": "Open Source",
-      "summary": "The Watermarks Remover tool provides a simple and effective way to remove watermarks from images and other media. The tool supports a wide range of file formats and is easy to use.",
-      "why_builders_care": "Builders can use the Watermarks Remover tool to remove watermarks from their own images and media, potentially improving the appearance and usability of their content.",
-      "difficulty": "Beginner",
-      "reading_time_mins": 3,
-      "tags": [
-        "watermarks",
-        "remover",
-        "tool"
-      ],
-      "confidence_score": 80
-    },
-    {
-      "title": "DACRI: Decision-Aware Causal Intervention Ranking for Critical Supply Chains",
-      "url": "https://arxiv.org/abs/2608.11154v1",
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "url": "https://arxiv.org/abs/2608.12313v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper proposes a method for decision-aware causal intervention ranking in critical supply chains. The approach enables the identification of the most effective interventions for improving supply chain performance.",
-      "why_builders_care": "Builders can use this method to improve the performance of their own supply chains, identifying the most effective interventions and optimizing their decision-making processes.",
+      "summary": "AVA-Encoder is a method aimed at learning video representations that are directly usable by agents for tasks like video generation and manipulation. It focuses on enabling agents to learn from high-quality human films and produce cinematic-grade videos.",
+      "why_builders_care": "Builders working on video generation and agent-based systems can utilize AVA-Encoder to enhance their models' ability to understand and generate high-quality video content.",
       "difficulty": "Advanced",
       "reading_time_mins": 12,
       "tags": [
-        "dacri",
-        "causal",
-        "intervention"
+        "video-representation",
+        "agent-native",
+        "learning"
       ],
       "confidence_score": 82
     },
     {
-      "title": "SAR2Agri: Learning SAR Intensity Representations for Agricultural Monitoring",
-      "url": "https://arxiv.org/abs/2608.11142v1",
+      "title": "Transformers: State-of-the-art machine learning models",
+      "url": "https://github.com/huggingface/transformers",
+      "source": "GitHub Trending",
+      "category": "AI Models",
+      "summary": "The Transformers repository by Hugging Face provides a wide range of pre-trained models and a framework for building custom models for various tasks, including text, vision, and multimodal processing.",
+      "why_builders_care": "Builders can use the Transformers library to easily integrate state-of-the-art models into their applications, leveraging the community-driven development and extensive model support.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 6,
+      "tags": [
+        "transformers",
+        "huggingface",
+        "pre-trained-models"
+      ],
+      "confidence_score": 95
+    },
+    {
+      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+      "url": "https://arxiv.org/abs/2608.12282v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper proposes a method for learning SAR intensity representations for agricultural monitoring. The approach enables the effective use of SAR data for monitoring crop health and yield.",
-      "why_builders_care": "Builders can use this method to improve the accuracy and effectiveness of their agricultural monitoring systems, potentially improving crop yields and reducing waste.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 10,
+      "summary": "VAKRA is a benchmark designed to evaluate the capabilities of agents in multi-hop reasoning across APIs and retrieval tasks, under policies that govern tool usage. It aims to assess the ability of models to reason and make decisions in complex, real-world scenarios.",
+      "why_builders_care": "Builders can use VAKRA to test and improve the multi-hop reasoning capabilities of their models, particularly in scenarios involving API interactions and tool usage.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 11,
       "tags": [
-        "sar2agri",
-        "agricultural",
-        "monitoring"
+        "multi-hop-reasoning",
+        "api-interaction",
+        "benchmark"
       ],
       "confidence_score": 80
     },
     {
-      "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-      "url": "https://arxiv.org/abs/2608.11195v1",
+      "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
+      "url": "https://arxiv.org/abs/2608.12308v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "This paper presents a case study on human-AI mathematical collaboration, focusing on the Grothendieck constant. The study demonstrates the potential for AI to contribute to mathematical research and improve human-AI collaboration.",
-      "why_builders_care": "Builders can use this study as a model for their own human-AI collaboration efforts, potentially improving the effectiveness and efficiency of their research and development processes.",
+      "summary": "DreamFly is a method for aerial vision-language navigation that integrates causal memory and receding-horizon diffusion planning. It aims to improve the navigation capabilities of embodied agents in complex, partially observable environments.",
+      "why_builders_care": "Builders working on vision-language navigation tasks can utilize DreamFly to enhance the performance of their agents in real-world scenarios, such as drone navigation.",
       "difficulty": "Advanced",
-      "reading_time_mins": 12,
+      "reading_time_mins": 13,
       "tags": [
-        "grothendieck",
-        "human-ai",
-        "collaboration"
+        "vision-language-navigation",
+        "aerial-navigation",
+        "diffusion-planning"
+      ],
+      "confidence_score": 78
+    },
+    {
+      "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review",
+      "url": "https://arxiv.org/abs/2608.12299v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "This review focuses on class activation mapping (CAM) methods in explainable computer vision, discussing their evolution, applications, and limitations. It provides insights into the use of CAM for visual explanations in deep learning models.",
+      "why_builders_care": "Builders can use this review to understand the state-of-the-art in explainable computer vision, particularly in relation to CAM methods, and apply this knowledge to improve the interpretability of their models.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 9,
+      "tags": [
+        "explainable-ai",
+        "computer-vision",
+        "cam-methods"
       ],
       "confidence_score": 85
+    },
+    {
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+      "source": "Simon Willison",
+      "category": "Research",
+      "summary": "This article discusses a method for extracting reasoning traces from proprietary large language model (LLM) APIs, which can be useful for understanding and improving the performance of these models.",
+      "why_builders_care": "Builders can apply the insights from this method to enhance their understanding of LLMs and potentially improve the development of their own models by leveraging the knowledge embedded in proprietary APIs.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 8,
+      "tags": [
+        "llm",
+        "reasoning-traces",
+        "proprietary-apis"
+      ],
+      "confidence_score": 83
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+      "source": "Simon Willison",
+      "category": "AI Models",
+      "summary": "DeepSeek V4 Pro 0813 is a new model release, available via API, offering advancements in performance and capabilities for various AI tasks.",
+      "why_builders_care": "Builders can integrate DeepSeek V4 Pro 0813 into their applications to leverage its improved performance and capabilities, enhancing the overall quality of their AI-driven services.",
+      "difficulty": "Intermediate",
+      "reading_time_mins": 5,
+      "tags": [
+        "deepseek",
+        "v4-pro",
+        "ai-model"
+      ],
+      "confidence_score": 89
     }
   ]
 }

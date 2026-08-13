@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Muse Glimmer",
+    "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license, offering a significant step up from previous Llama licenses. This model is part of Meta's efforts to provide open and accessible AI technologies.",
+    "why_builders_care": "Builders can utilize Muse Glimmer for a wide range of applications, from natural language processing to generative tasks, benefiting from its open license and Meta's commitment to AI development.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "llm",
+      "open-source",
+      "meta"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams",
+    "url": "https://arxiv.org/abs/2608.12262v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Diagram-MMU is a benchmark designed for evaluating the capabilities of multimodal large language models (MLLMs) in understanding and generating scientific diagrams. It aims to facilitate the development of MLLMs for scientific writing and collaboration.",
+    "why_builders_care": "Builders can use Diagram-MMU to assess and improve the performance of their MLLMs in scientific diagram-related tasks, enhancing the models' utility in academic and research settings.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "multimodal",
+      "scientific-diagrams",
+      "benchmark"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "txtai: All-in-one AI framework for semantic search, LLM orchestration, and language model workflows",
+    "url": "https://github.com/neuml/txtai",
+    "source": "GitHub Trending",
+    "category": "Agents",
+    "summary": "txtai is an AI framework that provides a comprehensive set of tools for semantic search, LLM orchestration, and managing language model workflows. It aims to simplify the integration of AI capabilities into various applications.",
+    "why_builders_care": "Builders can leverage txtai to streamline their AI development workflow, focusing on building applications rather than managing complex AI infrastructures.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "ai-framework",
+      "semantic-search",
+      "llm-orchestration"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+    "url": "https://arxiv.org/abs/2608.12313v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "AVA-Encoder is a method aimed at learning video representations that are directly usable by agents for tasks like video generation and manipulation. It focuses on enabling agents to learn from high-quality human films and produce cinematic-grade videos.",
+    "why_builders_care": "Builders working on video generation and agent-based systems can utilize AVA-Encoder to enhance their models' ability to understand and generate high-quality video content.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "video-representation",
+      "agent-native",
+      "learning"
+    ],
+    "confidence_score": 82
+  },
+  {
+    "title": "Transformers: State-of-the-art machine learning models",
+    "url": "https://github.com/huggingface/transformers",
+    "source": "GitHub Trending",
+    "category": "AI Models",
+    "summary": "The Transformers repository by Hugging Face provides a wide range of pre-trained models and a framework for building custom models for various tasks, including text, vision, and multimodal processing.",
+    "why_builders_care": "Builders can use the Transformers library to easily integrate state-of-the-art models into their applications, leveraging the community-driven development and extensive model support.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 6,
+    "tags": [
+      "transformers",
+      "huggingface",
+      "pre-trained-models"
+    ],
+    "confidence_score": 95
+  },
+  {
+    "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+    "url": "https://arxiv.org/abs/2608.12282v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "VAKRA is a benchmark designed to evaluate the capabilities of agents in multi-hop reasoning across APIs and retrieval tasks, under policies that govern tool usage. It aims to assess the ability of models to reason and make decisions in complex, real-world scenarios.",
+    "why_builders_care": "Builders can use VAKRA to test and improve the multi-hop reasoning capabilities of their models, particularly in scenarios involving API interactions and tool usage.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 11,
+    "tags": [
+      "multi-hop-reasoning",
+      "api-interaction",
+      "benchmark"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
+    "url": "https://arxiv.org/abs/2608.12308v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "DreamFly is a method for aerial vision-language navigation that integrates causal memory and receding-horizon diffusion planning. It aims to improve the navigation capabilities of embodied agents in complex, partially observable environments.",
+    "why_builders_care": "Builders working on vision-language navigation tasks can utilize DreamFly to enhance the performance of their agents in real-world scenarios, such as drone navigation.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 13,
+    "tags": [
+      "vision-language-navigation",
+      "aerial-navigation",
+      "diffusion-planning"
+    ],
+    "confidence_score": 78
+  },
+  {
+    "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review",
+    "url": "https://arxiv.org/abs/2608.12299v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "This review focuses on class activation mapping (CAM) methods in explainable computer vision, discussing their evolution, applications, and limitations. It provides insights into the use of CAM for visual explanations in deep learning models.",
+    "why_builders_care": "Builders can use this review to understand the state-of-the-art in explainable computer vision, particularly in relation to CAM methods, and apply this knowledge to improve the interpretability of their models.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 9,
+    "tags": [
+      "explainable-ai",
+      "computer-vision",
+      "cam-methods"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "This article discusses a method for extracting reasoning traces from proprietary large language model (LLM) APIs, which can be useful for understanding and improving the performance of these models.",
+    "why_builders_care": "Builders can apply the insights from this method to enhance their understanding of LLMs and potentially improve the development of their own models by leveraging the knowledge embedded in proprietary APIs.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 8,
+    "tags": [
+      "llm",
+      "reasoning-traces",
+      "proprietary-apis"
+    ],
+    "confidence_score": 83
+  },
+  {
+    "title": "DeepSeek V4 Pro 0813",
+    "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+    "source": "Simon Willison",
+    "category": "AI Models",
+    "summary": "DeepSeek V4 Pro 0813 is a new model release, available via API, offering advancements in performance and capabilities for various AI tasks.",
+    "why_builders_care": "Builders can integrate DeepSeek V4 Pro 0813 into their applications to leverage its improved performance and capabilities, enhancing the overall quality of their AI-driven services.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "deepseek",
+      "v4-pro",
+      "ai-model"
+    ],
+    "confidence_score": 89
+  }
+]
