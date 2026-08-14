@@ -1,0 +1,162 @@
+[
+  {
+    "title": "OmniCopilot",
+    "url": "https://github.com/diegosouzapw/OmniCopilot",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "OmniCopilot is a VS Code extension that integrates 1200+ AI models, including Kimi, Claude, GPT, and Gemini, with agent mode, tool calling, vision, and quota-aware auto-fallback. It is powered by OmniRoute and has 330+ providers, 90+ of which are free.",
+    "why_builders_care": "Builders can use OmniCopilot to access a wide range of AI models and tools, streamlining their development workflow.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "llm",
+      "agent",
+      "omnicopilot"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "url": "https://arxiv.org/abs/2608.13505v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Intern-S2-Preview is a scientific agentic foundation model that enables AI systems to reason over scientific evidence, interact with tools and environments, and sustain progress across long task horizons.",
+    "why_builders_care": "Builders can use Intern-S2-Preview to develop AI systems that can reason and interact with scientific tools and environments.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "scientific",
+      "agentic",
+      "foundation model"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters",
+    "url": "https://arxiv.org/abs/2608.13517v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "DFM Mimir v1 is an open-source language model that delivers frontier performance at 1B parameters using only permissible post-training data. It is based on the Hierarchical Reasoning Model (HRM) architecture.",
+    "why_builders_care": "Builders can use DFM Mimir v1 to develop high-performance language models that are transparent and explainable.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "language model",
+      "hrm",
+      "open-source"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Muse Glimmer",
+    "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license. It is a significant release from Meta, marking a step up from the previous Llama licenses.",
+    "why_builders_care": "Builders can use Muse Glimmer to develop AI applications that require a high-performance, open-source language model.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "language model",
+      "muse glimmer",
+      "apache 2.0"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "llama.cpp b10427 Accelerates Quantized FFNs",
+    "url": "https://dev.to/soytuber/llamacpp-b10427-accelerates-quantized-ffns-plus-new-agents-ollama-speeds-gpu-tech-4o0i",
+    "source": "Dev.to",
+    "category": "Agents",
+    "summary": "llama.cpp b10427 accelerates quantized FFNs, and Ollama speeds up speculative decoding for LLMs. Additionally, Meta unveiled its new local, open-source multimodal agent Muse Glimmer.",
+    "why_builders_care": "Builders can use llama.cpp and Ollama to optimize their AI models and improve performance.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "llama.cpp",
+      "ollama",
+      "quantized ffns"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "source": "GitHub",
+    "category": "AI Models",
+    "summary": "The Transformers library provides a wide range of pre-trained models and a simple interface for using them. It supports text, vision, audio, and multimodal models for both inference and training.",
+    "why_builders_care": "Builders can use the Transformers library to develop AI applications that require pre-trained models and a simple interface.",
+    "difficulty": "Beginner",
+    "reading_time_mins": 5,
+    "tags": [
+      "transformers",
+      "pre-trained models",
+      "huggingface"
+    ],
+    "confidence_score": 80
+  },
+  {
+    "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "url": "https://arxiv.org/abs/2608.13560v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "AutoDesign is a meta-harness optimization framework for long-horizon agentic design. It enables the optimization of model-harness systems to align with human design priors and accumulate reusable experience.",
+    "why_builders_care": "Builders can use AutoDesign to develop AI systems that can optimize model-harness systems for long-horizon agentic design.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "auto design",
+      "meta-harness optimization",
+      "agentic design"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2608.13489v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "DreamX-Phi 1.0 is an action-conditioned video world model for robotic manipulation. It predicts the resulting future observations given an observed frame, a language instruction, and a prescribed action sequence.",
+    "why_builders_care": "Builders can use DreamX-Phi 1.0 to develop AI systems that can predict future observations for robotic manipulation tasks.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "dreamx-phi",
+      "video world model",
+      "robotic manipulation"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "TabSOM: A tabular-to-image encoding method based on self-organizing maps",
+    "url": "https://arxiv.org/abs/2608.13513v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "TabSOM is a tabular-to-image encoding method based on self-organizing maps. It converts tabular data into image representations, mapping each feature at a fixed pixel location derived from a dimensionality-reduction technique.",
+    "why_builders_care": "Builders can use TabSOM to develop AI applications that require tabular-to-image encoding.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "tab som",
+      "tabular-to-image encoding",
+      "self-organizing maps"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "GS$^{2}$CI: Robust Gaussian Splatting For Snapshot Compressive Imaging via Large Vision Model Priors",
+    "url": "https://arxiv.org/abs/2608.13502v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "GS$^{2}$CI is a robust Gaussian splatting framework for snapshot compressive imaging. It uses large vision model priors to improve the quality of reconstructed images.",
+    "why_builders_care": "Builders can use GS$^{2}$CI to develop AI applications that require snapshot compressive imaging.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "gs$^{2}$ci",
+      "gaussian splatting",
+      "snapshot compressive imaging"
+    ],
+    "confidence_score": 90
+  }
+]

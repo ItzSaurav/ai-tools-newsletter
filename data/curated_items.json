@@ -1,165 +1,165 @@
 {
-  "intro": "This edition of The Builder's Brief highlights recent advancements in AI models, agents, and research, with a focus on practical applications and technical insights. From new open-source LLMs to innovative approaches in computer vision and natural language processing, these curated items provide valuable information for builders working on production AI systems.",
+  "intro": "This edition of The Builder's Brief highlights the latest advancements in AI models, agents, and research, with a focus on open-source releases, multimodal models, and inference optimization.",
   "curated_items": [
     {
-      "title": "Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
-      "source": "Simon Willison",
-      "category": "AI Models",
-      "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license, offering a significant step up from previous Llama licenses. This model is part of Meta's efforts to provide open and accessible AI technologies.",
-      "why_builders_care": "Builders can utilize Muse Glimmer for a wide range of applications, from natural language processing to generative tasks, benefiting from its open license and Meta's commitment to AI development.",
+      "title": "OmniCopilot",
+      "url": "https://github.com/diegosouzapw/OmniCopilot",
+      "source": "GitHub",
+      "category": "Agents",
+      "summary": "OmniCopilot is a VS Code extension that integrates 1200+ AI models, including Kimi, Claude, GPT, and Gemini, with agent mode, tool calling, vision, and quota-aware auto-fallback. It is powered by OmniRoute and has 330+ providers, 90+ of which are free.",
+      "why_builders_care": "Builders can use OmniCopilot to access a wide range of AI models and tools, streamlining their development workflow.",
       "difficulty": "Intermediate",
       "reading_time_mins": 5,
       "tags": [
         "llm",
-        "open-source",
-        "meta"
+        "agent",
+        "omnicopilot"
+      ],
+      "confidence_score": 85
+    },
+    {
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "url": "https://arxiv.org/abs/2608.13505v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "Intern-S2-Preview is a scientific agentic foundation model that enables AI systems to reason over scientific evidence, interact with tools and environments, and sustain progress across long task horizons.",
+      "why_builders_care": "Builders can use Intern-S2-Preview to develop AI systems that can reason and interact with scientific tools and environments.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "scientific",
+        "agentic",
+        "foundation model"
       ],
       "confidence_score": 90
     },
     {
-      "title": "Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams",
-      "url": "https://arxiv.org/abs/2608.12262v1",
+      "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters",
+      "url": "https://arxiv.org/abs/2608.13517v1",
       "source": "arXiv",
       "category": "Research",
-      "summary": "Diagram-MMU is a benchmark designed for evaluating the capabilities of multimodal large language models (MLLMs) in understanding and generating scientific diagrams. It aims to facilitate the development of MLLMs for scientific writing and collaboration.",
-      "why_builders_care": "Builders can use Diagram-MMU to assess and improve the performance of their MLLMs in scientific diagram-related tasks, enhancing the models' utility in academic and research settings.",
+      "summary": "DFM Mimir v1 is an open-source language model that delivers frontier performance at 1B parameters using only permissible post-training data. It is based on the Hierarchical Reasoning Model (HRM) architecture.",
+      "why_builders_care": "Builders can use DFM Mimir v1 to develop high-performance language models that are transparent and explainable.",
       "difficulty": "Advanced",
       "reading_time_mins": 10,
       "tags": [
-        "multimodal",
-        "scientific-diagrams",
-        "benchmark"
+        "language model",
+        "hrm",
+        "open-source"
       ],
-      "confidence_score": 85
+      "confidence_score": 92
     },
     {
-      "title": "txtai: All-in-one AI framework for semantic search, LLM orchestration, and language model workflows",
-      "url": "https://github.com/neuml/txtai",
-      "source": "GitHub Trending",
-      "category": "Agents",
-      "summary": "txtai is an AI framework that provides a comprehensive set of tools for semantic search, LLM orchestration, and managing language model workflows. It aims to simplify the integration of AI capabilities into various applications.",
-      "why_builders_care": "Builders can leverage txtai to streamline their AI development workflow, focusing on building applications rather than managing complex AI infrastructures.",
+      "title": "Muse Glimmer",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+      "source": "Simon Willison",
+      "category": "Research",
+      "summary": "Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license. It is a significant release from Meta, marking a step up from the previous Llama licenses.",
+      "why_builders_care": "Builders can use Muse Glimmer to develop AI applications that require a high-performance, open-source language model.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 8,
+      "reading_time_mins": 5,
       "tags": [
-        "ai-framework",
-        "semantic-search",
-        "llm-orchestration"
+        "language model",
+        "muse glimmer",
+        "apache 2.0"
       ],
       "confidence_score": 88
     },
     {
-      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
-      "url": "https://arxiv.org/abs/2608.12313v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "AVA-Encoder is a method aimed at learning video representations that are directly usable by agents for tasks like video generation and manipulation. It focuses on enabling agents to learn from high-quality human films and produce cinematic-grade videos.",
-      "why_builders_care": "Builders working on video generation and agent-based systems can utilize AVA-Encoder to enhance their models' ability to understand and generate high-quality video content.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 12,
-      "tags": [
-        "video-representation",
-        "agent-native",
-        "learning"
-      ],
-      "confidence_score": 82
-    },
-    {
-      "title": "Transformers: State-of-the-art machine learning models",
-      "url": "https://github.com/huggingface/transformers",
-      "source": "GitHub Trending",
-      "category": "AI Models",
-      "summary": "The Transformers repository by Hugging Face provides a wide range of pre-trained models and a framework for building custom models for various tasks, including text, vision, and multimodal processing.",
-      "why_builders_care": "Builders can use the Transformers library to easily integrate state-of-the-art models into their applications, leveraging the community-driven development and extensive model support.",
+      "title": "llama.cpp b10427 Accelerates Quantized FFNs",
+      "url": "https://dev.to/soytuber/llamacpp-b10427-accelerates-quantized-ffns-plus-new-agents-ollama-speeds-gpu-tech-4o0i",
+      "source": "Dev.to",
+      "category": "Agents",
+      "summary": "llama.cpp b10427 accelerates quantized FFNs, and Ollama speeds up speculative decoding for LLMs. Additionally, Meta unveiled its new local, open-source multimodal agent Muse Glimmer.",
+      "why_builders_care": "Builders can use llama.cpp and Ollama to optimize their AI models and improve performance.",
       "difficulty": "Intermediate",
-      "reading_time_mins": 6,
+      "reading_time_mins": 5,
       "tags": [
-        "transformers",
-        "huggingface",
-        "pre-trained-models"
-      ],
-      "confidence_score": 95
-    },
-    {
-      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
-      "url": "https://arxiv.org/abs/2608.12282v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "VAKRA is a benchmark designed to evaluate the capabilities of agents in multi-hop reasoning across APIs and retrieval tasks, under policies that govern tool usage. It aims to assess the ability of models to reason and make decisions in complex, real-world scenarios.",
-      "why_builders_care": "Builders can use VAKRA to test and improve the multi-hop reasoning capabilities of their models, particularly in scenarios involving API interactions and tool usage.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 11,
-      "tags": [
-        "multi-hop-reasoning",
-        "api-interaction",
-        "benchmark"
-      ],
-      "confidence_score": 80
-    },
-    {
-      "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
-      "url": "https://arxiv.org/abs/2608.12308v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "DreamFly is a method for aerial vision-language navigation that integrates causal memory and receding-horizon diffusion planning. It aims to improve the navigation capabilities of embodied agents in complex, partially observable environments.",
-      "why_builders_care": "Builders working on vision-language navigation tasks can utilize DreamFly to enhance the performance of their agents in real-world scenarios, such as drone navigation.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 13,
-      "tags": [
-        "vision-language-navigation",
-        "aerial-navigation",
-        "diffusion-planning"
-      ],
-      "confidence_score": 78
-    },
-    {
-      "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review",
-      "url": "https://arxiv.org/abs/2608.12299v1",
-      "source": "arXiv",
-      "category": "Research",
-      "summary": "This review focuses on class activation mapping (CAM) methods in explainable computer vision, discussing their evolution, applications, and limitations. It provides insights into the use of CAM for visual explanations in deep learning models.",
-      "why_builders_care": "Builders can use this review to understand the state-of-the-art in explainable computer vision, particularly in relation to CAM methods, and apply this knowledge to improve the interpretability of their models.",
-      "difficulty": "Intermediate",
-      "reading_time_mins": 9,
-      "tags": [
-        "explainable-ai",
-        "computer-vision",
-        "cam-methods"
+        "llama.cpp",
+        "ollama",
+        "quantized ffns"
       ],
       "confidence_score": 85
     },
     {
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
-      "source": "Simon Willison",
-      "category": "Research",
-      "summary": "This article discusses a method for extracting reasoning traces from proprietary large language model (LLM) APIs, which can be useful for understanding and improving the performance of these models.",
-      "why_builders_care": "Builders can apply the insights from this method to enhance their understanding of LLMs and potentially improve the development of their own models by leveraging the knowledge embedded in proprietary APIs.",
-      "difficulty": "Advanced",
-      "reading_time_mins": 8,
+      "title": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "source": "GitHub",
+      "category": "AI Models",
+      "summary": "The Transformers library provides a wide range of pre-trained models and a simple interface for using them. It supports text, vision, audio, and multimodal models for both inference and training.",
+      "why_builders_care": "Builders can use the Transformers library to develop AI applications that require pre-trained models and a simple interface.",
+      "difficulty": "Beginner",
+      "reading_time_mins": 5,
       "tags": [
-        "llm",
-        "reasoning-traces",
-        "proprietary-apis"
+        "transformers",
+        "pre-trained models",
+        "huggingface"
       ],
-      "confidence_score": 83
+      "confidence_score": 80
     },
     {
-      "title": "DeepSeek V4 Pro 0813",
-      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
-      "source": "Simon Willison",
-      "category": "AI Models",
-      "summary": "DeepSeek V4 Pro 0813 is a new model release, available via API, offering advancements in performance and capabilities for various AI tasks.",
-      "why_builders_care": "Builders can integrate DeepSeek V4 Pro 0813 into their applications to leverage its improved performance and capabilities, enhancing the overall quality of their AI-driven services.",
+      "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "url": "https://arxiv.org/abs/2608.13560v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "AutoDesign is a meta-harness optimization framework for long-horizon agentic design. It enables the optimization of model-harness systems to align with human design priors and accumulate reusable experience.",
+      "why_builders_care": "Builders can use AutoDesign to develop AI systems that can optimize model-harness systems for long-horizon agentic design.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "auto design",
+        "meta-harness optimization",
+        "agentic design"
+      ],
+      "confidence_score": 90
+    },
+    {
+      "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2608.13489v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "DreamX-Phi 1.0 is an action-conditioned video world model for robotic manipulation. It predicts the resulting future observations given an observed frame, a language instruction, and a prescribed action sequence.",
+      "why_builders_care": "Builders can use DreamX-Phi 1.0 to develop AI systems that can predict future observations for robotic manipulation tasks.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "dreamx-phi",
+        "video world model",
+        "robotic manipulation"
+      ],
+      "confidence_score": 92
+    },
+    {
+      "title": "TabSOM: A tabular-to-image encoding method based on self-organizing maps",
+      "url": "https://arxiv.org/abs/2608.13513v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "TabSOM is a tabular-to-image encoding method based on self-organizing maps. It converts tabular data into image representations, mapping each feature at a fixed pixel location derived from a dimensionality-reduction technique.",
+      "why_builders_care": "Builders can use TabSOM to develop AI applications that require tabular-to-image encoding.",
       "difficulty": "Intermediate",
       "reading_time_mins": 5,
       "tags": [
-        "deepseek",
-        "v4-pro",
-        "ai-model"
+        "tab som",
+        "tabular-to-image encoding",
+        "self-organizing maps"
       ],
-      "confidence_score": 89
+      "confidence_score": 85
+    },
+    {
+      "title": "GS$^{2}$CI: Robust Gaussian Splatting For Snapshot Compressive Imaging via Large Vision Model Priors",
+      "url": "https://arxiv.org/abs/2608.13502v1",
+      "source": "arXiv",
+      "category": "Research",
+      "summary": "GS$^{2}$CI is a robust Gaussian splatting framework for snapshot compressive imaging. It uses large vision model priors to improve the quality of reconstructed images.",
+      "why_builders_care": "Builders can use GS$^{2}$CI to develop AI applications that require snapshot compressive imaging.",
+      "difficulty": "Advanced",
+      "reading_time_mins": 10,
+      "tags": [
+        "gs$^{2}$ci",
+        "gaussian splatting",
+        "snapshot compressive imaging"
+      ],
+      "confidence_score": 90
     }
   ]
 }

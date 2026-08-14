@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "source_counts": {
     "fetch_arxiv": 30,
     "fetch_hackernews": 30,
@@ -17,6 +17,6 @@
     "fetch_reddit": 0
   },
   "total_fetched": 255,
-  "duplicates_removed": 2,
-  "new_items": 253
+  "duplicates_removed": 0,
+  "new_items": 255
 }
