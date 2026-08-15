@@ -1,0 +1,162 @@
+[
+  {
+    "title": "OmniCopilot",
+    "url": "https://github.com/diegosouzapw/OmniCopilot",
+    "source": "GitHub",
+    "category": "Agents",
+    "summary": "OmniCopilot is a VS Code extension that integrates over 1200 AI models, including Kimi, Claude, GPT, and Gemini, with agent mode, tool calling, vision, and quota-aware auto-fallback. It's powered by OmniRoute and has 330+ providers, 90+ of which are free.",
+    "why_builders_care": "Builders can use OmniCopilot to enhance their development workflow with AI-powered coding assistance and automation.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "agents",
+      "coding"
+    ],
+    "confidence_score": 85
+  },
+  {
+    "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "url": "https://arxiv.org/abs/2608.13505v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Intern-S2-Preview is a series of scientific agentic foundation models designed to reason over scientific evidence, interact with tools and environments, and sustain progress across long task horizons.",
+    "why_builders_care": "Builders can explore the potential of scientific agentic foundation models for advancing AI capabilities in scientific discovery and research.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai",
+      "research",
+      "science"
+    ],
+    "confidence_score": 90
+  },
+  {
+    "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters",
+    "url": "https://arxiv.org/abs/2608.13517v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "DFM Mimir v1 is a 1-billion-parameter language model based on the Hierarchical Reasoning Model (HRM) architecture, achieving frontier performance using only permissible post-training data.",
+    "why_builders_care": "Builders can leverage DFM Mimir v1 for developing high-performance AI models that adhere to ethical data sourcing standards.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 10,
+    "tags": [
+      "ai",
+      "models",
+      "ethics"
+    ],
+    "confidence_score": 92
+  },
+  {
+    "title": "Muse Glimmer",
+    "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
+    "source": "Simon Willison",
+    "category": "Research",
+    "summary": "Muse Glimmer is a new 30B model released by Meta under an Apache 2.0 license, marking a significant step in open-source AI model development.",
+    "why_builders_care": "Builders can utilize Muse Glimmer for developing AI applications, benefiting from its open-source nature and large model size.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "models",
+      "open-source"
+    ],
+    "confidence_score": 88
+  },
+  {
+    "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "url": "https://arxiv.org/abs/2608.13560v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "AutoDesign introduces a meta-harness optimization approach for long-horizon agentic design, focusing on aligning model-harness systems with human design priors and accumulating reusable experience.",
+    "why_builders_care": "Builders can apply AutoDesign principles to improve the efficiency and effectiveness of their AI system design processes.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "design",
+      "optimization"
+    ],
+    "confidence_score": 89
+  },
+  {
+    "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+    "url": "https://arxiv.org/abs/2608.13558v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "OmniScientist is a proposed AI scientist framework that automates research workflows across multiple disciplines and modalities, aiming to enhance scientific discovery and collaboration.",
+    "why_builders_care": "Builders can explore the potential of OmniScientist for developing more comprehensive and interdisciplinary AI-powered research tools.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "science",
+      "research"
+    ],
+    "confidence_score": 91
+  },
+  {
+    "title": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+    "url": "https://arxiv.org/abs/2608.13522v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "Vero investigates the capability of AI agents to generate formally verified software repositories, exploring the potential for trustworthy AI-generated code.",
+    "why_builders_care": "Builders can leverage Vero's findings to develop more reliable and verifiable AI-powered software development tools.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "software",
+      "verification"
+    ],
+    "confidence_score": 93
+  },
+  {
+    "title": "TabSOM: A tabular-to-image encoding method based on self-organizing maps",
+    "url": "https://arxiv.org/abs/2608.13513v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "TabSOM proposes a novel tabular-to-image encoding method using self-organizing maps, enabling the application of convolutional neural networks to tabular data.",
+    "why_builders_care": "Builders can apply TabSOM to expand the capabilities of their AI models in handling diverse data types.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 8,
+    "tags": [
+      "ai",
+      "encoding",
+      "images"
+    ],
+    "confidence_score": 86
+  },
+  {
+    "title": "DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2608.13489v1",
+    "source": "arXiv",
+    "category": "Research",
+    "summary": "DreamX-Phi 1.0 is an action-conditioned video world model designed for robotic manipulation, predicting future observations based on observed frames, language instructions, and prescribed action sequences.",
+    "why_builders_care": "Builders can utilize DreamX-Phi 1.0 for developing more sophisticated robotic manipulation systems that integrate AI and computer vision.",
+    "difficulty": "Advanced",
+    "reading_time_mins": 12,
+    "tags": [
+      "ai",
+      "robotics",
+      "vision"
+    ],
+    "confidence_score": 94
+  },
+  {
+    "title": "Investing in multi-agent AI safety research",
+    "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+    "source": "DeepMind Blog",
+    "category": "Research",
+    "summary": "DeepMind announces a $10M funding call for multi-agent safety research, aiming to advance the development of safe and reliable AI systems.",
+    "why_builders_care": "Builders can participate in the funding call to contribute to the development of safer AI systems and explore new research opportunities.",
+    "difficulty": "Intermediate",
+    "reading_time_mins": 5,
+    "tags": [
+      "ai",
+      "safety",
+      "research"
+    ],
+    "confidence_score": 87
+  }
+]
