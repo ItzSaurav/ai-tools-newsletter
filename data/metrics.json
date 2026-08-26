@@ -1,22 +1,13 @@
 {
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-08-26",
   "total_runs": 30,
   "rolling_30d": {
-    "avg_fetched_per_run": 246.8,
+    "avg_fetched_per_run": 246.7,
     "avg_curated_per_run": 10.1,
-    "avg_groq_latency_seconds": 6.33,
-    "avg_pipeline_duration_seconds": 33.0
+    "avg_groq_latency_seconds": 6.36,
+    "avg_pipeline_duration_seconds": 33.9
   },
   "history": [
-    {
-      "date": "2026-07-27",
-      "total_fetched": 248,
-      "new_items": 248,
-      "curated_count": 9,
-      "groq_latency_s": 5.365,
-      "pipeline_duration_s": 15.6,
-      "draft_size_kb": 42.4
-    },
     {
       "date": "2026-07-28",
       "total_fetched": 255,
@@ -276,6 +267,15 @@
       "curated_count": 10,
       "groq_latency_s": 6.347,
       "pipeline_duration_s": 40.11,
+      "draft_size_kb": 46.1
+    },
+    {
+      "date": "2026-08-26",
+      "total_fetched": 247,
+      "new_items": 247,
+      "curated_count": 10,
+      "groq_latency_s": 6.347,
+      "pipeline_duration_s": 40.51,
       "draft_size_kb": 46.1
     }
   ]
